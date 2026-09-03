@@ -1,0 +1,550 @@
+<!DOCTYPE html><html lang="zh-CN" data-lvt-canonical="1"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>袁浩 · 空间设计师</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Spline+Sans+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0A0A0A;
+      --fg: #FFFFFF;
+      --border: #333333;
+      --muted: #888888;
+      --surface: #111111;
+      --hover: #1A1A1A;
+      --display: "Inter", "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+      --cn: "Inter", "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+      --mono: "Spline Sans Mono", "JetBrains Mono", ui-monospace, monospace;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--fg); font-family: var(--cn); font-weight: 400; line-height: 1.6; overflow-x: hidden; }
+
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 48px; background: rgba(10,10,10,0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-logo { font-family: var(--display); font-size: 16px; font-weight: 400; letter-spacing: 0.08em; color: var(--fg); text-decoration: none; }
+    .nav-logo span { color: var(--muted); font-size: 13px; margin-left: 12px; font-family: var(--mono); letter-spacing: 0.05em; }
+    .nav-links { display: flex; gap: 40px; list-style: none; }
+    .nav-links a { color: var(--muted); text-decoration: none; font-size: 13px; font-family: var(--mono); letter-spacing: 0.08em; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--fg); }
+    .nav-menu-btn { display: none; background: none; border: none; cursor: pointer; padding: 8px; flex-direction: column; gap: 5px; }
+    .nav-menu-btn span { display: block; width: 22px; height: 1px; background: var(--fg); transition: all 0.3s; }
+
+    #hero { min-height: 100vh; display: grid; grid-template-columns: 45% 55%; padding-top: 64px; position: relative; }
+    .hero-left { display: flex; flex-direction: column; justify-content: center; padding: 80px 64px 80px 80px; position: relative; }
+    .hero-eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: 0.2em; color: var(--muted); text-transform: uppercase; margin-bottom: 32px; }
+    .hero-name { font-family: var(--display); font-size: clamp(72px,8vw,120px); font-weight: 300; line-height: 1; letter-spacing: -0.02em; margin-bottom: 20px; }
+    .hero-title { font-family: var(--display); font-size: clamp(20px,2.5vw,32px); font-weight: 300; color: var(--muted); letter-spacing: 0.15em; margin-bottom: 64px; }
+    .hero-divider { width: 40px; height: 1px; background: var(--border); margin-bottom: 40px; }
+    .hero-tagline { font-family: var(--mono); font-size: 13px; color: var(--muted); letter-spacing: 0.1em; line-height: 2; }
+    .hero-scroll-hint { position: absolute; bottom: 40px; left: 80px; display: flex; align-items: center; gap: 12px; font-family: var(--mono); font-size: 11px; color: var(--muted); letter-spacing: 0.15em; text-transform: uppercase; }
+    .hero-scroll-hint::before { content: ''; display: block; width: 24px; height: 1px; background: var(--muted); }
+    .hero-right { position: relative; overflow: hidden; }
+    .hero-right img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+    .hero-right::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to right, var(--bg) 0%, transparent 15%); }
+
+    section { padding: 120px 80px; }
+    .section-header { display: flex; align-items: baseline; gap: 24px; margin-bottom: 80px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+    .section-num { font-family: var(--mono); font-size: 12px; color: var(--muted); letter-spacing: 0.15em; }
+    .section-title { font-family: var(--display); font-size: 13px; font-weight: 400; letter-spacing: 0.2em; text-transform: uppercase; color: var(--fg); }
+    .section-title-cn { font-family: var(--display); font-size: 36px; font-weight: 300; letter-spacing: 0.05em; margin-left: auto; color: var(--muted); }
+
+    #projects { background: var(--bg); }
+    .projects-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 2px; }
+    .project-card { position: relative; aspect-ratio: 4/3; overflow: hidden; cursor: pointer; background: var(--surface); }
+    .project-card img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; transition: transform 0.6s cubic-bezier(0.25,0.46,0.45,0.94); }
+    .project-card:hover img { transform: scale(1.06); }
+    .project-card-overlay { position: absolute; inset: 0; background: linear-gradient(to top,rgba(0,0,0,0.85) 0%,rgba(0,0,0,0.2) 50%,transparent 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 24px; transition: background 0.3s; }
+    .project-card:hover .project-card-overlay { background: linear-gradient(to top,rgba(0,0,0,0.92) 0%,rgba(0,0,0,0.4) 60%,rgba(0,0,0,0.1) 100%); }
+    .project-card-num { position: absolute; top: 20px; right: 20px; font-family: var(--mono); font-size: 11px; color: rgba(255,255,255,0.4); letter-spacing: 0.15em; opacity: 0; transition: opacity 0.3s; }
+    .project-card:hover .project-card-num { opacity: 1; }
+    .project-card-name { font-family: var(--display); font-size: 16px; font-weight: 400; margin-bottom: 6px; line-height: 1.3; }
+    .project-card-meta { font-family: var(--mono); font-size: 11px; color: rgba(255,255,255,0.55); letter-spacing: 0.08em; }
+    .project-card-type { font-family: var(--mono); font-size: 10px; color: rgba(255,255,255,0.4); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 8px; }
+
+    .project-detail { padding: 100px 80px; border-top: 1px solid var(--border); }
+    .project-detail:nth-child(odd) { background: var(--surface); }
+    .project-detail:nth-child(even) { background: var(--bg); }
+    .project-detail-inner { display: grid; grid-template-columns: 280px 1fr; gap: 80px; align-items: start; }
+    .project-info { position: sticky; top: 88px; }
+    .project-info-num { font-family: var(--mono); font-size: 11px; color: var(--muted); letter-spacing: 0.2em; margin-bottom: 20px; }
+    .project-info-name { font-family: var(--display); font-size: 26px; font-weight: 300; line-height: 1.3; margin-bottom: 32px; letter-spacing: 0.02em; }
+    .project-info-divider { width: 24px; height: 1px; background: var(--border); margin-bottom: 28px; }
+    .project-info-row { display: flex; flex-direction: column; gap: 4px; margin-bottom: 16px; }
+    .project-info-label { font-family: var(--mono); font-size: 10px; color: var(--muted); letter-spacing: 0.18em; text-transform: uppercase; }
+    .project-info-value { font-size: 14px; color: var(--fg); font-weight: 400; }
+    .project-info-desc { margin-top: 28px; padding-top: 28px; border-top: 1px solid var(--border); font-size: 14px; color: var(--muted); line-height: 1.8; }
+
+    .project-gallery { display: grid; grid-template-columns: repeat(2,1fr); gap: 3px; }
+    .project-gallery-item { position: relative; overflow: hidden; cursor: pointer; background: var(--surface); }
+    .project-gallery-item.wide { grid-column: span 2; }
+    .project-gallery-item img { width: 100%; height: auto; display: block; object-fit: cover; aspect-ratio: 16/9; transition: transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94); }
+    .project-gallery-item.wide img { aspect-ratio: 32/9; }
+    .project-gallery-item:hover img { transform: scale(1.03); }
+    .gallery-zoom-hint { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0); transition: background 0.3s; }
+    .gallery-zoom-hint::after { content: '↗'; font-size: 20px; color: white; opacity: 0; transition: opacity 0.3s; }
+    .project-gallery-item:hover .gallery-zoom-hint { background: rgba(0,0,0,0.25); }
+    .project-gallery-item:hover .gallery-zoom-hint::after { opacity: 1; }
+
+    #about { background: var(--bg); border-top: 1px solid var(--border); }
+    .about-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 120px; align-items: start; }
+    .about-bio { font-size: 18px; line-height: 2; color: var(--muted); font-weight: 400; }
+    .about-bio strong { color: var(--fg); font-weight: 400; }
+    .about-right { display: flex; flex-direction: column; gap: 48px; }
+    .about-block-title { font-family: var(--mono); font-size: 11px; color: var(--muted); letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 20px; }
+    .about-info-list { display: flex; flex-direction: column; gap: 16px; }
+    .about-info-item { display: flex; justify-content: space-between; align-items: baseline; padding-bottom: 16px; border-bottom: 1px solid var(--border); font-size: 15px; }
+    .about-info-item .label { color: var(--muted); font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; }
+    .about-info-item .value { color: var(--fg); }
+    .skills-list { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skill-tag { padding: 8px 18px; border: 1px solid var(--border); font-family: var(--mono); font-size: 12px; letter-spacing: 0.12em; color: var(--muted); transition: all 0.2s; }
+    .skill-tag:hover { border-color: var(--fg); color: var(--fg); }
+
+    #contact { background: var(--surface); border-top: 1px solid var(--border); text-align: center; padding: 120px 80px; }
+    .contact-tagline { font-family: var(--mono); font-size: 12px; color: var(--muted); letter-spacing: 0.25em; text-transform: uppercase; margin-bottom: 48px; }
+    .contact-heading { font-family: var(--display); font-size: clamp(36px,4vw,64px); font-weight: 300; letter-spacing: 0.05em; margin-bottom: 64px; }
+    .contact-items { display: flex; justify-content: center; gap: 80px; flex-wrap: wrap; }
+    .contact-item { display: flex; flex-direction: column; gap: 8px; align-items: center; }
+    .contact-item-label { font-family: var(--mono); font-size: 11px; color: var(--muted); letter-spacing: 0.2em; text-transform: uppercase; }
+    .contact-item-value { font-family: var(--mono); font-size: 18px; color: var(--fg); letter-spacing: 0.05em; }
+
+    footer { background: var(--bg); border-top: 1px solid var(--border); padding: 32px 80px; display: flex; justify-content: space-between; align-items: center; }
+    .footer-copy { font-family: var(--mono); font-size: 12px; color: var(--muted); letter-spacing: 0.08em; }
+    .footer-back-top { font-family: var(--mono); font-size: 12px; color: var(--muted); text-decoration: none; letter-spacing: 0.1em; transition: color 0.2s; }
+    .footer-back-top:hover { color: var(--fg); }
+
+    .lightbox { display: none; position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,0.95); align-items: center; justify-content: center; }
+    .lightbox.active { display: flex; }
+    .lightbox-img { max-width: 92vw; max-height: 92vh; object-fit: contain; display: block; }
+    .lightbox-close { position: absolute; top: 24px; right: 32px; font-family: var(--mono); font-size: 13px; color: var(--muted); cursor: pointer; letter-spacing: 0.1em; transition: color 0.2s; background: none; border: none; }
+    .lightbox-close:hover { color: var(--fg); }
+    .lightbox-nav { position: absolute; top: 50%; transform: translateY(-50%); background: none; border: 1px solid var(--border); color: var(--muted); font-size: 18px; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.2s; }
+    .lightbox-nav:hover { border-color: var(--fg); color: var(--fg); }
+    .lightbox-prev { left: 24px; }
+    .lightbox-next { right: 24px; }
+
+    .mobile-nav { display: none; position: fixed; inset: 0; z-index: 99; background: var(--bg); flex-direction: column; align-items: center; justify-content: center; gap: 40px; }
+    .mobile-nav.active { display: flex; }
+    .mobile-nav a { font-family: var(--display); font-size: 28px; font-weight: 300; color: var(--fg); text-decoration: none; letter-spacing: 0.1em; }
+
+    @media (max-width: 1200px) { .projects-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 900px) {
+      nav { padding: 0 24px; }
+      .nav-links { display: none; }
+      .nav-menu-btn { display: flex; }
+      #hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-left { padding: 80px 24px 60px; order: 2; }
+      .hero-right { height: 60vw; order: 1; }
+      .hero-right::after { background: linear-gradient(to bottom, transparent 70%, var(--bg) 100%); }
+      .hero-scroll-hint { display: none; }
+      section { padding: 80px 24px; }
+      .project-detail { padding: 80px 24px; }
+      .project-detail-inner { grid-template-columns: 1fr; gap: 40px; }
+      .project-info { position: static; }
+      .about-inner { grid-template-columns: 1fr; gap: 60px; }
+      footer { padding: 24px; flex-direction: column; gap: 12px; text-align: center; }
+      .contact-items { gap: 48px; }
+    }
+    @media (max-width: 600px) {
+      .projects-grid { grid-template-columns: 1fr; }
+      .project-gallery { grid-template-columns: 1fr; }
+      .project-gallery-item.wide { grid-column: span 1; }
+      .project-gallery-item.wide img { aspect-ratio: 16/9; }
+      .section-title-cn { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="top" data-lvt-eid="29299e8e95">
+    <a href="#top" class="nav-logo" data-lvt-eid="aee80513e7">袁浩<span data-lvt-eid="2966371790">YUAN HAO</span></a>
+    <ul class="nav-links" data-lvt-eid="9dd0aa0d19">
+      <li data-lvt-eid="8476565f0d"><a href="#projects" data-lvt-eid="54754542cf">项目</a></li>
+      <li data-lvt-eid="5198e9012b"><a href="#about" data-lvt-eid="117d00ef0a">关于</a></li>
+      <li data-lvt-eid="0ad6cb98c4"><a href="#contact" data-lvt-eid="8607c5a1b9">联系</a></li>
+    </ul>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="菜单" data-lvt-eid="cd1763079b">
+      <span data-lvt-eid="68f25bc4d5"></span><span data-lvt-eid="c450ee4d35"></span><span data-lvt-eid="5a60d80b85"></span>
+    </button>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav" data-lvt-eid="2b1f7353d1">
+    <a href="#projects" onclick="closeMobileNav()" data-lvt-eid="7a20bfc7ec">项目</a>
+    <a href="#about" onclick="closeMobileNav()" data-lvt-eid="264393ae75">关于</a>
+    <a href="#contact" onclick="closeMobileNav()" data-lvt-eid="2316b65a91">联系</a>
+  </div>
+
+  <section id="hero" data-lvt-eid="05d6096fa7">
+    <div class="hero-left" data-lvt-eid="869f652643">
+      <p class="hero-eyebrow" data-lvt-eid="669bbf0653">Portfolio · 2026</p>
+      <h1 class="hero-name" data-lvt-eid="b1dfde7a6f">袁浩</h1>
+      <h2 class="hero-title" data-lvt-eid="392f7ada4b">空间设计师</h2>
+      <div class="hero-divider" data-lvt-eid="2fe90284f5"></div>
+      <p class="hero-tagline" data-lvt-eid="bebc2e9a50">场馆展厅 · 品牌门店 · 10年+经验</p>
+      <div class="hero-scroll-hint" data-lvt-eid="b7eb1b1ff0">Scroll</div>
+    </div>
+    <div class="hero-right" data-lvt-eid="0da71f5c15">
+      <img src="https://xla-persist.xingliu.art/artifacts/user/ySUtQNfMPxDzyKyr.jpg" alt="imon 野萌体验馆室内场景" loading="eager" referrerpolicy="no-referrer" data-lvt-eid="8c1c372ec6">
+    </div>
+  </section>
+
+  <section id="projects" data-lvt-eid="ec2dbd5616">
+    <div class="section-header" data-lvt-eid="fd2fad4dda">
+      <span class="section-num" data-lvt-eid="13e4a94f2b">01</span>
+      <span class="section-title" data-lvt-eid="7cfa4e7bf8">Selected Works</span>
+      <span class="section-title-cn" data-lvt-eid="7d92bf349c">精选项目</span>
+    </div>
+    <div class="projects-grid" data-lvt-eid="0f7ae73fa0">
+      <div class="project-card" onclick="scrollToProject('p1')" data-lvt-eid="c0c02fd5cc">
+        <img src="https://xla-persist.xingliu.art/artifacts/user/ySUtQNfMPxDzyKyr.jpg" alt="imon 野萌体验馆" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="494eea8bbc">
+        <div class="project-card-overlay" data-lvt-eid="49a4725c96"><span class="project-card-num" data-lvt-eid="a95467f57b">01</span><p class="project-card-type" data-lvt-eid="f6a052a056">商业体验空间</p><p class="project-card-name" data-lvt-eid="75d064987a">imon 野萌体验馆</p><p class="project-card-meta" data-lvt-eid="bb6401e6a1">深圳 / 2025 / 283㎡</p></div>
+      </div>
+      <div class="project-card" onclick="scrollToProject('p2')" data-lvt-eid="1b1067daa2">
+        <img src="https://xla-persist.xingliu.art/artifacts/user/9viJXPeiKwL4KtkI.jpg" alt="集里桥儿童之家" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="01ff592912">
+        <div class="project-card-overlay" data-lvt-eid="5a5a63dcae"><span class="project-card-num" data-lvt-eid="8ccfd6a05f">02</span><p class="project-card-type" data-lvt-eid="a15b368fb2">社区文化 / 儿童公共空间</p><p class="project-card-name" data-lvt-eid="63c99266cf">集里桥儿童之家</p><p class="project-card-meta" data-lvt-eid="47c94655ff">浏阳 / 2023 / 180㎡</p></div>
+      </div>
+      <div class="project-card" onclick="scrollToProject('p3')" data-lvt-eid="dd19d0d444">
+        <img src="https://xla-persist.xingliu.art/artifacts/user/zy41yiiv3GHHv6rc.jpg" alt="MILO 智能医美概念方案" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="df1fa7a0e3">
+        <div class="project-card-overlay" data-lvt-eid="ae84811459"><span class="project-card-num" data-lvt-eid="1c0ad59d46">03</span><p class="project-card-type" data-lvt-eid="263a003403">医美 / 科技展厅 / 概念方案</p><p class="project-card-name" data-lvt-eid="e201bc3b24">MILO 智能医美概念方案</p><p class="project-card-meta" data-lvt-eid="9dac244f02">概念 / 2020 / 100㎡</p></div>
+      </div>
+      <div class="project-card" onclick="scrollToProject('p4')" data-lvt-eid="74c3f972dc">
+        <img src="https://xla-persist.xingliu.art/artifacts/user/rN6SgurjB0HKeRwN.jpg" alt="天恩宇牧旭辉国际品牌店" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="c1511881e3">
+        <div class="project-card-overlay" data-lvt-eid="6e22cb6706"><span class="project-card-num" data-lvt-eid="5369f65b79">04</span><p class="project-card-type" data-lvt-eid="52cde35db5">代餐饮品店</p><p class="project-card-name" data-lvt-eid="422a02cc2d">天恩宇牧旭辉国际品牌店</p><p class="project-card-meta" data-lvt-eid="cef5b6f065">长沙 / 2025 / 30㎡</p></div>
+      </div>
+      <div class="project-card" onclick="scrollToProject('p5')" data-lvt-eid="1daa78b1fd">
+        <img src="https://xla-persist.xingliu.art/artifacts/user/nkMMN2wPlyDTMyOS.jpg" alt="九麦真品品牌早点店" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="7c3084e880">
+        <div class="project-card-overlay" data-lvt-eid="9284b32d2a"><span class="project-card-num" data-lvt-eid="904383976c">05</span><p class="project-card-type" data-lvt-eid="17a211a8a8">品牌早点店</p><p class="project-card-name" data-lvt-eid="e2cc69b43f">九麦真品品牌早点店</p><p class="project-card-meta" data-lvt-eid="d76f4850bb">长沙 / 2025 / 80㎡</p></div>
+      </div>
+      <div class="project-card" onclick="scrollToProject('p6')" data-lvt-eid="2a8c139baf">
+        <img src="https://xla-persist.xingliu.art/artifacts/user/C4C9uGxTjl9vFc6s.jpg" alt="山川生物集团前台大厅" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="3ed0e14b24">
+        <div class="project-card-overlay" data-lvt-eid="92e0208fef"><span class="project-card-num" data-lvt-eid="48279e9754">06</span><p class="project-card-type" data-lvt-eid="07a4c68773">企业文化墙</p><p class="project-card-name" data-lvt-eid="41ee40ea4c">山川生物集团前台大厅</p><p class="project-card-meta" data-lvt-eid="f69b16d5b1">武汉 / 2024 / 100㎡</p></div>
+      </div>
+      <div class="project-card" onclick="scrollToProject('p7')" data-lvt-eid="46c685a9fe">
+        <img src="https://xla-persist.xingliu.art/artifacts/user/CJnSZoORMCAD1LH7.jpg" alt="税博士文化墙" loading="lazy" style="object-position: top center;" referrerpolicy="no-referrer" data-lvt-eid="e8cb45555f">
+        <div class="project-card-overlay" data-lvt-eid="19bf5c2387"><span class="project-card-num" data-lvt-eid="24e3dfa824">07</span><p class="project-card-type" data-lvt-eid="5c43927e0c">文化墙</p><p class="project-card-name" data-lvt-eid="82c1f91cea">税博士文化墙</p><p class="project-card-meta" data-lvt-eid="5d5028f7c5">长沙 / 2024 / 30㎡</p></div>
+      </div>
+      <div class="project-card" onclick="scrollToProject('p8')" data-lvt-eid="bde376dae6">
+        <img src="https://xla-persist.xingliu.art/artifacts/user/W15YtwBvD0DYlVpz.jpg" alt="湘幼集团办公室设计" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="99835f0b00">
+        <div class="project-card-overlay" data-lvt-eid="d80d86457c"><span class="project-card-num" data-lvt-eid="7696879e42">08</span><p class="project-card-type" data-lvt-eid="7a35db8b1f">办公室设计</p><p class="project-card-name" data-lvt-eid="54da775bcb">湘幼集团办公室设计</p><p class="project-card-meta" data-lvt-eid="bb6f1f95ca">长沙 / 2022 / 500㎡</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT DETAILS -->
+
+  <div class="project-detail" id="p1" data-lvt-eid="1fc21f8d16">
+    <div class="project-detail-inner" data-lvt-eid="dde906d2ff">
+      <div class="project-info" data-lvt-eid="85041ca79f">
+        <p class="project-info-num" data-lvt-eid="1c3bb7c988">PROJECT 01</p>
+        <h3 class="project-info-name" data-lvt-eid="a406f0c2d9">imon 野萌体验馆</h3>
+        <div class="project-info-divider" data-lvt-eid="4bf8bfa100"></div>
+        <div class="project-info-row" data-lvt-eid="76b382017b"><span class="project-info-label" data-lvt-eid="748722e78b">类型</span><span class="project-info-value" data-lvt-eid="2fe3a2c481">商业体验空间</span></div>
+        <div class="project-info-row" data-lvt-eid="7eb4cb6204"><span class="project-info-label" data-lvt-eid="b574edd78a">地点</span><span class="project-info-value" data-lvt-eid="d817a5ed9f">深圳</span></div>
+        <div class="project-info-row" data-lvt-eid="ece0e8ef8d"><span class="project-info-label" data-lvt-eid="c7be5cb7ad">年份</span><span class="project-info-value" data-lvt-eid="1cdc27e497">2025</span></div>
+        <div class="project-info-row" data-lvt-eid="00127b972a"><span class="project-info-label" data-lvt-eid="0ed920ef3a">面积</span><span class="project-info-value" data-lvt-eid="01bfd6daab">283㎡</span></div>
+        <div class="project-info-row" data-lvt-eid="11f580ce5d"><span class="project-info-label" data-lvt-eid="7704e1fc8e">角色</span><span class="project-info-value" data-lvt-eid="47886900db">项目负责人</span></div>
+        <div class="project-info-row" data-lvt-eid="7e41418c29"><span class="project-info-label" data-lvt-eid="d07054a56b">状态</span><span class="project-info-value" data-lvt-eid="791eb33c20">已交付</span></div>
+        <p class="project-info-desc" data-lvt-eid="c97de3e475">为毛绒玩具品牌 imon 打造的场景型体验旗舰店。以"野"与"萌"为品牌内核，将自然场景融入零售空间，打破传统玩具店的货架陈列逻辑，创造可逛、可玩、可拍照的沉浸式品牌体验。</p>
+      </div>
+      <div class="project-gallery" data-gallery="p1" data-lvt-eid="2e65117bf9">
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/ySUtQNfMPxDzyKyr.jpg" data-lvt-eid="627385c653"><img src="https://xla-persist.xingliu.art/artifacts/user/ySUtQNfMPxDzyKyr.jpg" alt="imon 01" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="a981108859"><div class="gallery-zoom-hint" data-lvt-eid="e21057d5a6"></div></div>
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/k2f4o3xBldFzMeiG.jpg" data-lvt-eid="01d52f25ee"><img src="https://xla-persist.xingliu.art/artifacts/user/k2f4o3xBldFzMeiG.jpg" alt="imon 02" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="74cf82f682"><div class="gallery-zoom-hint" data-lvt-eid="29c99af780"></div></div>
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/mqmq019YLOCmXiR6.jpg" data-lvt-eid="b7462d16bb"><img src="https://xla-persist.xingliu.art/artifacts/user/mqmq019YLOCmXiR6.jpg" alt="imon 03" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="06a414d858"><div class="gallery-zoom-hint" data-lvt-eid="80c8668a68"></div></div>
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/20eJ0BRiz6Ari9HK.jpg" data-lvt-eid="5736d80f23"><img src="https://xla-persist.xingliu.art/artifacts/user/20eJ0BRiz6Ari9HK.jpg" alt="imon 04" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="b0795c938d"><div class="gallery-zoom-hint" data-lvt-eid="3fc5b9ade6"></div></div>
+        <div class="project-gallery-item wide" data-src="https://xla-persist.xingliu.art/artifacts/user/0LohikPsWJ9Bjy1l.jpg" data-lvt-eid="9a7879ef10"><img src="https://xla-persist.xingliu.art/artifacts/user/0LohikPsWJ9Bjy1l.jpg" alt="imon 06" loading="lazy" style="aspect-ratio:2048/492;" referrerpolicy="no-referrer" data-lvt-eid="7326f0c920"><div class="gallery-zoom-hint" data-lvt-eid="a30522bd39"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-detail" id="p2" data-lvt-eid="54720d924b">
+    <div class="project-detail-inner" data-lvt-eid="bbec409726">
+      <div class="project-info" data-lvt-eid="dc3158413b">
+        <p class="project-info-num" data-lvt-eid="311db7929f">PROJECT 02</p>
+        <h3 class="project-info-name" data-lvt-eid="def57f1de6">集里桥儿童之家</h3>
+        <div class="project-info-divider" data-lvt-eid="ac7c7afcdc"></div>
+        <div class="project-info-row" data-lvt-eid="b1cd999460"><span class="project-info-label" data-lvt-eid="c684052f72">类型</span><span class="project-info-value" data-lvt-eid="448e437b14">社区文化 / 儿童公共空间</span></div>
+        <div class="project-info-row" data-lvt-eid="a26b7c7e37"><span class="project-info-label" data-lvt-eid="99e8a7f60c">地点</span><span class="project-info-value" data-lvt-eid="d346402ead">浏阳</span></div>
+        <div class="project-info-row" data-lvt-eid="17fb04d648"><span class="project-info-label" data-lvt-eid="56296eb9fb">年份</span><span class="project-info-value" data-lvt-eid="9cc48b7229">2023</span></div>
+        <div class="project-info-row" data-lvt-eid="79356036ab"><span class="project-info-label" data-lvt-eid="02dd3be5d0">面积</span><span class="project-info-value" data-lvt-eid="236d09167a">180㎡</span></div>
+        <div class="project-info-row" data-lvt-eid="0a605133d8"><span class="project-info-label" data-lvt-eid="3733afb253">角色</span><span class="project-info-value" data-lvt-eid="691e759ac3">项目负责人</span></div>
+        <div class="project-info-row" data-lvt-eid="26d67fd830"><span class="project-info-label" data-lvt-eid="84bcc64ad0">状态</span><span class="project-info-value" data-lvt-eid="9861e51a0d">已建成</span></div>
+        <p class="project-info-desc" data-lvt-eid="091f3735f4">以"爱护航 童沐阳光"为主题的社区儿童公共空间。通过明亮的色彩、圆润的造型与开放的布局，为社区儿童打造一个安全、温暖、富有探索感的成长活动场所。</p>
+      </div>
+      <div class="project-gallery" data-gallery="p2" data-lvt-eid="ff4255f588">
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/9viJXPeiKwL4KtkI.jpg" data-lvt-eid="3ca13afe3d"><img src="https://xla-persist.xingliu.art/artifacts/user/9viJXPeiKwL4KtkI.jpg" alt="集里桥 01" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="8e74815473"><div class="gallery-zoom-hint" data-lvt-eid="799e199e8e"></div></div>
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/wW54deo2ZM1vIbQs.jpg" data-lvt-eid="40163be1f1"><img src="https://xla-persist.xingliu.art/artifacts/user/wW54deo2ZM1vIbQs.jpg" alt="集里桥 03" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="00417f2a13"><div class="gallery-zoom-hint" data-lvt-eid="6870688b68"></div></div>
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/kaa44RMmGa4joABh.jpg" data-lvt-eid="28c63a5190"><img src="https://xla-persist.xingliu.art/artifacts/user/kaa44RMmGa4joABh.jpg" alt="集里桥 04" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="c876012566"><div class="gallery-zoom-hint" data-lvt-eid="1f1f5b0a38"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-detail" id="p3" data-lvt-eid="db8479f801">
+    <div class="project-detail-inner" data-lvt-eid="fcb152f6b4">
+      <div class="project-info" data-lvt-eid="07a0273dfa">
+        <p class="project-info-num" data-lvt-eid="9ce6bbfc44">PROJECT 03</p>
+        <h3 class="project-info-name" data-lvt-eid="7d38d1689c">MILO 智能医美概念方案</h3>
+        <div class="project-info-divider" data-lvt-eid="b83470e3b0"></div>
+        <div class="project-info-row" data-lvt-eid="d9df211ac2"><span class="project-info-label" data-lvt-eid="8f66a46afc">类型</span><span class="project-info-value" data-lvt-eid="bf0bb4f8a5">医美 / 科技展厅 / 概念方案</span></div>
+        <div class="project-info-row" data-lvt-eid="0c09979799"><span class="project-info-label" data-lvt-eid="11c4ade521">地点</span><span class="project-info-value" data-lvt-eid="7b9aee5764">概念</span></div>
+        <div class="project-info-row" data-lvt-eid="a7aa797f0e"><span class="project-info-label" data-lvt-eid="65605c9693">年份</span><span class="project-info-value" data-lvt-eid="992a672cce">2020</span></div>
+        <div class="project-info-row" data-lvt-eid="b7e118fb70"><span class="project-info-label" data-lvt-eid="e33a3eee4c">面积</span><span class="project-info-value" data-lvt-eid="21eab80f56">100㎡</span></div>
+        <div class="project-info-row" data-lvt-eid="3deb763acc"><span class="project-info-label" data-lvt-eid="fcb7be9caf">角色</span><span class="project-info-value" data-lvt-eid="a63c505fca">项目负责人</span></div>
+        <div class="project-info-row" data-lvt-eid="3ebf5510e9"><span class="project-info-label" data-lvt-eid="950979d04f">状态</span><span class="project-info-value" data-lvt-eid="90f0562af6">概念方案</span></div>
+        <p class="project-info-desc" data-lvt-eid="31d820b49b">以生物医学为背景的人工智能医美概念空间。融合科技感与医美行业的精致属性，探索未来医美场景中科技、美学与用户体验的融合方式。</p>
+      </div>
+      <div class="project-gallery" data-gallery="p3" data-lvt-eid="db8549c129">
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/zy41yiiv3GHHv6rc.jpg" data-lvt-eid="546b9a042c"><img src="https://xla-persist.xingliu.art/artifacts/user/zy41yiiv3GHHv6rc.jpg" alt="MILO 01" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="c4ed06bb5f"><div class="gallery-zoom-hint" data-lvt-eid="76aa9c0cb2"></div></div>
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/souVA5dZOOH6qGhI.jpg" data-lvt-eid="e488f03e34"><img src="https://xla-persist.xingliu.art/artifacts/user/souVA5dZOOH6qGhI.jpg" alt="MILO 02" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="24b1b611e8"><div class="gallery-zoom-hint" data-lvt-eid="cef41119b8"></div></div>
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/HdSaq2jWkoJSjFb6.jpg" data-lvt-eid="0b847711d4"><img src="https://xla-persist.xingliu.art/artifacts/user/HdSaq2jWkoJSjFb6.jpg" alt="MILO 03" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="604c0dadd0"><div class="gallery-zoom-hint" data-lvt-eid="a4dd75c6fa"></div></div>
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/depjPeD6rQ7TFQeM.jpg" data-lvt-eid="f97af8fb99"><img src="https://xla-persist.xingliu.art/artifacts/user/depjPeD6rQ7TFQeM.jpg" alt="MILO 04" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="25e70614cb"><div class="gallery-zoom-hint" data-lvt-eid="f29edec605"></div></div>
+        <div class="project-gallery-item wide" data-src="https://xla-persist.xingliu.art/artifacts/user/DslVFhQlOB1EsDOk.jpg" data-lvt-eid="81b1329c87"><img src="https://xla-persist.xingliu.art/artifacts/user/DslVFhQlOB1EsDOk.jpg" alt="MILO 05" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="8c168235a6"><div class="gallery-zoom-hint" data-lvt-eid="a9d394b9a2"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-detail" id="p4" data-lvt-eid="a7226a7a93">
+    <div class="project-detail-inner" data-lvt-eid="f6d3dfcfc4">
+      <div class="project-info" data-lvt-eid="cc8d229f49">
+        <p class="project-info-num" data-lvt-eid="631783bc36">PROJECT 04</p>
+        <h3 class="project-info-name" data-lvt-eid="bb02cdfdc5">天恩宇牧旭辉国际品牌店</h3>
+        <div class="project-info-divider" data-lvt-eid="e7a1c8e17a"></div>
+        <div class="project-info-row" data-lvt-eid="caf266262a"><span class="project-info-label" data-lvt-eid="62e765d858">类型</span><span class="project-info-value" data-lvt-eid="d2f684bbb7">代餐饮品店</span></div>
+        <div class="project-info-row" data-lvt-eid="9b5b1081f5"><span class="project-info-label" data-lvt-eid="17c9b2e093">地点</span><span class="project-info-value" data-lvt-eid="a340d19000">长沙</span></div>
+        <div class="project-info-row" data-lvt-eid="1ca8659f77"><span class="project-info-label" data-lvt-eid="c8e48865df">年份</span><span class="project-info-value" data-lvt-eid="b6745e5eb4">2025</span></div>
+        <div class="project-info-row" data-lvt-eid="6e97313758"><span class="project-info-label" data-lvt-eid="e3c41236ce">面积</span><span class="project-info-value" data-lvt-eid="24279d8463">30㎡</span></div>
+        <div class="project-info-row" data-lvt-eid="65dcb4bf0d"><span class="project-info-label" data-lvt-eid="96586ba81a">角色</span><span class="project-info-value" data-lvt-eid="81517c34e6">项目负责人</span></div>
+        <div class="project-info-row" data-lvt-eid="321a86ca29"><span class="project-info-label" data-lvt-eid="4cfbd21136">状态</span><span class="project-info-value" data-lvt-eid="fa7b95b964">已建成</span></div>
+        <p class="project-info-desc" data-lvt-eid="c8eb70210d">以自然养生为核心理念的代餐饮品店。在仅30㎡的有限空间内，通过品牌色、杯子造型、灯光营造自然、健康、舒适的品牌氛围。</p>
+      </div>
+      <div class="project-gallery" data-gallery="p4" data-lvt-eid="22c9ebcac8">
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/rN6SgurjB0HKeRwN.jpg" data-lvt-eid="066132cf99"><img src="https://xla-persist.xingliu.art/artifacts/user/rN6SgurjB0HKeRwN.jpg" alt="天恩宇牧 01" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="9431af0c35"><div class="gallery-zoom-hint" data-lvt-eid="bafd406c58"></div></div>
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/jyV53YJHMo8nVPMf.jpg" data-lvt-eid="99f8118e3d"><img src="https://xla-persist.xingliu.art/artifacts/user/jyV53YJHMo8nVPMf.jpg" alt="天恩宇牧 02" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="8304d56663"><div class="gallery-zoom-hint" data-lvt-eid="b0f9604099"></div></div>
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/MF7d1J7brSJpWmim.jpg" data-lvt-eid="f9378003a6"><img src="https://xla-persist.xingliu.art/artifacts/user/MF7d1J7brSJpWmim.jpg" alt="天恩宇牧 03" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="cb7821b506"><div class="gallery-zoom-hint" data-lvt-eid="60604c231c"></div></div>
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/vIUNjMj60a88hjHB.jpg" data-lvt-eid="a38ece235f"><img src="https://xla-persist.xingliu.art/artifacts/user/vIUNjMj60a88hjHB.jpg" alt="天恩宇牧 04" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="7f225c496f"><div class="gallery-zoom-hint" data-lvt-eid="76ca929105"></div></div>
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/khz6HoBuTyXgSWU2.jpg" data-lvt-eid="cd95842a1c"><img src="https://xla-persist.xingliu.art/artifacts/user/khz6HoBuTyXgSWU2.jpg" alt="天恩宇牧 05" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="cbf46e3b9a"><div class="gallery-zoom-hint" data-lvt-eid="f685437a18"></div></div>
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/7ePsGqDoacBoFW7J.jpg" data-lvt-eid="a09be8a639"><img src="https://xla-persist.xingliu.art/artifacts/user/7ePsGqDoacBoFW7J.jpg" alt="天恩宇牧 06" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="ef808f3809"><div class="gallery-zoom-hint" data-lvt-eid="e59d8b164f"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-detail" id="p5" data-lvt-eid="eba96f5b43">
+    <div class="project-detail-inner" data-lvt-eid="6e7b282ea1">
+      <div class="project-info" data-lvt-eid="236881c874">
+        <p class="project-info-num" data-lvt-eid="8045a80587">PROJECT 05</p>
+        <h3 class="project-info-name" data-lvt-eid="5f17478433">九麦真品品牌早点店</h3>
+        <div class="project-info-divider" data-lvt-eid="4ee6055ca3"></div>
+        <div class="project-info-row" data-lvt-eid="4ee6be4626"><span class="project-info-label" data-lvt-eid="a4bd23c064">类型</span><span class="project-info-value" data-lvt-eid="0ae2f094c0">品牌早点店</span></div>
+        <div class="project-info-row" data-lvt-eid="4687ef2f69"><span class="project-info-label" data-lvt-eid="255907f3bd">地点</span><span class="project-info-value" data-lvt-eid="c2234c41b2">长沙</span></div>
+        <div class="project-info-row" data-lvt-eid="9cd089d19d"><span class="project-info-label" data-lvt-eid="e0dda9c14f">年份</span><span class="project-info-value" data-lvt-eid="e4a58dfd5a">2025</span></div>
+        <div class="project-info-row" data-lvt-eid="962d1299f5"><span class="project-info-label" data-lvt-eid="3a2f5626ab">面积</span><span class="project-info-value" data-lvt-eid="35ae582938">80㎡</span></div>
+        <div class="project-info-row" data-lvt-eid="22586ea856"><span class="project-info-label" data-lvt-eid="7cc9a8a212">角色</span><span class="project-info-value" data-lvt-eid="10393e86ba">项目负责人</span></div>
+        <div class="project-info-row" data-lvt-eid="f8a06872e2"><span class="project-info-label" data-lvt-eid="22d446bf37">状态</span><span class="project-info-value" data-lvt-eid="ac525ab780">已建成</span></div>
+        <p class="project-info-desc" data-lvt-eid="147ae7811d">以黑麦为特色的品牌早点店。围绕"真材实料、健康早餐"的品牌定位，用温暖质朴的材质与简洁的空间语言，传递品牌的真诚与品质感。</p>
+      </div>
+      <div class="project-gallery" data-gallery="p5" data-lvt-eid="2f8c14581e">
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/nkMMN2wPlyDTMyOS.jpg" data-lvt-eid="1def33add2"><img src="https://xla-persist.xingliu.art/artifacts/user/nkMMN2wPlyDTMyOS.jpg" alt="九麦真品 01" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="07c25646d5"><div class="gallery-zoom-hint" data-lvt-eid="5a360d8735"></div></div>
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/FkGFm9G2jE4rezXI.jpg" data-lvt-eid="f57ae142dc"><img src="https://xla-persist.xingliu.art/artifacts/user/FkGFm9G2jE4rezXI.jpg" alt="九麦真品 02" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="03607fa726"><div class="gallery-zoom-hint" data-lvt-eid="b6c2227f48"></div></div>
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/USktBDkKGk1LvzGw.jpg" data-lvt-eid="fd0a2b4b8a"><img src="https://xla-persist.xingliu.art/artifacts/user/USktBDkKGk1LvzGw.jpg" alt="九麦真品 03" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="bbe5926155"><div class="gallery-zoom-hint" data-lvt-eid="e783d3947c"></div></div>
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/Ud3KA86wie3C4FTO.jpg" data-lvt-eid="74a5412022"><img src="https://xla-persist.xingliu.art/artifacts/user/Ud3KA86wie3C4FTO.jpg" alt="九麦真品 04" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="3243e15e70"><div class="gallery-zoom-hint" data-lvt-eid="7c370a9206"></div></div>
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/nvdJm7zPZ8DoWgMi.jpg" data-lvt-eid="95c50515df"><img src="https://xla-persist.xingliu.art/artifacts/user/nvdJm7zPZ8DoWgMi.jpg" alt="九麦真品 05" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="0916b88229"><div class="gallery-zoom-hint" data-lvt-eid="eb5936da07"></div></div>
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/IfrZcRCYV4GSnDk3.jpg" data-lvt-eid="e4971d2297"><img src="https://xla-persist.xingliu.art/artifacts/user/IfrZcRCYV4GSnDk3.jpg" alt="九麦真品 06" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="d2d6098830"><div class="gallery-zoom-hint" data-lvt-eid="2f72c633e0"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-detail" id="p6" data-lvt-eid="e4703a64ec">
+    <div class="project-detail-inner" data-lvt-eid="10242c8ae0">
+      <div class="project-info" data-lvt-eid="d3cff57d8f">
+        <p class="project-info-num" data-lvt-eid="9985c266cf">PROJECT 06</p>
+        <h3 class="project-info-name" data-lvt-eid="e5f296c2c7">山川生物集团前台大厅</h3>
+        <div class="project-info-divider" data-lvt-eid="c81a2c81ba"></div>
+        <div class="project-info-row" data-lvt-eid="aeb8897e36"><span class="project-info-label" data-lvt-eid="008984c257">类型</span><span class="project-info-value" data-lvt-eid="5f79e3083d">企业文化墙</span></div>
+        <div class="project-info-row" data-lvt-eid="d36564a062"><span class="project-info-label" data-lvt-eid="8d03a33dfa">地点</span><span class="project-info-value" data-lvt-eid="4e9055845e">武汉</span></div>
+        <div class="project-info-row" data-lvt-eid="6934bfab3b"><span class="project-info-label" data-lvt-eid="3b6135bc1c">年份</span><span class="project-info-value" data-lvt-eid="822ebb0e31">2024</span></div>
+        <div class="project-info-row" data-lvt-eid="45f4fe9cb0"><span class="project-info-label" data-lvt-eid="d788ed92a9">面积</span><span class="project-info-value" data-lvt-eid="a1ac4f726e">100㎡</span></div>
+        <div class="project-info-row" data-lvt-eid="a2d95321c3"><span class="project-info-label" data-lvt-eid="aa3d98b55b">角色</span><span class="project-info-value" data-lvt-eid="24cdd2157f">项目负责人</span></div>
+        <div class="project-info-row" data-lvt-eid="e3f0348a83"><span class="project-info-label" data-lvt-eid="78f5ed83ba">状态</span><span class="project-info-value" data-lvt-eid="5fb394ef9f">方案阶段</span></div>
+        <p class="project-info-desc" data-lvt-eid="4073eab05b">以"山"为设计灵感的企业前台大厅及文化墙。提取山的轮廓与层次，结合绿色光带，将企业的生物科技属性与自然意象融合，打造兼具品牌展示与接待功能的企业门面。</p>
+      </div>
+      <div class="project-gallery" data-gallery="p6" data-lvt-eid="294b0acb37">
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/C4C9uGxTjl9vFc6s.jpg" data-lvt-eid="9fcca0af62"><img src="https://xla-persist.xingliu.art/artifacts/user/C4C9uGxTjl9vFc6s.jpg" alt="山川生物 01" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="3073ba784c"><div class="gallery-zoom-hint" data-lvt-eid="8175094019"></div></div>
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/mGUNxLkFWUFfet2W.jpg" data-lvt-eid="5c3d085c15"><img src="https://xla-persist.xingliu.art/artifacts/user/mGUNxLkFWUFfet2W.jpg" alt="山川生物 03" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="3f35f5205f"><div class="gallery-zoom-hint" data-lvt-eid="9a6ec09492"></div></div>
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/RSR3F7hlXy5HGSd2.jpg" data-lvt-eid="e54c851710"><img src="https://xla-persist.xingliu.art/artifacts/user/RSR3F7hlXy5HGSd2.jpg" alt="山川生物 04" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="22d4781196"><div class="gallery-zoom-hint" data-lvt-eid="8f88491fdf"></div></div>
+        <div class="project-gallery-item wide" data-src="https://xla-persist.xingliu.art/artifacts/user/k43A389U5Q1aMlWO.jpg" data-lvt-eid="a8b3fee73c"><img src="https://xla-persist.xingliu.art/artifacts/user/k43A389U5Q1aMlWO.jpg" alt="山川生物 05" loading="lazy" style="aspect-ratio:2048/304;" referrerpolicy="no-referrer" data-lvt-eid="48cd754b32"><div class="gallery-zoom-hint" data-lvt-eid="4ddcaec13c"></div></div>
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/b8OTwoNWQqZZYaLC.jpg" data-lvt-eid="38333d3511"><img src="https://xla-persist.xingliu.art/artifacts/user/b8OTwoNWQqZZYaLC.jpg" alt="山川生物 06" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="f76e99ea4a"><div class="gallery-zoom-hint" data-lvt-eid="09f21cd23e"></div></div>
+        <div class="project-gallery-item wide" data-src="https://xla-persist.xingliu.art/artifacts/user/yef2UUUtDuCclmbt.jpg" data-lvt-eid="54480846d3"><img src="https://xla-persist.xingliu.art/artifacts/user/yef2UUUtDuCclmbt.jpg" alt="山川生物 07" loading="lazy" style="aspect-ratio:2047/582;" referrerpolicy="no-referrer" data-lvt-eid="91f89b2804"><div class="gallery-zoom-hint" data-lvt-eid="93ea16b117"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-detail" id="p7" data-lvt-eid="522b85bc83">
+    <div class="project-detail-inner" data-lvt-eid="8910ffc673">
+      <div class="project-info" data-lvt-eid="7304970d7c">
+        <p class="project-info-num" data-lvt-eid="9fb1942604">PROJECT 07</p>
+        <h3 class="project-info-name" data-lvt-eid="a7ed58ae09">税博士文化墙</h3>
+        <div class="project-info-divider" data-lvt-eid="8d76d9c1e4"></div>
+        <div class="project-info-row" data-lvt-eid="810e4b7ce8"><span class="project-info-label" data-lvt-eid="7561852565">类型</span><span class="project-info-value" data-lvt-eid="ddc6dc9455">文化墙</span></div>
+        <div class="project-info-row" data-lvt-eid="6d9d3919f2"><span class="project-info-label" data-lvt-eid="198ee9e937">地点</span><span class="project-info-value" data-lvt-eid="04b6655d3b">长沙</span></div>
+        <div class="project-info-row" data-lvt-eid="fce43c675a"><span class="project-info-label" data-lvt-eid="46e841f03d">年份</span><span class="project-info-value" data-lvt-eid="fd267fb9ec">2024</span></div>
+        <div class="project-info-row" data-lvt-eid="f141d0923e"><span class="project-info-label" data-lvt-eid="9444447c58">面积</span><span class="project-info-value" data-lvt-eid="8b3876a087">30㎡</span></div>
+        <div class="project-info-row" data-lvt-eid="2e76c5b44a"><span class="project-info-label" data-lvt-eid="c83d2d295b">角色</span><span class="project-info-value" data-lvt-eid="d2b1c9aafa">项目负责人</span></div>
+        <div class="project-info-row" data-lvt-eid="fe3f26e3a9"><span class="project-info-label" data-lvt-eid="e3b6c5e8da">状态</span><span class="project-info-value" data-lvt-eid="1032b905ae">已建成</span></div>
+        <p class="project-info-desc" data-lvt-eid="a64c1aecd3">以财税专业与女性力量为关键词的企业文化墙设计。通过图文编排与色彩层次，在有限的墙面空间内呈现企业数字化的服务理念与团队文化。</p>
+      </div>
+      <div class="project-gallery" data-gallery="p7" data-lvt-eid="4ead38bff6">
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/hJfzCQwx9l4oyZSw.jpg" data-lvt-eid="18fec1741f"><img src="https://xla-persist.xingliu.art/artifacts/user/hJfzCQwx9l4oyZSw.jpg" alt="税博士 03" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="828ef07e96"><div class="gallery-zoom-hint" data-lvt-eid="0f340c59a8"></div></div>
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/7ecBGdDR6CC37pva.jpg" data-lvt-eid="aeaf245814"><img src="https://xla-persist.xingliu.art/artifacts/user/7ecBGdDR6CC37pva.jpg" alt="税博士 04" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="2ed871be11"><div class="gallery-zoom-hint" data-lvt-eid="4372389dce"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-detail" id="p8" data-lvt-eid="28ca0ae482">
+    <div class="project-detail-inner" data-lvt-eid="3a77ae3ae8">
+      <div class="project-info" data-lvt-eid="c38814816a">
+        <p class="project-info-num" data-lvt-eid="c306f0bed3">PROJECT 08</p>
+        <h3 class="project-info-name" data-lvt-eid="6fc2168dc9">湘幼集团办公室设计</h3>
+        <div class="project-info-divider" data-lvt-eid="2e746833dc"></div>
+        <div class="project-info-row" data-lvt-eid="830e69b1e7"><span class="project-info-label" data-lvt-eid="cbbbb700c8">类型</span><span class="project-info-value" data-lvt-eid="194cadd54a">办公室设计</span></div>
+        <div class="project-info-row" data-lvt-eid="3752bceb12"><span class="project-info-label" data-lvt-eid="7a7aa72502">地点</span><span class="project-info-value" data-lvt-eid="00c0f1a84a">长沙</span></div>
+        <div class="project-info-row" data-lvt-eid="88f67df1bf"><span class="project-info-label" data-lvt-eid="d7b13978d5">年份</span><span class="project-info-value" data-lvt-eid="900149917a">2022</span></div>
+        <div class="project-info-row" data-lvt-eid="684ea37b3a"><span class="project-info-label" data-lvt-eid="dca26567b0">面积</span><span class="project-info-value" data-lvt-eid="c001d257cd">500㎡</span></div>
+        <div class="project-info-row" data-lvt-eid="ebf36bb6dc"><span class="project-info-label" data-lvt-eid="7fc892e07f">角色</span><span class="project-info-value" data-lvt-eid="3ca7d1fbb7">项目负责人</span></div>
+        <div class="project-info-row" data-lvt-eid="32d4609523"><span class="project-info-label" data-lvt-eid="7c5f11ba0e">状态</span><span class="project-info-value" data-lvt-eid="a675156f1d">方案已交付</span></div>
+        <p class="project-info-desc" data-lvt-eid="f3cab7d3bd">涵盖总裁室、办公区、贵宾室、前台、展厅、直播间等多功能的集团总部办公空间。在500㎡的空间内统筹规划功能分区与动线，兼顾企业形象展示与日常办公效率。</p>
+      </div>
+      <div class="project-gallery" data-gallery="p8" data-lvt-eid="727a87bcf8">
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/W15YtwBvD0DYlVpz.jpg" data-lvt-eid="8459668b6e"><img src="https://xla-persist.xingliu.art/artifacts/user/W15YtwBvD0DYlVpz.jpg" alt="湘幼集团 01" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="fa0333f59b"><div class="gallery-zoom-hint" data-lvt-eid="b1a85290c7"></div></div>
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/kdltZQPSqMcFosK3.jpg" data-lvt-eid="b2d9d4b903"><img src="https://xla-persist.xingliu.art/artifacts/user/kdltZQPSqMcFosK3.jpg" alt="湘幼集团 02" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="968e828ea7"><div class="gallery-zoom-hint" data-lvt-eid="17dda16122"></div></div>
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/FF2tvaUj2pHrTse4.jpg" data-lvt-eid="d35b1c7770"><img src="https://xla-persist.xingliu.art/artifacts/user/FF2tvaUj2pHrTse4.jpg" alt="湘幼集团 03" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="4f14284371"><div class="gallery-zoom-hint" data-lvt-eid="b6bdfb55c6"></div></div>
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/0mABCOwaMnKJuKZp.jpg" data-lvt-eid="19c610b4ef"><img src="https://xla-persist.xingliu.art/artifacts/user/0mABCOwaMnKJuKZp.jpg" alt="湘幼集团 04" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="d8d18c3644"><div class="gallery-zoom-hint" data-lvt-eid="20cc3efae0"></div></div>
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/6oAA0t690fIEbXdG.jpg" data-lvt-eid="4de832eeab"><img src="https://xla-persist.xingliu.art/artifacts/user/6oAA0t690fIEbXdG.jpg" alt="湘幼集团 05" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="74a5effbdc"><div class="gallery-zoom-hint" data-lvt-eid="81e1da441c"></div></div>
+        <div class="project-gallery-item" data-src="https://xla-persist.xingliu.art/artifacts/user/xYhpbGbG7A94vOmV.jpg" data-lvt-eid="db40e192bb"><img src="https://xla-persist.xingliu.art/artifacts/user/xYhpbGbG7A94vOmV.jpg" alt="湘幼集团 06" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="0a675b1043"><div class="gallery-zoom-hint" data-lvt-eid="77887f03b3"></div></div>
+        <div class="project-gallery-item wide" data-src="https://xla-persist.xingliu.art/artifacts/user/Sjk47COPIkBPzILW.jpg" data-lvt-eid="abd9ab8918"><img src="https://xla-persist.xingliu.art/artifacts/user/Sjk47COPIkBPzILW.jpg" alt="湘幼集团 07" loading="lazy" referrerpolicy="no-referrer" data-lvt-eid="096f5a53b0"><div class="gallery-zoom-hint" data-lvt-eid="4d139f59bf"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="about" data-lvt-eid="cc00fc2982">
+    <div class="section-header" data-lvt-eid="51cac55209">
+      <span class="section-num" data-lvt-eid="dba5e8365a">02</span>
+      <span class="section-title" data-lvt-eid="c219d9be6b">About</span>
+      <span class="section-title-cn" data-lvt-eid="2df13ddcd3">关于我</span>
+    </div>
+    <div class="about-inner" data-lvt-eid="59197c9f72">
+      <div data-lvt-eid="678a3aa639">
+        <p class="about-bio" data-lvt-eid="ab1c7cd0af">
+          <strong data-lvt-eid="4a66b197cb">四川美术学院建筑艺术专业</strong>，10年以上空间设计工作经验，4年团队管理经验。设计方向聚焦<strong data-lvt-eid="58916cd4fc">场馆展厅与品牌门店</strong>，擅长将品牌理念转化为可体验的空间场景。
+        </p>
+      </div>
+      <div class="about-right" data-lvt-eid="5af9cf20e1">
+        <div data-lvt-eid="83ded4a887">
+          <p class="about-block-title" data-lvt-eid="df61258a03">基本信息</p>
+          <div class="about-info-list" data-lvt-eid="a5d9d09237">
+            <div class="about-info-item" data-lvt-eid="048df1b2ad"><span class="label" data-lvt-eid="44b33f5036">院校</span><span class="value" data-lvt-eid="1ae730e075">四川美术学院</span></div>
+            <div class="about-info-item" data-lvt-eid="a96aef6eff"><span class="label" data-lvt-eid="c2c067ee23">专业</span><span class="value" data-lvt-eid="bcb7522661">建筑艺术</span></div>
+            <div class="about-info-item" data-lvt-eid="50ab049ae5"><span class="label" data-lvt-eid="6df18cc45b">籍贯</span><span class="value" data-lvt-eid="02b1e0c091">湖南</span></div>
+            <div class="about-info-item" data-lvt-eid="8b63ebb228"><span class="label" data-lvt-eid="6e061aa93a">工作经验</span><span class="value" data-lvt-eid="d2de5ad07c">10年+</span></div>
+          </div>
+        </div>
+        <div data-lvt-eid="c5e4f9b1f8">
+          <p class="about-block-title" data-lvt-eid="de3f2c0c48">专业技能</p>
+          <div class="skills-list" data-lvt-eid="b14739b523">
+            <span class="skill-tag" data-lvt-eid="c03e4fcd51">PS</span>
+            <span class="skill-tag" data-lvt-eid="4b28a14bf8">3DMAX</span>
+            <span class="skill-tag" data-lvt-eid="55cf824d80">VR</span>
+            <span class="skill-tag" data-lvt-eid="be8309b661">SU</span>
+            <span class="skill-tag" data-lvt-eid="f0edd74403">ENS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" data-lvt-eid="d7e78ff077">
+    <p class="contact-tagline" data-lvt-eid="fc5462040a">Get in Touch</p>
+    <h2 class="contact-heading" data-lvt-eid="3a8a5e0b23">期待与您合作</h2>
+    <div class="contact-items" data-lvt-eid="e7fdbcd248">
+      <div class="contact-item" data-lvt-eid="b288d08eee">
+        <span class="contact-item-label" data-lvt-eid="856ba258d0">Email</span>
+        <span class="contact-item-value" data-lvt-eid="1b0c969fcc">2294108016@qq.com</span>
+      </div>
+      <div class="contact-item" data-lvt-eid="afb0cad27f">
+        <span class="contact-item-label" data-lvt-eid="ecf4ee3bd9">Phone</span>
+        <span class="contact-item-value" data-lvt-eid="ee726bac94">15377480766</span>
+      </div>
+    </div>
+  </section>
+
+  <footer data-lvt-eid="8792885378">
+    <span class="footer-copy" data-lvt-eid="9527946764">© 2026 袁浩 · 空间设计师</span>
+    <a href="#top" class="footer-back-top" data-lvt-eid="b9725332d9">↑ Back to top</a>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" data-lvt-eid="25bd12acb4">
+    <button class="lightbox-close" id="lightboxClose" data-lvt-eid="08d118641e">ESC 关闭</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" data-lvt-eid="5ce6001b04">‹</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="" referrerpolicy="no-referrer" data-lvt-eid="fc0bbf3f4f">
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" data-lvt-eid="74582f1fd5">›</button>
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    menuBtn.addEventListener('click', () => { mobileNav.classList.toggle('active'); });
+    function closeMobileNav() { mobileNav.classList.remove('active'); }
+
+    function scrollToProject(id) {
+      const el = document.getElementById(id);
+      if (el) { const top = el.getBoundingClientRect().top + window.scrollY - 80; window.scrollTo({ top, behavior: 'smooth' }); }
+    }
+
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const lightboxPrev = document.getElementById('lightboxPrev');
+    const lightboxNext = document.getElementById('lightboxNext');
+    let currentGalleryItems = [], currentIndex = 0;
+
+    function openLightbox(items, index) {
+      currentGalleryItems = items; currentIndex = index;
+      showLightboxImage(); lightbox.classList.add('active'); document.body.style.overflow = 'hidden';
+    }
+    function showLightboxImage() {
+      lightboxImg.src = currentGalleryItems[currentIndex]; lightboxImg.alt = '';
+      lightboxPrev.style.display = currentGalleryItems.length > 1 ? 'flex' : 'none';
+      lightboxNext.style.display = currentGalleryItems.length > 1 ? 'flex' : 'none';
+    }
+    function closeLightbox() { lightbox.classList.remove('active'); document.body.style.overflow = ''; lightboxImg.src = ''; }
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightboxPrev.addEventListener('click', (e) => { e.stopPropagation(); currentIndex = (currentIndex - 1 + currentGalleryItems.length) % currentGalleryItems.length; showLightboxImage(); });
+    lightboxNext.addEventListener('click', (e) => { e.stopPropagation(); currentIndex = (currentIndex + 1) % currentGalleryItems.length; showLightboxImage(); });
+    lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+    document.addEventListener('keydown', (e) => {
+      if (!lightbox.classList.contains('active')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') { currentIndex = (currentIndex - 1 + currentGalleryItems.length) % currentGalleryItems.length; showLightboxImage(); }
+      if (e.key === 'ArrowRight') { currentIndex = (currentIndex + 1) % currentGalleryItems.length; showLightboxImage(); }
+    });
+
+    document.querySelectorAll('.project-gallery').forEach(gallery => {
+      const items = Array.from(gallery.querySelectorAll('.project-gallery-item'));
+      const srcs = items.map(item => item.dataset.src);
+      items.forEach((item, idx) => { item.addEventListener('click', () => openLightbox(srcs, idx)); });
+    });
+
+    const sections = document.querySelectorAll('section[id], div.project-detail[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          navLinks.forEach(link => { link.style.color = link.getAttribute('href') === '#' + id ? 'var(--fg)' : ''; });
+        }
+      });
+    }, { threshold: 0.3 });
+    sections.forEach(s => observer.observe(s));
+  </script>
+
+
+
+</body></html>
