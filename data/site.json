@@ -1,0 +1,117 @@
+{
+  "hero": {
+    "eyebrow": "空间设计 / 项目统筹 / 设计管理",
+    "title": "SPATIAL<br>DESIGN<br>LEAD<span>.</span>",
+    "hero_cn": "空间设计负责人",
+    "meta": "空间设计 · 项目统筹 · 设计管理",
+    "meta_en": "Spatial Design · Project Leadership · Design Management",
+    "image": "https://xla-persist.xingliu.art/artifacts/user/ySUtQNfMPxDzyKyr.jpg",
+    "image_alt": "IMON 野萌体验馆"
+  },
+  "profile": {
+    "statement": "我专注于<em>空间设计</em>、项目统筹与设计管理。",
+    "statement_en": "I work across spatial design, project coordination and design leadership.",
+    "note": "拥有商业空间、办公空间及公共空间项目经验，从前期方案设计到深化落地，参与并推动项目完整实现。"
+  },
+  "skills": [
+    {
+      "index": "01",
+      "name": "空间策略",
+      "en": "SPATIAL STRATEGY"
+    },
+    {
+      "index": "02",
+      "name": "概念与方案设计",
+      "en": "CONCEPT DEVELOPMENT"
+    },
+    {
+      "index": "03",
+      "name": "项目统筹",
+      "en": "PROJECT COORDINATION"
+    },
+    {
+      "index": "04",
+      "name": "设计团队管理",
+      "en": "DESIGN LEADERSHIP"
+    },
+    {
+      "index": "05",
+      "name": "深化与技术协调",
+      "en": "TECHNICAL DEVELOPMENT"
+    }
+  ],
+  "projects": [
+    {
+      "index": "01 / 04",
+      "title": "IMON",
+      "subtitle": "野萌体验馆 · 项目负责人",
+      "role": "PROJECT LEAD",
+      "image": "https://xla-persist.xingliu.art/artifacts/user/ySUtQNfMPxDzyKyr.jpg",
+      "alt": "IMON 野萌体验馆",
+      "href": "case-studies/imon.html",
+      "offset": false
+    },
+    {
+      "index": "02 / 04",
+      "title": "JILIQIAO",
+      "subtitle": "集里桥儿童之家 · 概念与空间设计",
+      "role": "CONCEPT & SPATIAL DESIGN",
+      "image": "assets/jili/jili-cover.jpg",
+      "alt": "集里桥儿童之家",
+      "href": "case-studies/jiliqiao.html",
+      "offset": true
+    },
+    {
+      "index": "03 / 04",
+      "title": "XIANGYOU",
+      "subtitle": "湘幼教育集团办公室 · 主方案设计 / 团队带领",
+      "role": "DESIGN LEADERSHIP",
+      "image": "assets/xiangyou/xiangyou-cover.jpg",
+      "alt": "湘幼教育集团办公室",
+      "href": "",
+      "offset": false
+    },
+    {
+      "index": "04 / 04",
+      "title": "WULIPING",
+      "subtitle": "五里坪党群服务中心 · 项目统筹 / 空间设计",
+      "role": "PROJECT DELIVERY",
+      "image": "assets/wuliping/wuliping-cover.jpg",
+      "alt": "五里坪党群服务中心",
+      "href": "",
+      "offset": true
+    }
+  ],
+  "process": [
+    {
+      "cn": "理解需求与场景",
+      "en": "DISCOVER",
+      "note": "Understand people, business & context."
+    },
+    {
+      "cn": "明确问题与设计方向",
+      "en": "DEFINE",
+      "note": "Clarify problems & set direction."
+    },
+    {
+      "cn": "构建概念、空间与体验",
+      "en": "DESIGN",
+      "note": "Concept, space & experience."
+    },
+    {
+      "cn": "统筹、评审与持续优化",
+      "en": "DEVELOP",
+      "note": "Coordinate, review & refine."
+    },
+    {
+      "cn": "图纸深化与项目落地",
+      "en": "DELIVER",
+      "note": "Documentation, construction & completion."
+    }
+  ],
+  "footer": {
+    "cn": "创造具有意义的空间",
+    "en": "MEANINGFUL SPACES.",
+    "sign": "YUAN HAO / 空间设计负责人 · SPATIAL DESIGN LEAD"
+  }
+}
