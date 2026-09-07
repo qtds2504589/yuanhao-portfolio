@@ -63,3 +63,141 @@
   .image-small{width:68%;height:58vw;margin:5vw 0 0 auto;transform:none}
   .image-small figcaption{padding-left:0}
 }
+
+
+/* ========================================
+   PORTFOLIO DESIGN SYSTEM — FINAL UNIFICATION
+======================================== */
+:root{
+  --case-pad:clamp(24px,3.6vw,72px);
+  --space-xs:clamp(16px,1.5vw,28px);
+  --space-sm:clamp(32px,3vw,56px);
+  --space-md:clamp(72px,8vw,150px);
+  --space-lg:clamp(120px,13vw,240px);
+  --type-label:10px;
+  --type-body:clamp(15px,1.1vw,18px);
+  --type-section:clamp(46px,5.5vw,104px);
+  --type-hero:clamp(88px,11vw,210px);
+  --text-primary:#f1f0ed;
+  --text-secondary:rgba(241,240,237,.62);
+  --text-muted:rgba(241,240,237,.38);
+}
+
+/* fixed editorial rhythm */
+.case-page .section,
+.case-page .case-section{
+  padding-top:var(--space-md);
+  padding-bottom:var(--space-md);
+}
+.case-page .eyebrow{
+  font-size:var(--type-label);
+  letter-spacing:.14em;
+  line-height:1.55;
+  color:var(--text-muted);
+}
+.case-page .section-head h2,
+.case-page .chapter-title{
+  font-size:var(--type-section);
+  letter-spacing:-.055em;
+  line-height:.98;
+}
+.case-page p:not(.eyebrow){color:var(--text-secondary)}
+.case-page figure{margin-top:var(--space-sm)}
+.case-page img{display:block;width:100%;object-fit:cover}
+
+/* chapter sections earn the large whitespace */
+.case-page .chapter,
+.case-page .spatial-journey{
+  min-height:min(82vh,960px);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+/* Ending */
+.case-ending{
+  border-top:1px solid var(--line);
+  background:#0b0c0e;
+}
+.ending-summary{min-height:92vh;display:flex;flex-direction:column;justify-content:center}
+.ending-summary .eyebrow{margin-bottom:var(--space-md)}
+.ending-statement{
+  margin:0;
+  max-width:1250px;
+  font-size:clamp(42px,5.25vw,96px);
+  font-weight:400;
+  letter-spacing:-.055em;
+  line-height:1.1;
+}
+.ending-statement span{color:var(--text-secondary)}
+.ending-en{
+  max-width:620px;
+  margin:var(--space-sm) 0 var(--space-lg);
+  font-size:var(--type-body);
+  line-height:1.7;
+}
+.ending-meta{
+  display:grid;
+  grid-template-columns:1fr 1fr 2fr;
+  gap:var(--space-sm);
+  padding-top:var(--space-sm);
+  border-top:1px solid var(--line);
+}
+.ending-meta div{display:flex;flex-direction:column;gap:14px}
+.ending-meta span{
+  font:var(--type-label) monospace;
+  letter-spacing:.12em;
+  color:var(--text-muted);
+}
+.ending-meta strong{
+  max-width:360px;
+  font-size:14px;
+  font-weight:400;
+  line-height:1.6;
+  color:var(--text-secondary);
+}
+
+/* Next case transition */
+.next-case{
+  display:block;
+  min-height:70vh;
+  padding:var(--space-md) var(--case-pad);
+  border-top:1px solid var(--line);
+  text-decoration:none;
+  color:var(--text-primary);
+  background:#0b0c0e;
+  transition:background .6s var(--ease-out);
+}
+.next-case:hover{background:#101113}
+.next-case-meta{
+  display:flex;
+  justify-content:space-between;
+  font:var(--type-label) monospace;
+  letter-spacing:.12em;
+  color:var(--text-muted);
+}
+.next-case-title{
+  display:flex;
+  align-items:baseline;
+  gap:.18em;
+  margin-top:18vh;
+  font-size:clamp(72px,12vw,220px);
+  letter-spacing:-.075em;
+  line-height:.8;
+  transition:transform 1s var(--ease-out);
+}
+.next-case-title em{font-family:serif;font-weight:400}
+.next-case-title span{margin-left:auto;font-size:.42em;transition:transform .8s var(--ease-out)}
+@media(hover:hover){
+  .next-case:hover .next-case-title{transform:translateX(18px)}
+  .next-case:hover .next-case-title span{transform:translate(12px,-12px)}
+}
+
+@media(max-width:700px){
+  .case-page .section,.case-page .case-section{padding-top:80px;padding-bottom:80px}
+  .ending-summary{min-height:auto;padding-top:130px!important;padding-bottom:130px!important}
+  .ending-statement br{display:none}
+  .ending-meta{grid-template-columns:1fr;gap:34px}
+  .next-case{min-height:55vh;padding-top:70px;padding-bottom:70px}
+  .next-case-title{margin-top:15vh}
+}
