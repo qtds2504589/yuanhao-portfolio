@@ -282,6 +282,5 @@
 .case-title h1{font-size:clamp(44px,6.6vw,96px);letter-spacing:-.02em}
 .case-sub .case-title-en{font:11px monospace;letter-spacing:.14em;color:var(--muted)}
 
-/* 版式优化：statement 数字强调 + role-grid 均衡 */
-.statement b.num{font-family:Georgia,serif;font-weight:400;font-size:1.12em;color:var(--fg)}
+/* 版式优化：role-grid 两列均衡 */
 .role-grid span[data-field=role_name_en]{font-size:1.05em;letter-spacing:.04em}
