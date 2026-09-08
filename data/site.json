@@ -200,13 +200,13 @@
         },
         {
           "index": "13",
-          "title": "SNTO 企业展厅",
-          "subtitle": "项目角色：展厅与品牌设计. 项目状态：方案提案",
-          "role": "GALLERY & BRAND",
+          "title": "SNTO 企业文化墙",
+          "subtitle": "项目角色：文化墙与品牌设计. 项目状态：方案提案",
+          "role": "CULTURE WALL & BRAND",
           "image": "assets/snto/cover.jpg",
-          "alt": "SNTO 企业展厅",
+          "alt": "SNTO 企业文化墙",
           "href": "case-studies/snto.html",
-          "title_en": "SNTO ALUMINUM FOIL EXHIBITION HALL"
+          "title_en": "SNTO CORPORATE CULTURE WALL"
         }
       ]
     }
