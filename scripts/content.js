@@ -7,7 +7,7 @@
   var base = inSub ? '../' : '';
   var file = page === 'index' ? base + 'data/site.json' : base + 'data/cases/' + page + '.json';
 
-  fetch(file)
+  fetch(file + '?v=' + Date.now())
     .then(function (r) { if (!r.ok) throw new Error('load fail'); return r.json(); })
     .then(function (data) {
       fillFields(data);
@@ -80,6 +80,7 @@
           '<div class="cat-card-body">' +
             '<small class="cat-index">' + esc(p.index) + '</small>' +
             '<h3>' + esc(p.title) + '</h3>' +
+            (p.title_en ? '<small class="cat-title-en">' + esc(p.title_en) + '</small>' : '') +
             '<p>' + esc(p.subtitle) + ' <span>' + esc(p.role) + '</span></p>' +
           '</div>' +
           end;

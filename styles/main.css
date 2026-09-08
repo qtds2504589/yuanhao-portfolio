@@ -226,7 +226,8 @@
 .cat-img-empty{display:flex;align-items:center;justify-content:center;color:#555;font:11px monospace;letter-spacing:.1em}
 .cat-card-body{padding:1.4vw 0;border-bottom:1px solid var(--line)}
 .cat-index{display:block;margin-bottom:.8vw}
-.cat-card h3{font-size:clamp(28px,3.6vw,64px);letter-spacing:-.05em;line-height:1;margin:0 0 1vw;font-weight:400}
+.cat-card h3{font-size:clamp(26px,3.2vw,56px);letter-spacing:-.03em;line-height:1;margin:0 0 .6vw;font-weight:400}
+.cat-title-en{display:block;font:11px monospace;letter-spacing:.12em;color:var(--muted);margin:0 0 1vw}
 .cat-card p{font-size:13px;color:var(--muted);margin:0}
 .cat-card p span{display:block;font-size:.78em;color:var(--muted);margin-top:6px;letter-spacing:.02em}
 

@@ -49,48 +49,53 @@
       "projects": [
         {
           "index": "01",
-          "title": "IMON",
-          "subtitle": "野萌体验馆 · 项目负责人 · 已交付",
+          "title": "野萌体验馆",
+          "subtitle": "岗位：项目负责人. 状态：已交付",
           "role": "PROJECT LEAD",
           "image": "assets/imon/10.jpg",
           "alt": "IMON 野萌体验馆",
-          "href": "case-studies/imon.html"
+          "href": "case-studies/imon.html",
+          "title_en": "IMON WILD & CUTE EXPERIENCE STORE"
         },
         {
           "index": "02",
-          "title": "JILIQIAO",
-          "subtitle": "集里桥儿童之家 · 项目负责人 · 已建成",
+          "title": "集里桥儿童之家",
+          "subtitle": "岗位：项目负责人. 状态：已建成",
           "role": "PROJECT LEAD",
           "image": "assets/jili/jili-cover.jpg",
           "alt": "集里桥儿童之家",
-          "href": "case-studies/jiliqiao.html"
+          "href": "case-studies/jiliqiao.html",
+          "title_en": "JILIQIAO CHILDREN'S HOME"
         },
         {
           "index": "03",
-          "title": "WULIPING",
-          "subtitle": "五里坪党群服务中心 · 已建成 · 项目统筹 / 空间设计",
+          "title": "五里坪党群服务中心",
+          "subtitle": "岗位：项目统筹 / 空间设计. 状态：已建成",
           "role": "PROJECT DELIVERY",
           "image": "assets/wuliping/wuliping-cover.jpg",
           "alt": "五里坪党群服务中心",
-          "href": "case-studies/wuliping.html"
+          "href": "case-studies/wuliping.html",
+          "title_en": "WULIPING PARTY-MASS SERVICE CENTER"
         },
         {
           "index": "04",
-          "title": "ZHONGYOU",
-          "subtitle": "中幼集团产品展厅 · 已建成 · 空间设计",
+          "title": "中幼集团产品展厅",
+          "subtitle": "岗位：空间设计. 状态：已建成",
           "role": "SPATIAL DESIGN",
           "image": "assets/zhongyou/cover.jpg",
           "alt": "中幼集团产品展厅",
-          "href": "case-studies/zhongyou.html"
+          "href": "case-studies/zhongyou.html",
+          "title_en": "ZHONGYOU GROUP PRODUCT EXHIBITION HALL"
         },
         {
           "index": "05",
-          "title": "MILO",
-          "subtitle": "智能医美体验概念方案 · 概念设计",
+          "title": "MILO 智能医美体验",
+          "subtitle": "岗位：概念设计. 状态：概念方案",
           "role": "CONCEPT DESIGN",
           "image": "assets/milo/cover.jpg",
           "alt": "MILO 智能医美体验概念方案",
-          "href": "case-studies/milo.html"
+          "href": "case-studies/milo.html",
+          "title_en": "MILO SMART AESTHETICS EXPERIENCE CONCEPT"
         }
       ]
     },
@@ -101,30 +106,33 @@
       "projects": [
         {
           "index": "06",
-          "title": "YUMU",
-          "subtitle": "宇牧米昔旭辉国际品牌店 · 已建成",
+          "title": "宇牧米昔旭辉国际品牌店",
+          "subtitle": "岗位：空间设计. 状态：已建成",
           "role": "SPATIAL DESIGN",
           "image": "assets/yumu/cover.jpg",
           "alt": "宇牧米昔旭辉国际品牌店",
-          "href": "case-studies/yumu.html"
+          "href": "case-studies/yumu.html",
+          "title_en": "YUMU MIXI XUHUI INTERNATIONAL BRAND STORE"
         },
         {
           "index": "07",
-          "title": "JIUMAI",
-          "subtitle": "九麦真品品牌早点店 · 已建成",
+          "title": "九麦真品品牌早点店",
+          "subtitle": "岗位：空间设计. 状态：已建成",
           "role": "SPATIAL DESIGN",
           "image": "assets/jiumai/cover.jpg",
           "alt": "九麦真品品牌早点店",
-          "href": "case-studies/jiumai.html"
+          "href": "case-studies/jiumai.html",
+          "title_en": "JIUMAI GENUINE BREAKFAST BRAND STORE"
         },
         {
           "index": "14",
-          "title": "IMON STORE",
-          "subtitle": "品牌店 · 门店场景系统 · 空间设计",
+          "title": "IMON 品牌店",
+          "subtitle": "岗位：空间设计. 状态：方案提案",
           "role": "SPATIAL DESIGN",
           "image": "assets/imonstore/01.jpg",
           "alt": "IMON 品牌店",
-          "href": "case-studies/imonstore.html"
+          "href": "case-studies/imonstore.html",
+          "title_en": "IMON RETAIL STORE SCENE SYSTEM"
         }
       ]
     },
@@ -135,21 +143,23 @@
       "projects": [
         {
           "index": "08",
-          "title": "XIANGYOU",
-          "subtitle": "湘幼教育集团办公室 · 方案已交付 · 500㎡",
+          "title": "湘幼教育集团办公室",
+          "subtitle": "岗位：设计负责人. 状态：方案已交付",
           "role": "DESIGN LEADERSHIP",
           "image": "assets/xiangyou/xiangyou-cover.jpg",
           "alt": "湘幼教育集团办公室",
-          "href": "case-studies/xiangyou.html"
+          "href": "case-studies/xiangyou.html",
+          "title_en": "XIANGYOU EDUCATION GROUP HEADQUARTERS"
         },
         {
           "index": "09",
-          "title": "SHANCHUAN",
-          "subtitle": "山川生物集团前台大厅 · 方案已交付",
+          "title": "山川生物集团前台大厅",
+          "subtitle": "岗位：空间设计. 状态：方案已交付",
           "role": "CONCEPT DESIGN",
           "image": "assets/shanchuan/cover.jpg",
           "alt": "山川生物集团前台大厅",
-          "href": "case-studies/shanchuan.html"
+          "href": "case-studies/shanchuan.html",
+          "title_en": "SHANCHUAN BIOTECH FRONT HALL"
         }
       ]
     },
@@ -160,39 +170,43 @@
       "projects": [
         {
           "index": "10",
-          "title": "SHUIBOSHI",
-          "subtitle": "税博士文化墙 · 企业文化墙 · 已建成",
+          "title": "税博士文化墙",
+          "subtitle": "岗位：平面与空间设计. 状态：已建成",
           "role": "GRAPHIC & SPATIAL",
           "image": "assets/shuiboshi/cover.jpg",
           "alt": "税博士文化墙",
-          "href": "case-studies/shuiboshi.html"
+          "href": "case-studies/shuiboshi.html",
+          "title_en": "SHUIBOSHI CULTURE WALL"
         },
         {
           "index": "11",
-          "title": "GUOKE ACADEMY",
-          "subtitle": "国科大学院主题墙 · 主题文化墙",
+          "title": "国科大学院主题墙",
+          "subtitle": "岗位：空间与展示设计. 状态：方案交付",
           "role": "SPATIAL & DISPLAY",
           "image": "assets/guoke/cover.jpg",
           "alt": "国科大学院主题墙",
-          "href": "case-studies/guoke.html"
+          "href": "case-studies/guoke.html",
+          "title_en": "UCAS ACADEMY THEME WALL"
         },
         {
           "index": "12",
-          "title": "KANGWEI",
-          "subtitle": "康为数字化门头 · 展馆立面",
+          "title": "康为数字化门头",
+          "subtitle": "岗位：门头与导视设计. 状态：方案提案",
           "role": "FACADE & SIGNAGE",
           "image": "assets/kangwei/cover.jpg",
           "alt": "康为数字化门头",
-          "href": "case-studies/kangwei.html"
+          "href": "case-studies/kangwei.html",
+          "title_en": "KANGWEI DIGITAL EXHIBITION FACADE"
         },
         {
           "index": "13",
-          "title": "SNTO",
-          "subtitle": "SNTO 铝箔包装企业展厅 · 品牌展示",
+          "title": "SNTO 企业展厅",
+          "subtitle": "岗位：展厅与品牌设计. 状态：方案提案",
           "role": "GALLERY & BRAND",
           "image": "assets/snto/cover.jpg",
           "alt": "SNTO 企业展厅",
-          "href": "case-studies/snto.html"
+          "href": "case-studies/snto.html",
+          "title_en": "SNTO ALUMINUM FOIL EXHIBITION HALL"
         }
       ]
     }

@@ -89,6 +89,9 @@ content:
               - name: title
                 label: 项目名称
                 type: string
+              - name: title_en
+                label: 项目英文名（拼音，中文标题下行）
+                type: string
               - name: subtitle
                 label: 中文副标题
                 type: string
