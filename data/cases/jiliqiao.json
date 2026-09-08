@@ -1,8 +1,7 @@
 {
-  "nav_label": "案例 02 / CASE 02 · JILIQIAO",
-  "eyebrow": "案例研究 / CASE STUDY · 02",
-  "title": "JILIQIAO",
-  "sub_cn": "集里桥儿童之家",
+  "nav_label": "案例 02 · 集里桥儿童之家 / JILIQIAO",
+  "eyebrow": "项目案例 / CASE STUDY · 02",
+  "title": "集里桥儿童之家",
   "sub_en": "CHILDREN'S HOUSE · SPATIAL EXPERIENCE",
   "hero_image": "assets/jili/jili-cover.jpg",
   "hero_image_alt": "集里桥儿童之家",
@@ -43,5 +42,6 @@
   "s5_image_alt": "集里桥发现时刻",
   "s5_caption": "体验由尺度、色彩与连续的空间序列共同构成。",
   "outro_statement": "好的儿童空间，<br>不是替孩子定义世界，<br>而是<span style=\"color:#aaa\">为探索留下可能。</span>",
-  "outro_statement_en": "The goal is not to define a world for children,\nbut to leave room for them to discover one."
+  "outro_statement_en": "The goal is not to define a world for children,\nbut to leave room for them to discover one.",
+  "title_en": "JILIQIAO CHILDREN'S HOME"
 }

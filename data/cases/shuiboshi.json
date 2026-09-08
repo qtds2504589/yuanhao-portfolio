@@ -1,8 +1,7 @@
 {
-  "nav_label": "案例 10 / CASE 10 · SHUIBOSHI",
-  "eyebrow": "案例研究 / CASE STUDY · 10",
-  "title": "SHUIBOSHI",
-  "sub_cn": "税博士文化墙 · 企业文化墙",
+  "nav_label": "案例 10 · 税博士文化墙 / SHUIBOSHI",
+  "eyebrow": "项目案例 / CASE STUDY · 10",
+  "title": "税博士文化墙",
   "sub_en": "CORPORATE CULTURE WALL · TAX & FINANCE",
   "hero_image": "assets/shuiboshi/cover.jpg",
   "hero_image_alt": "税博士文化墙 · 企业文化墙",
@@ -32,5 +31,6 @@
   "imgs": [
     "assets/shuiboshi/01.jpg",
     "assets/shuiboshi/02.jpg"
-  ]
+  ],
+  "title_en": "SHUIBOSHI CULTURE WALL"
 }

@@ -1,8 +1,7 @@
 {
-  "nav_label": "案例 01 / CASE 01 · IMON",
-  "eyebrow": "案例研究 / CASE STUDY · 01",
-  "title": "IMON",
-  "sub_cn": "野萌体验馆",
+  "nav_label": "案例 01 · 野萌体验馆 / IMON",
+  "eyebrow": "项目案例 / CASE STUDY · 01",
+  "title": "野萌体验馆",
   "sub_en": "FLAGSHIP EXPERIENCE STORE · 300㎡",
   "hero_image": "assets/imon/6.jpg",
   "hero_image_alt": "IMON 野萌体验馆",
@@ -40,5 +39,6 @@
   "s4_image_alt": "IMON 空间细节",
   "s4_caption": "品牌色涂料、毛绒表皮、发光字与仿真草皮，将品牌符号贯穿到材质与细节；极地主题场景让「野」的叙事延伸至空间深处。<br>THE BRAND EXTENDS INTO MATERIALS — FROM POLAR SCENES TO PLUSH TEXTURES.",
   "outro_statement": "设计管理不仅是创造一个画面，更是将一个想法统筹并推进成为<br>可落地的空间体验。",
-  "outro_statement_en": "Design leadership is not only about creating an image — but coordinating an idea into a deliverable spatial experience."
+  "outro_statement_en": "Design leadership is not only about creating an image — but coordinating an idea into a deliverable spatial experience.",
+  "title_en": "IMON WILD & CUTE EXPERIENCE STORE"
 }

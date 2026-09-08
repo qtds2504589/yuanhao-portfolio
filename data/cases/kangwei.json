@@ -1,8 +1,7 @@
 {
-  "nav_label": "案例 12 / CASE 12 · KANGWEI",
-  "eyebrow": "案例研究 / CASE STUDY · 12",
-  "title": "KANGWEI",
-  "sub_cn": "康为数字化门头 · 长沙数字化展馆",
+  "nav_label": "案例 12 · 康为数字化门头 / KANGWEI",
+  "eyebrow": "项目案例 / CASE STUDY · 12",
+  "title": "康为数字化门头",
   "sub_en": "DIGITAL GALLERY FACADE",
   "hero_image": "assets/kangwei/cover.jpg",
   "hero_image_alt": "康为数字化门头 · 长沙数字化展馆",
@@ -32,5 +31,6 @@
   "imgs": [
     "assets/kangwei/01.jpg",
     "assets/kangwei/02.jpg"
-  ]
+  ],
+  "title_en": "KANGWEI DIGITAL EXHIBITION FACADE"
 }

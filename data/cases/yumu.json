@@ -1,8 +1,7 @@
 {
-  "nav_label": "案例 06 / CASE 06 · YUMU",
-  "eyebrow": "案例研究 / CASE STUDY · 06",
-  "title": "YUMU",
-  "sub_cn": "宇牧米昔旭辉国际品牌店",
+  "nav_label": "案例 06 · 宇牧米昔旭辉国际品牌店 / YUMU",
+  "eyebrow": "项目案例 / CASE STUDY · 06",
+  "title": "宇牧米昔旭辉国际品牌店",
   "sub_en": "NATURAL HEALTH DRINK STORE · 30㎡",
   "hero_image": "assets/yumu/cover.jpg",
   "hero_image_alt": "宇牧米昔旭辉国际品牌店",
@@ -38,5 +37,6 @@
     "assets/yumu/03.jpg",
     "assets/yumu/04.jpg",
     "assets/yumu/05.jpg"
-  ]
+  ],
+  "title_en": "YUMU MIXI XUHUI INTERNATIONAL BRAND STORE"
 }

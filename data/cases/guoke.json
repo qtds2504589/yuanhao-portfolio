@@ -1,8 +1,7 @@
 {
-  "nav_label": "案例 11 / CASE 11 · GUOKE",
-  "eyebrow": "案例研究 / CASE STUDY · 11",
-  "title": "GUOKE ACADEMY",
-  "sub_cn": "国科大学院主题墙",
+  "nav_label": "案例 11 · 国科大学院主题墙 / GUOKE",
+  "eyebrow": "项目案例 / CASE STUDY · 11",
+  "title": "国科大学院主题墙",
   "sub_en": "ACADEMY THEME WALL",
   "hero_image": "assets/guoke/cover.jpg",
   "hero_image_alt": "国科大学院主题墙",
@@ -31,5 +30,6 @@
   "outro_statement_en": "A theme wall is the most direct expression of an academy's spirit.",
   "imgs": [
     "assets/guoke/01.jpg"
-  ]
+  ],
+  "title_en": "UCAS ACADEMY THEME WALL"
 }

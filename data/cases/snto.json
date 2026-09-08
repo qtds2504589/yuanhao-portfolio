@@ -1,8 +1,7 @@
 {
-  "nav_label": "案例 13 / CASE 13 · SNTO",
-  "eyebrow": "案例研究 / CASE STUDY · 13",
-  "title": "SNTO",
-  "sub_cn": "SNTO 铝箔包装企业展厅",
+  "nav_label": "案例 13 · SNTO 企业展厅 / SNTO",
+  "eyebrow": "项目案例 / CASE STUDY · 13",
+  "title": "SNTO 企业展厅",
   "sub_en": "ENTERPRISE GALLERY · ALUMINUM PACKAGING",
   "hero_image": "assets/snto/cover.jpg",
   "hero_image_alt": "SNTO 铝箔包装企业展厅",
@@ -32,5 +31,6 @@
   "imgs": [
     "assets/snto/01.jpg",
     "assets/snto/02.jpg"
-  ]
+  ],
+  "title_en": "SNTO ALUMINUM FOIL EXHIBITION HALL"
 }

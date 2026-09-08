@@ -1,8 +1,7 @@
 {
-  "nav_label": "案例 05 / CASE 05 · MILO",
-  "eyebrow": "案例研究 / CASE STUDY · 05",
-  "title": "MILO",
-  "sub_cn": "智能医美体验厅概念方案",
+  "nav_label": "案例 05 · MILO 智能医美体验 / MILO",
+  "eyebrow": "项目案例 / CASE STUDY · 05",
+  "title": "MILO 智能医美体验",
   "sub_en": "SMART MEDICAL BEAUTY EXPERIENCE · CONCEPT",
   "hero_image": "assets/milo/cover.jpg",
   "hero_image_alt": "智能医美体验厅概念方案",
@@ -38,5 +37,6 @@
     "assets/milo/03.jpg",
     "assets/milo/04.jpg",
     "assets/milo/05.jpg"
-  ]
+  ],
+  "title_en": "MILO SMART AESTHETICS EXPERIENCE CONCEPT"
 }

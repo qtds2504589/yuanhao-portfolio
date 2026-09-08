@@ -1,8 +1,7 @@
 {
-  "nav_label": "案例 08 / CASE 08 · XIANGYOU",
-  "eyebrow": "案例研究 / CASE STUDY · 08",
-  "title": "XIANGYOU",
-  "sub_cn": "湘幼教育集团办公室",
+  "nav_label": "案例 08 · 湘幼教育集团办公室 / XIANGYOU",
+  "eyebrow": "项目案例 / CASE STUDY · 08",
+  "title": "湘幼教育集团办公室",
   "sub_en": "GROUP HEADQUARTERS OFFICE · 500㎡",
   "hero_image": "assets/xiangyou/xiangyou-cover.jpg",
   "hero_image_alt": "湘幼教育集团办公室",
@@ -38,5 +37,6 @@
     "assets/xiangyou/03.jpg",
     "assets/xiangyou/04.jpg",
     "assets/xiangyou/05.jpg"
-  ]
+  ],
+  "title_en": "XIANGYOU EDUCATION GROUP HEADQUARTERS"
 }

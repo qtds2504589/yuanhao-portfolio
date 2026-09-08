@@ -1,8 +1,7 @@
 {
-  "nav_label": "案例 07 / CASE 07 · JIUMAI",
-  "eyebrow": "案例研究 / CASE STUDY · 07",
-  "title": "JIUMAI",
-  "sub_cn": "九麦真品品牌早点店",
+  "nav_label": "案例 07 · 九麦真品品牌早点店 / JIUMAI",
+  "eyebrow": "项目案例 / CASE STUDY · 07",
+  "title": "九麦真品品牌早点店",
   "sub_en": "BRAND BREAKFAST STORE",
   "hero_image": "assets/jiumai/cover.jpg",
   "hero_image_alt": "九麦真品品牌早点店",
@@ -38,5 +37,6 @@
     "assets/jiumai/03.jpg",
     "assets/jiumai/04.jpg",
     "assets/jiumai/05.jpg"
-  ]
+  ],
+  "title_en": "JIUMAI GENUINE BREAKFAST BRAND STORE"
 }

@@ -1,8 +1,7 @@
 {
-  "nav_label": "案例 09 / CASE 09 · SHANCHUAN",
-  "eyebrow": "案例研究 / CASE STUDY · 09",
-  "title": "SHANCHUAN",
-  "sub_cn": "山川生物集团前台大厅",
+  "nav_label": "案例 09 · 山川生物集团前台大厅 / SHANCHUAN",
+  "eyebrow": "项目案例 / CASE STUDY · 09",
+  "title": "山川生物集团前台大厅",
   "sub_en": "CORPORATE LOBBY & CULTURE WALL",
   "hero_image": "assets/shanchuan/cover.jpg",
   "hero_image_alt": "山川生物集团前台大厅",
@@ -38,5 +37,6 @@
     "assets/shanchuan/03.jpg",
     "assets/shanchuan/04.jpg",
     "assets/shanchuan/05.jpg"
-  ]
+  ],
+  "title_en": "SHANCHUAN BIOTECH FRONT HALL"
 }

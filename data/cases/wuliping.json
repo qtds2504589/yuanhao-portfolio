@@ -1,8 +1,7 @@
 {
-  "nav_label": "案例 03 / CASE 03 · WULIPING",
-  "eyebrow": "案例研究 / CASE STUDY · 03",
-  "title": "WULIPING",
-  "sub_cn": "湘西五里坪党群服务中心",
+  "nav_label": "案例 03 · 五里坪党群服务中心 / WULIPING",
+  "eyebrow": "项目案例 / CASE STUDY · 03",
+  "title": "五里坪党群服务中心",
   "sub_en": "COMMUNITY PARTY SERVICE CENTER",
   "hero_image": "assets/wuliping/wuliping-cover.jpg",
   "hero_image_alt": "湘西五里坪党群服务中心",
@@ -38,5 +37,6 @@
     "assets/wuliping/03.jpg",
     "assets/wuliping/04.jpg",
     "assets/wuliping/05.jpg"
-  ]
+  ],
+  "title_en": "WULIPING PARTY-MASS SERVICE CENTER"
 }
