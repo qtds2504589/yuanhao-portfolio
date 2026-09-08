@@ -61,35 +61,71 @@ content:
           - name: en
             label: 名称（英文）
             type: string
-      - name: projects
-        label: 精选项目
+      - name: categories
+        label: 分类项目目录
         type: object
         list: true
         fields:
-          - name: index
-            label: 序号（如 01 / 04）
+          - name: name
+            label: 分类名称（中文）
             type: string
-          - name: title
-            label: 项目名称
+          - name: en
+            label: 分类名称（英文）
             type: string
-          - name: subtitle
-            label: 中文副标题
+          - name: desc
+            label: 分类说明
             type: string
-          - name: role
-            label: 英文角色
+          - name: projects
+            label: 项目列表
+            type: object
+            list: true
+            fields:
+              - name: index
+                label: 序号（如 01）
+                type: string
+              - name: title
+                label: 项目名称
+                type: string
+              - name: subtitle
+                label: 中文副标题
+                type: string
+              - name: role
+                label: 英文角色
+                type: string
+              - name: image
+                label: 封面图
+                type: image
+              - name: alt
+                label: 图片说明文字
+                type: string
+              - name: href
+                label: 案例页链接（留空则无链接）
+                type: string
+      - name: contact
+        label: 联系方式
+        type: object
+        fields:
+          - name: email
+            label: 邮箱
             type: string
-          - name: image
-            label: 封面图
+          - name: tel
+            label: 电话
+            type: string
+          - name: wechat_qr
+            label: 微信二维码
             type: image
-          - name: alt
-            label: 图片说明文字
+          - name: resume
+            label: 简历 PDF
+            type: file
+          - name: location
+            label: 所在城市
             type: string
-          - name: href
-            label: 案例页链接（留空则无链接）
+          - name: status
+            label: 求职状态（中文）
             type: string
-          - name: offset
-            label: 错位排版
-            type: boolean
+          - name: status_en
+            label: 求职状态（英文）
+            type: string
       - name: process
         label: 工作方法
         type: object
@@ -396,3 +432,788 @@ content:
           - name: outro_statement_en
             label: 总结主句（英文）
             type: text
+
+      - name: zhongyou
+        label: ZHONGYOU 中幼集团产品展厅
+        type: file
+        path: data/cases/zhongyou.json
+        format: json
+        fields:
+          - name: nav_label
+            label: 导航标签
+            type: string
+          - name: eyebrow
+            label: 页眉标签
+            type: string
+          - name: title
+            label: 标题
+            type: string
+          - name: sub_cn
+            label: 副标题（中文）
+            type: string
+          - name: sub_en
+            label: 副标题（英文）
+            type: string
+          - name: hero_image
+            label: 封面图
+            type: image
+          - name: hero_image_alt
+            label: 封面图说明
+            type: string
+          - name: hero_caption
+            label: 封面图注文
+            type: string
+          - name: role_label
+            label: 角色标签
+            type: string
+          - name: role_statement
+            label: 角色主句（中文）
+            type: rich-text
+          - name: role_statement_en
+            label: 角色主句（英文）
+            type: text
+          - name: role_name
+            label: 项目角色（中文）
+            type: string
+          - name: role_name_en
+            label: 项目角色（英文）
+            type: string
+          - name: scope_label
+            label: 范围标签
+            type: string
+          - name: scope
+            label: 工作范围（中文）
+            type: string
+          - name: scope_en
+            label: 工作范围（英文）
+            type: string
+          - name: s2_eyebrow
+            label: 章节 02 标签
+            type: rich-text
+          - name: s2_caption
+            label: 章节 02 文案
+            type: rich-text
+          - name: s2_image
+            label: 章节 02 图片
+            type: image
+          - name: s2_caption2
+            label: 章节 02 图注
+            type: string
+          - name: s3_eyebrow
+            label: 章节 03 标签
+            type: rich-text
+          - name: s3_caption
+            label: 章节 03 文案
+            type: text
+          - name: s3_image1
+            label: 章节 03 图片一
+            type: image
+          - name: s3_image2
+            label: 章节 03 图片二
+            type: image
+          - name: s3_caption3
+            label: 图片二图注
+            type: string
+          - name: s4_eyebrow
+            label: 章节 04 标签
+            type: rich-text
+          - name: s4_caption
+            label: 章节 04 文案
+            type: text
+          - name: s4_image
+            label: 章节 04 图片
+            type: image
+          - name: s4_caption2
+            label: 章节 04 图注
+            type: string
+          - name: s5_eyebrow
+            label: 章节 05 标签
+            type: rich-text
+          - name: s5_caption
+            label: 章节 05 文案
+            type: text
+          - name: s5_image
+            label: 章节 05 图片
+            type: image
+          - name: s5_caption2
+            label: 章节 05 图注
+            type: string
+          - name: outro_statement
+            label: 总结主句（中文）
+            type: rich-text
+          - name: outro_statement_en
+            label: 总结主句（英文）
+            type: text
+
+      - name: milo
+        label: MILO 智能医美体验概念方案
+        type: file
+        path: data/cases/milo.json
+        format: json
+        fields:
+          - name: nav_label
+            label: 导航标签
+            type: string
+          - name: eyebrow
+            label: 页眉标签
+            type: string
+          - name: title
+            label: 标题
+            type: string
+          - name: sub_cn
+            label: 副标题（中文）
+            type: string
+          - name: sub_en
+            label: 副标题（英文）
+            type: string
+          - name: hero_image
+            label: 封面图
+            type: image
+          - name: hero_image_alt
+            label: 封面图说明
+            type: string
+          - name: hero_caption
+            label: 封面图注文
+            type: string
+          - name: role_label
+            label: 角色标签
+            type: string
+          - name: role_statement
+            label: 角色主句（中文）
+            type: rich-text
+          - name: role_statement_en
+            label: 角色主句（英文）
+            type: text
+          - name: role_name
+            label: 项目角色（中文）
+            type: string
+          - name: role_name_en
+            label: 项目角色（英文）
+            type: string
+          - name: scope_label
+            label: 范围标签
+            type: string
+          - name: scope
+            label: 工作范围（中文）
+            type: string
+          - name: scope_en
+            label: 工作范围（英文）
+            type: string
+          - name: s2_eyebrow
+            label: 章节 02 标签
+            type: rich-text
+          - name: s2_caption
+            label: 章节 02 文案
+            type: rich-text
+          - name: s2_image
+            label: 章节 02 图片
+            type: image
+          - name: s2_caption2
+            label: 章节 02 图注
+            type: string
+          - name: s3_eyebrow
+            label: 章节 03 标签
+            type: rich-text
+          - name: s3_caption
+            label: 章节 03 文案
+            type: text
+          - name: s3_image1
+            label: 章节 03 图片一
+            type: image
+          - name: s3_image2
+            label: 章节 03 图片二
+            type: image
+          - name: s3_caption3
+            label: 图片二图注
+            type: string
+          - name: s4_eyebrow
+            label: 章节 04 标签
+            type: rich-text
+          - name: s4_caption
+            label: 章节 04 文案
+            type: text
+          - name: s4_image
+            label: 章节 04 图片
+            type: image
+          - name: s4_caption2
+            label: 章节 04 图注
+            type: string
+          - name: s5_eyebrow
+            label: 章节 05 标签
+            type: rich-text
+          - name: s5_caption
+            label: 章节 05 文案
+            type: text
+          - name: s5_image
+            label: 章节 05 图片
+            type: image
+          - name: s5_caption2
+            label: 章节 05 图注
+            type: string
+          - name: outro_statement
+            label: 总结主句（中文）
+            type: rich-text
+          - name: outro_statement_en
+            label: 总结主句（英文）
+            type: text
+
+      - name: shanchuan
+        label: SHANCHUAN 山川生物集团前台大厅
+        type: file
+        path: data/cases/shanchuan.json
+        format: json
+        fields:
+          - name: nav_label
+            label: 导航标签
+            type: string
+          - name: eyebrow
+            label: 页眉标签
+            type: string
+          - name: title
+            label: 标题
+            type: string
+          - name: sub_cn
+            label: 副标题（中文）
+            type: string
+          - name: sub_en
+            label: 副标题（英文）
+            type: string
+          - name: hero_image
+            label: 封面图
+            type: image
+          - name: hero_image_alt
+            label: 封面图说明
+            type: string
+          - name: hero_caption
+            label: 封面图注文
+            type: string
+          - name: role_label
+            label: 角色标签
+            type: string
+          - name: role_statement
+            label: 角色主句（中文）
+            type: rich-text
+          - name: role_statement_en
+            label: 角色主句（英文）
+            type: text
+          - name: role_name
+            label: 项目角色（中文）
+            type: string
+          - name: role_name_en
+            label: 项目角色（英文）
+            type: string
+          - name: scope_label
+            label: 范围标签
+            type: string
+          - name: scope
+            label: 工作范围（中文）
+            type: string
+          - name: scope_en
+            label: 工作范围（英文）
+            type: string
+          - name: s2_eyebrow
+            label: 章节 02 标签
+            type: rich-text
+          - name: s2_caption
+            label: 章节 02 文案
+            type: rich-text
+          - name: s2_image
+            label: 章节 02 图片
+            type: image
+          - name: s2_caption2
+            label: 章节 02 图注
+            type: string
+          - name: s3_eyebrow
+            label: 章节 03 标签
+            type: rich-text
+          - name: s3_caption
+            label: 章节 03 文案
+            type: text
+          - name: s3_image1
+            label: 章节 03 图片一
+            type: image
+          - name: s3_image2
+            label: 章节 03 图片二
+            type: image
+          - name: s3_caption3
+            label: 图片二图注
+            type: string
+          - name: s4_eyebrow
+            label: 章节 04 标签
+            type: rich-text
+          - name: s4_caption
+            label: 章节 04 文案
+            type: text
+          - name: s4_image
+            label: 章节 04 图片
+            type: image
+          - name: s4_caption2
+            label: 章节 04 图注
+            type: string
+          - name: s5_eyebrow
+            label: 章节 05 标签
+            type: rich-text
+          - name: s5_caption
+            label: 章节 05 文案
+            type: text
+          - name: s5_image
+            label: 章节 05 图片
+            type: image
+          - name: s5_caption2
+            label: 章节 05 图注
+            type: string
+          - name: outro_statement
+            label: 总结主句（中文）
+            type: rich-text
+          - name: outro_statement_en
+            label: 总结主句（英文）
+            type: text
+
+      - name: jiumai
+        label: JIUMAI 九麦真品品牌早点店
+        type: file
+        path: data/cases/jiumai.json
+        format: json
+        fields:
+          - name: nav_label
+            label: 导航标签
+            type: string
+          - name: eyebrow
+            label: 页眉标签
+            type: string
+          - name: title
+            label: 标题
+            type: string
+          - name: sub_cn
+            label: 副标题（中文）
+            type: string
+          - name: sub_en
+            label: 副标题（英文）
+            type: string
+          - name: hero_image
+            label: 封面图
+            type: image
+          - name: hero_image_alt
+            label: 封面图说明
+            type: string
+          - name: hero_caption
+            label: 封面图注文
+            type: string
+          - name: role_label
+            label: 角色标签
+            type: string
+          - name: role_statement
+            label: 角色主句（中文）
+            type: rich-text
+          - name: role_statement_en
+            label: 角色主句（英文）
+            type: text
+          - name: role_name
+            label: 项目角色（中文）
+            type: string
+          - name: role_name_en
+            label: 项目角色（英文）
+            type: string
+          - name: scope_label
+            label: 范围标签
+            type: string
+          - name: scope
+            label: 工作范围（中文）
+            type: string
+          - name: scope_en
+            label: 工作范围（英文）
+            type: string
+          - name: s2_eyebrow
+            label: 章节 02 标签
+            type: rich-text
+          - name: s2_caption
+            label: 章节 02 文案
+            type: rich-text
+          - name: s2_image
+            label: 章节 02 图片
+            type: image
+          - name: s2_caption2
+            label: 章节 02 图注
+            type: string
+          - name: s3_eyebrow
+            label: 章节 03 标签
+            type: rich-text
+          - name: s3_caption
+            label: 章节 03 文案
+            type: text
+          - name: s3_image1
+            label: 章节 03 图片一
+            type: image
+          - name: s3_image2
+            label: 章节 03 图片二
+            type: image
+          - name: s3_caption3
+            label: 图片二图注
+            type: string
+          - name: s4_eyebrow
+            label: 章节 04 标签
+            type: rich-text
+          - name: s4_caption
+            label: 章节 04 文案
+            type: text
+          - name: s4_image
+            label: 章节 04 图片
+            type: image
+          - name: s4_caption2
+            label: 章节 04 图注
+            type: string
+          - name: s5_eyebrow
+            label: 章节 05 标签
+            type: rich-text
+          - name: s5_caption
+            label: 章节 05 文案
+            type: text
+          - name: s5_image
+            label: 章节 05 图片
+            type: image
+          - name: s5_caption2
+            label: 章节 05 图注
+            type: string
+          - name: outro_statement
+            label: 总结主句（中文）
+            type: rich-text
+          - name: outro_statement_en
+            label: 总结主句（英文）
+            type: text
+
+      - name: yumu
+        label: YUMU 宇牧米昔旭辉国际品牌店
+        type: file
+        path: data/cases/yumu.json
+        format: json
+        fields:
+          - name: nav_label
+            label: 导航标签
+            type: string
+          - name: eyebrow
+            label: 页眉标签
+            type: string
+          - name: title
+            label: 标题
+            type: string
+          - name: sub_cn
+            label: 副标题（中文）
+            type: string
+          - name: sub_en
+            label: 副标题（英文）
+            type: string
+          - name: hero_image
+            label: 封面图
+            type: image
+          - name: hero_image_alt
+            label: 封面图说明
+            type: string
+          - name: hero_caption
+            label: 封面图注文
+            type: string
+          - name: role_label
+            label: 角色标签
+            type: string
+          - name: role_statement
+            label: 角色主句（中文）
+            type: rich-text
+          - name: role_statement_en
+            label: 角色主句（英文）
+            type: text
+          - name: role_name
+            label: 项目角色（中文）
+            type: string
+          - name: role_name_en
+            label: 项目角色（英文）
+            type: string
+          - name: scope_label
+            label: 范围标签
+            type: string
+          - name: scope
+            label: 工作范围（中文）
+            type: string
+          - name: scope_en
+            label: 工作范围（英文）
+            type: string
+          - name: s2_eyebrow
+            label: 章节 02 标签
+            type: rich-text
+          - name: s2_caption
+            label: 章节 02 文案
+            type: rich-text
+          - name: s2_image
+            label: 章节 02 图片
+            type: image
+          - name: s2_caption2
+            label: 章节 02 图注
+            type: string
+          - name: s3_eyebrow
+            label: 章节 03 标签
+            type: rich-text
+          - name: s3_caption
+            label: 章节 03 文案
+            type: text
+          - name: s3_image1
+            label: 章节 03 图片一
+            type: image
+          - name: s3_image2
+            label: 章节 03 图片二
+            type: image
+          - name: s3_caption3
+            label: 图片二图注
+            type: string
+          - name: s4_eyebrow
+            label: 章节 04 标签
+            type: rich-text
+          - name: s4_caption
+            label: 章节 04 文案
+            type: text
+          - name: s4_image
+            label: 章节 04 图片
+            type: image
+          - name: s4_caption2
+            label: 章节 04 图注
+            type: string
+          - name: s5_eyebrow
+            label: 章节 05 标签
+            type: rich-text
+          - name: s5_caption
+            label: 章节 05 文案
+            type: text
+          - name: s5_image
+            label: 章节 05 图片
+            type: image
+          - name: s5_caption2
+            label: 章节 05 图注
+            type: string
+          - name: outro_statement
+            label: 总结主句（中文）
+            type: rich-text
+          - name: outro_statement_en
+            label: 总结主句（英文）
+            type: text
+
+      - name: xiangyou
+        label: XIANGYOU 湘幼教育集团办公室
+        type: file
+        path: data/cases/xiangyou.json
+        format: json
+        fields:
+          - name: nav_label
+            label: 导航标签
+            type: string
+          - name: eyebrow
+            label: 页眉标签
+            type: string
+          - name: title
+            label: 标题
+            type: string
+          - name: sub_cn
+            label: 副标题（中文）
+            type: string
+          - name: sub_en
+            label: 副标题（英文）
+            type: string
+          - name: hero_image
+            label: 封面图
+            type: image
+          - name: hero_image_alt
+            label: 封面图说明
+            type: string
+          - name: hero_caption
+            label: 封面图注文
+            type: string
+          - name: role_label
+            label: 角色标签
+            type: string
+          - name: role_statement
+            label: 角色主句（中文）
+            type: rich-text
+          - name: role_statement_en
+            label: 角色主句（英文）
+            type: text
+          - name: role_name
+            label: 项目角色（中文）
+            type: string
+          - name: role_name_en
+            label: 项目角色（英文）
+            type: string
+          - name: scope_label
+            label: 范围标签
+            type: string
+          - name: scope
+            label: 工作范围（中文）
+            type: string
+          - name: scope_en
+            label: 工作范围（英文）
+            type: string
+          - name: s2_eyebrow
+            label: 章节 02 标签
+            type: rich-text
+          - name: s2_caption
+            label: 章节 02 文案
+            type: rich-text
+          - name: s2_image
+            label: 章节 02 图片
+            type: image
+          - name: s2_caption2
+            label: 章节 02 图注
+            type: string
+          - name: s3_eyebrow
+            label: 章节 03 标签
+            type: rich-text
+          - name: s3_caption
+            label: 章节 03 文案
+            type: text
+          - name: s3_image1
+            label: 章节 03 图片一
+            type: image
+          - name: s3_image2
+            label: 章节 03 图片二
+            type: image
+          - name: s3_caption3
+            label: 图片二图注
+            type: string
+          - name: s4_eyebrow
+            label: 章节 04 标签
+            type: rich-text
+          - name: s4_caption
+            label: 章节 04 文案
+            type: text
+          - name: s4_image
+            label: 章节 04 图片
+            type: image
+          - name: s4_caption2
+            label: 章节 04 图注
+            type: string
+          - name: s5_eyebrow
+            label: 章节 05 标签
+            type: rich-text
+          - name: s5_caption
+            label: 章节 05 文案
+            type: text
+          - name: s5_image
+            label: 章节 05 图片
+            type: image
+          - name: s5_caption2
+            label: 章节 05 图注
+            type: string
+          - name: outro_statement
+            label: 总结主句（中文）
+            type: rich-text
+          - name: outro_statement_en
+            label: 总结主句（英文）
+            type: text
+
+      - name: wuliping
+        label: WULIPING 湘西五里坪党群服务中心
+        type: file
+        path: data/cases/wuliping.json
+        format: json
+        fields:
+          - name: nav_label
+            label: 导航标签
+            type: string
+          - name: eyebrow
+            label: 页眉标签
+            type: string
+          - name: title
+            label: 标题
+            type: string
+          - name: sub_cn
+            label: 副标题（中文）
+            type: string
+          - name: sub_en
+            label: 副标题（英文）
+            type: string
+          - name: hero_image
+            label: 封面图
+            type: image
+          - name: hero_image_alt
+            label: 封面图说明
+            type: string
+          - name: hero_caption
+            label: 封面图注文
+            type: string
+          - name: role_label
+            label: 角色标签
+            type: string
+          - name: role_statement
+            label: 角色主句（中文）
+            type: rich-text
+          - name: role_statement_en
+            label: 角色主句（英文）
+            type: text
+          - name: role_name
+            label: 项目角色（中文）
+            type: string
+          - name: role_name_en
+            label: 项目角色（英文）
+            type: string
+          - name: scope_label
+            label: 范围标签
+            type: string
+          - name: scope
+            label: 工作范围（中文）
+            type: string
+          - name: scope_en
+            label: 工作范围（英文）
+            type: string
+          - name: s2_eyebrow
+            label: 章节 02 标签
+            type: rich-text
+          - name: s2_caption
+            label: 章节 02 文案
+            type: rich-text
+          - name: s2_image
+            label: 章节 02 图片
+            type: image
+          - name: s2_caption2
+            label: 章节 02 图注
+            type: string
+          - name: s3_eyebrow
+            label: 章节 03 标签
+            type: rich-text
+          - name: s3_caption
+            label: 章节 03 文案
+            type: text
+          - name: s3_image1
+            label: 章节 03 图片一
+            type: image
+          - name: s3_image2
+            label: 章节 03 图片二
+            type: image
+          - name: s3_caption3
+            label: 图片二图注
+            type: string
+          - name: s4_eyebrow
+            label: 章节 04 标签
+            type: rich-text
+          - name: s4_caption
+            label: 章节 04 文案
+            type: text
+          - name: s4_image
+            label: 章节 04 图片
+            type: image
+          - name: s4_caption2
+            label: 章节 04 图注
+            type: string
+          - name: s5_eyebrow
+            label: 章节 05 标签
+            type: rich-text
+          - name: s5_caption
+            label: 章节 05 文案
+            type: text
+          - name: s5_image
+            label: 章节 05 图片
+            type: image
+          - name: s5_caption2
+            label: 章节 05 图注
+            type: string
+          - name: outro_statement
+            label: 总结主句（中文）
+            type: rich-text
+          - name: outro_statement_en
+            label: 总结主句（英文）
+            type: text
+

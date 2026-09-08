@@ -201,3 +201,80 @@
   .next-case{min-height:55vh;padding-top:70px;padding-bottom:70px}
   .next-case-title{margin-top:15vh}
 }
+/* ========================================
+   V2.0 JOB-SEEKER PORTFOLIO — CATEGORY INDEX / ABOUT / CONTACT
+======================================== */
+.nav{display:flex;gap:3vw}
+.nav .nav-links{margin-left:auto;display:flex;gap:2.4vw;align-items:center}
+.nav-links a{color:var(--muted);transition:color .3s}
+.nav-links a:hover{color:var(--fg)}
+
+/* 分类目录 */
+#categories{margin-top:6vw}
+.cat-block{border-top:1px solid var(--line);padding:5vw 0 2vw}
+.cat-head{display:grid;grid-template-columns:7vw 1fr;gap:2vw;align-items:start;margin-bottom:5vw}
+.cat-no{font:11px monospace;letter-spacing:.1em;color:var(--muted);padding-top:1.2vw}
+.cat-head h2{font-size:clamp(34px,4.6vw,84px);letter-spacing:-.05em;line-height:1;margin:0 0 .8vw;font-weight:400}
+.cat-head h2 em{display:block;font-family:Georgia,serif;font-weight:400;font-size:.42em;letter-spacing:.02em;color:var(--muted);margin-top:.9vw}
+.cat-head p{grid-column:2;margin:0;font-size:14px;color:var(--muted)}
+.cat-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 4vw}
+.cat-card{display:block;color:inherit;text-decoration:none;margin-bottom:6vw}
+.cat-card:nth-child(even){margin-top:8vw}
+.cat-img{height:32vw;background:#181818;overflow:hidden}
+.cat-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.cat-card:hover .cat-img img{transform:scale(1.025)}
+.cat-img-empty{display:flex;align-items:center;justify-content:center;color:#555;font:11px monospace;letter-spacing:.1em}
+.cat-card-body{padding:1.4vw 0;border-bottom:1px solid var(--line)}
+.cat-index{display:block;margin-bottom:.8vw}
+.cat-card h3{font-size:clamp(28px,3.6vw,64px);letter-spacing:-.05em;line-height:1;margin:0 0 1vw;font-weight:400}
+.cat-card p{font-size:13px;color:var(--muted);margin:0}
+.cat-card p span{display:block;font-size:.78em;color:var(--muted);margin-top:6px;letter-spacing:.02em}
+
+/* 联系区 */
+.contact-head{margin:4vw 0 6vw}
+.contact-head h2{font-size:clamp(30px,4vw,72px);letter-spacing:-.05em;line-height:1.05;margin:0 0 1.4vw;font-weight:400}
+.contact-head .statement-en{margin:0}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.contact-item{padding:3vw 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:1.2vw}
+.contact-item:nth-child(odd){border-right:1px solid var(--line);padding-right:4vw}
+.contact-item:nth-child(even){padding-left:4vw}
+.contact-item small{font:11px monospace;letter-spacing:.12em;color:var(--muted)}
+.contact-item a{color:var(--fg);font-size:clamp(18px,2vw,34px);text-decoration:none;letter-spacing:-.02em;word-break:break-all}
+.contact-item a:hover{color:var(--muted)}
+.contact-qr{width:160px;height:160px;object-fit:cover;border:1px solid var(--line)}
+.contact-loc{color:var(--muted);font-size:13px;margin-top:2.5vw}
+
+/* 关于页 */
+.about-hero{padding:8vw 3vw 4vw}
+.about-hero h1{font-size:clamp(64px,9vw,170px);letter-spacing:-.07em;line-height:.82;margin:2vw 0}
+.about-intro{max-width:900px}
+.timeline{margin-top:6vw;border-top:1px solid var(--line)}
+.tl-row{display:grid;grid-template-columns:190px 1fr 1fr;gap:3vw;padding:3vw 0;border-bottom:1px solid var(--line)}
+.tl-year{font:11px monospace;letter-spacing:.1em;color:var(--muted);padding-top:.5vw}
+.tl-role b{font-weight:400;font-size:clamp(18px,1.9vw,30px);display:block;margin-bottom:.6vw}
+.tl-role span{font-size:13px;color:var(--muted);display:block;line-height:1.7}
+.tl-desc{font-size:13px;color:var(--muted);line-height:1.8}
+.skill-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:4vw}
+.skill-cell{background:var(--bg);padding:2.2vw}
+.skill-cell small{display:block;margin-bottom:.8vw}
+.skill-cell b{font-weight:400;font-size:17px;display:block;margin-bottom:.6vw}
+.skill-cell p{font-size:13px;color:var(--muted);margin:0;line-height:1.7}
+.about-extra{max-width:760px}
+.about-extra p{font-size:15px;line-height:1.9;color:var(--muted)}
+
+@media(max-width:700px){
+  .nav{flex-wrap:wrap;gap:1.2vw;padding-top:14px;padding-bottom:14px;height:auto}
+  .nav .nav-links{width:100%;margin-left:0;gap:14px;flex-wrap:wrap}
+  .cat-grid{grid-template-columns:1fr}
+  .cat-card:nth-child(even){margin-top:0}
+  .cat-img{height:60vw}
+  .cat-head{grid-template-columns:14vw 1fr}
+  .cat-card-body{padding:4vw 0}
+  .contact-grid{grid-template-columns:1fr}
+  .contact-item:nth-child(odd){border-right:0;padding-right:0}
+  .contact-item:nth-child(even){padding-left:0}
+  .contact-qr{width:140px;height:140px}
+  .tl-row{grid-template-columns:1fr;gap:1.6vw;padding:7vw 0}
+  .about-hero{padding:14vw 5vw 6vw}
+  .skill-cell{padding:6vw}
+}
