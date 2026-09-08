@@ -153,9 +153,36 @@
           "title": "SHUIBOSHI",
           "subtitle": "税博士文化墙 · 企业文化墙 · 已建成",
           "role": "GRAPHIC & SPATIAL",
-          "image": "",
+          "image": "assets/shuiboshi/cover.jpg",
           "alt": "税博士文化墙",
-          "href": ""
+          "href": "case-studies/shuiboshi.html"
+        },
+        {
+          "index": "11",
+          "title": "GUOKE ACADEMY",
+          "subtitle": "国科大学院主题墙 · 主题文化墙",
+          "role": "SPATIAL & DISPLAY",
+          "image": "assets/guoke/cover.jpg",
+          "alt": "国科大学院主题墙",
+          "href": "case-studies/guoke.html"
+        },
+        {
+          "index": "12",
+          "title": "KANGWEI",
+          "subtitle": "康为数字化门头 · 展馆立面",
+          "role": "FACADE & SIGNAGE",
+          "image": "assets/kangwei/cover.jpg",
+          "alt": "康为数字化门头",
+          "href": "case-studies/kangwei.html"
+        },
+        {
+          "index": "13",
+          "title": "SNTO",
+          "subtitle": "SNTO 铝箔包装企业展厅 · 品牌展示",
+          "role": "GALLERY & BRAND",
+          "image": "assets/snto/cover.jpg",
+          "alt": "SNTO 企业展厅",
+          "href": "case-studies/snto.html"
         }
       ]
     }
