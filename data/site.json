@@ -37,7 +37,7 @@
     },
     {
       "index": "05",
-      "name": "深化与落地交付",
+      "name": "图纸与落地交付",
       "en": "TECHNICAL DEVELOPMENT"
     }
   ],
@@ -68,7 +68,7 @@
         {
           "index": "03",
           "title": "WULIPING",
-          "subtitle": "五里坪党群服务中心 · 项目统筹 / 空间设计",
+          "subtitle": "五里坪党群服务中心 · 已建成 · 项目统筹 / 空间设计",
           "role": "PROJECT DELIVERY",
           "image": "assets/wuliping/wuliping-cover.jpg",
           "alt": "五里坪党群服务中心",
@@ -77,7 +77,7 @@
         {
           "index": "04",
           "title": "ZHONGYOU",
-          "subtitle": "中幼集团产品展厅 · 空间设计",
+          "subtitle": "中幼集团产品展厅 · 已建成 · 空间设计",
           "role": "SPATIAL DESIGN",
           "image": "assets/zhongyou/cover.jpg",
           "alt": "中幼集团产品展厅",
@@ -102,7 +102,7 @@
         {
           "index": "06",
           "title": "YUMU",
-          "subtitle": "宇牧米昔旭辉国际品牌店 · 已建成 · 30㎡",
+          "subtitle": "宇牧米昔旭辉国际品牌店 · 已建成",
           "role": "SPATIAL DESIGN",
           "image": "assets/yumu/cover.jpg",
           "alt": "宇牧米昔旭辉国际品牌店",
@@ -145,7 +145,7 @@
         {
           "index": "09",
           "title": "SHANCHUAN",
-          "subtitle": "山川生物集团前台大厅 · 概念方案",
+          "subtitle": "山川生物集团前台大厅 · 方案已交付",
           "role": "CONCEPT DESIGN",
           "image": "assets/shanchuan/cover.jpg",
           "alt": "山川生物集团前台大厅",
