@@ -284,3 +284,20 @@
 
 /* 版式优化：role-grid 两列均衡 */
 .role-grid span[data-field=role_name_en]{font-size:1.05em;letter-spacing:.04em}
+
+/* ===== 版式再调整（2025-26 外文编辑式作品集参考） ===== */
+/* 分类头：描述行改衬线斜体脚注，杂志编辑感 */
+.cat-head p{font:italic 14px/1.7 Georgia,serif;max-width:440px;margin-top:1.1vw}
+/* 案例 intro：英文行与下方 role 区呼吸感 */
+.case-page .statement-en{margin-bottom:6vw}
+/* journey 左列限宽，标题与英文副标间距 */
+.journey-copy{max-width:560px}
+.journey h3 span{margin-top:2.5vw}
+/* 微交互：卡片标题字距呼吸 + 编号点亮 */
+.cat-card h3{transition:letter-spacing .6s ease}
+.cat-card:hover h3{letter-spacing:-.008em}
+.cat-card:hover .cat-index{color:var(--fg)}
+/* 图注与图片间距 */
+figcaption{margin-top:1.2vw}
+/* 章节头与内容间距 */
+.section-head{margin-bottom:5vw}
