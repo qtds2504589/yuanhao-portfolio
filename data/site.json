@@ -3,8 +3,8 @@
     "eyebrow": "空间设计负责人 · 长沙 · 10+ 年经验",
     "title": "SPATIAL<br>DESIGN<br>LEAD<span>.</span>",
     "hero_cn": "袁浩 · 空间设计负责人 · 长沙",
-    "meta": "10+ 年经验 · 全职 / 空间设计方向",
-    "meta_en": "10+ Years · Full-time / Spatial Design",
+    "meta": "全职 / 空间设计方向 · 意向领域：展厅与文化 / 商业与零售",
+    "meta_en": "Full-time · Spatial Design · Focus: Exhibition & Culture / Commercial & Retail",
     "image": "assets/imon/6.jpg",
     "image_alt": "IMON 野萌体验馆 · 环形展示架与自然造景"
   },
@@ -115,6 +115,15 @@
           "image": "assets/jiumai/cover.jpg",
           "alt": "九麦真品品牌早点店",
           "href": "case-studies/jiumai.html"
+        },
+        {
+          "index": "14",
+          "title": "IMON STORE",
+          "subtitle": "品牌店 · 门店场景系统 · 空间设计",
+          "role": "SPATIAL DESIGN",
+          "image": "assets/imonstore/01.jpg",
+          "alt": "IMON 品牌店",
+          "href": "case-studies/imonstore.html"
         }
       ]
     },

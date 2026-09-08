@@ -158,6 +158,139 @@ content:
     label: 案例页 / Case Studies
     type: group
     items:
+      - name: imonstore
+        label: IMON 品牌店
+        type: file
+        path: data/cases/imonstore.json
+        format: json
+        fields:
+          - name: nav_label
+            label: 导航标签
+            type: string
+          - name: eyebrow
+            label: 页眉标签
+            type: string
+          - name: title
+            label: 标题
+            type: string
+          - name: sub_cn
+            label: 副标题（中文）
+            type: string
+          - name: sub_en
+            label: 副标题（英文）
+            type: string
+          - name: hero_image
+            label: 封面图
+            type: image
+          - name: hero_image_alt
+            label: 封面图说明
+            type: string
+          - name: hero_caption
+            label: 封面图注文
+            type: string
+          - name: role_label
+            label: 角色标签
+            type: string
+          - name: role_statement
+            label: 角色主句（中文）
+            type: rich-text
+          - name: role_statement_en
+            label: 角色主句（英文）
+            type: text
+          - name: role_name
+            label: 项目角色（中文）
+            type: string
+          - name: role_name_en
+            label: 项目角色（英文）
+            type: string
+          - name: scope_label
+            label: 范围标签
+            type: string
+          - name: scope
+            label: 工作范围（中文）
+            type: string
+          - name: scope_en
+            label: 工作范围（英文）
+            type: string
+          - name: s2_eyebrow
+            label: 章节 02 标签
+            type: rich-text
+          - name: s2_caption
+            label: 章节 02 文案
+            type: rich-text
+          - name: s2_image
+            label: 章节 02 图片
+            type: image
+          - name: s2_image_alt
+            label: 章节 02 图片说明
+            type: string
+          - name: s2_caption2
+            label: 章节 02 图注
+            type: string
+          - name: s2_note_title
+            label: 空间组织标题
+            type: string
+          - name: s2_note
+            label: 空间组织文案
+            type: text
+          - name: s2_list_1
+            label: 节点 01
+            type: string
+          - name: s2_list_2
+            label: 节点 02
+            type: string
+          - name: s2_list_3
+            label: 节点 03
+            type: string
+          - name: s2_list_4
+            label: 节点 04
+            type: string
+          - name: s2_list_5
+            label: 节点 05
+            type: string
+          - name: s3_eyebrow
+            label: 章节 03 标签
+            type: rich-text
+          - name: s3_caption
+            label: 章节 03 文案
+            type: rich-text
+          - name: s3_image1
+            label: 章节 03 图片一
+            type: image
+          - name: s3_image1_alt
+            label: 图片一说明
+            type: string
+          - name: s3_image2
+            label: 章节 03 图片二
+            type: image
+          - name: s3_image2_alt
+            label: 图片二说明
+            type: string
+          - name: s3_caption3
+            label: 图片二图注
+            type: string
+          - name: s4_eyebrow
+            label: 章节 04 标签
+            type: rich-text
+          - name: s4_title
+            label: 章节 04 标题
+            type: rich-text
+          - name: s4_image
+            label: 章节 04 图片
+            type: image
+          - name: s4_image_alt
+            label: 章节 04 图片说明
+            type: string
+          - name: s4_caption
+            label: 章节 04 图注
+            type: string
+          - name: outro_statement
+            label: 总结主句（中文）
+            type: rich-text
+          - name: outro_statement_en
+            label: 总结主句（英文）
+            type: text
+
       - name: imon
         label: IMON 野萌体验馆
         type: file
