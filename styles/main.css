@@ -309,3 +309,7 @@ figcaption{margin-top:1.2vw}
   .cat-card-body{padding:5vw 0}
   .cat-index{top:5vw}
 }
+
+/* hero 首图放大填满容器 */
+.hero .visual{overflow:hidden}
+.hero .visual img{transform:scale(1.14)}
