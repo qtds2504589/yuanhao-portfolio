@@ -50,7 +50,7 @@
         {
           "index": "01",
           "title": "野萌体验馆",
-          "subtitle": "岗位：项目负责人. 状态：已交付",
+          "subtitle": "项目角色：项目负责人. 项目状态：已交付",
           "role": "PROJECT LEAD",
           "image": "assets/imon/10.jpg",
           "alt": "IMON 野萌体验馆",
@@ -60,7 +60,7 @@
         {
           "index": "02",
           "title": "集里桥儿童之家",
-          "subtitle": "岗位：项目负责人. 状态：已建成",
+          "subtitle": "项目角色：项目负责人. 项目状态：已建成",
           "role": "PROJECT LEAD",
           "image": "assets/jili/jili-cover.jpg",
           "alt": "集里桥儿童之家",
@@ -70,7 +70,7 @@
         {
           "index": "03",
           "title": "五里坪党群服务中心",
-          "subtitle": "岗位：项目统筹 / 空间设计. 状态：已建成",
+          "subtitle": "项目角色：项目统筹 / 空间设计. 项目状态：已建成",
           "role": "PROJECT DELIVERY",
           "image": "assets/wuliping/wuliping-cover.jpg",
           "alt": "五里坪党群服务中心",
@@ -80,7 +80,7 @@
         {
           "index": "04",
           "title": "中幼集团产品展厅",
-          "subtitle": "岗位：空间设计. 状态：已建成",
+          "subtitle": "项目角色：空间设计. 项目状态：已建成",
           "role": "SPATIAL DESIGN",
           "image": "assets/zhongyou/cover.jpg",
           "alt": "中幼集团产品展厅",
@@ -90,7 +90,7 @@
         {
           "index": "05",
           "title": "MILO 智能医美体验",
-          "subtitle": "岗位：概念设计. 状态：概念方案",
+          "subtitle": "项目角色：概念设计. 项目状态：概念方案",
           "role": "CONCEPT DESIGN",
           "image": "assets/milo/cover.jpg",
           "alt": "MILO 智能医美体验概念方案",
@@ -107,7 +107,7 @@
         {
           "index": "06",
           "title": "宇牧米昔旭辉国际品牌店",
-          "subtitle": "岗位：空间设计. 状态：已建成",
+          "subtitle": "项目角色：空间设计. 项目状态：已建成",
           "role": "SPATIAL DESIGN",
           "image": "assets/yumu/cover.jpg",
           "alt": "宇牧米昔旭辉国际品牌店",
@@ -117,7 +117,7 @@
         {
           "index": "07",
           "title": "九麦真品品牌早点店",
-          "subtitle": "岗位：空间设计. 状态：已建成",
+          "subtitle": "项目角色：空间设计. 项目状态：已建成",
           "role": "SPATIAL DESIGN",
           "image": "assets/jiumai/cover.jpg",
           "alt": "九麦真品品牌早点店",
@@ -127,7 +127,7 @@
         {
           "index": "14",
           "title": "IMON 品牌店",
-          "subtitle": "岗位：空间设计. 状态：方案提案",
+          "subtitle": "项目角色：空间设计. 项目状态：方案提案",
           "role": "SPATIAL DESIGN",
           "image": "assets/imonstore/01.jpg",
           "alt": "IMON 品牌店",
@@ -144,7 +144,7 @@
         {
           "index": "08",
           "title": "湘幼教育集团办公室",
-          "subtitle": "岗位：设计负责人. 状态：方案已交付",
+          "subtitle": "项目角色：设计负责人. 项目状态：方案已交付",
           "role": "DESIGN LEADERSHIP",
           "image": "assets/xiangyou/xiangyou-cover.jpg",
           "alt": "湘幼教育集团办公室",
@@ -154,7 +154,7 @@
         {
           "index": "09",
           "title": "山川生物集团前台大厅",
-          "subtitle": "岗位：空间设计. 状态：方案已交付",
+          "subtitle": "项目角色：空间设计. 项目状态：方案已交付",
           "role": "CONCEPT DESIGN",
           "image": "assets/shanchuan/cover.jpg",
           "alt": "山川生物集团前台大厅",
@@ -171,7 +171,7 @@
         {
           "index": "10",
           "title": "税博士文化墙",
-          "subtitle": "岗位：平面与空间设计. 状态：已建成",
+          "subtitle": "项目角色：平面与空间设计. 项目状态：已建成",
           "role": "GRAPHIC & SPATIAL",
           "image": "assets/shuiboshi/cover.jpg",
           "alt": "税博士文化墙",
@@ -181,7 +181,7 @@
         {
           "index": "11",
           "title": "国科大学院主题墙",
-          "subtitle": "岗位：空间与展示设计. 状态：方案交付",
+          "subtitle": "项目角色：空间与展示设计. 项目状态：方案交付",
           "role": "SPATIAL & DISPLAY",
           "image": "assets/guoke/cover.jpg",
           "alt": "国科大学院主题墙",
@@ -191,7 +191,7 @@
         {
           "index": "12",
           "title": "康为数字化门头",
-          "subtitle": "岗位：门头与导视设计. 状态：方案提案",
+          "subtitle": "项目角色：门头与导视设计. 项目状态：方案提案",
           "role": "FACADE & SIGNAGE",
           "image": "assets/kangwei/cover.jpg",
           "alt": "康为数字化门头",
@@ -201,7 +201,7 @@
         {
           "index": "13",
           "title": "SNTO 企业展厅",
-          "subtitle": "岗位：展厅与品牌设计. 状态：方案提案",
+          "subtitle": "项目角色：展厅与品牌设计. 项目状态：方案提案",
           "role": "GALLERY & BRAND",
           "image": "assets/snto/cover.jpg",
           "alt": "SNTO 企业展厅",
