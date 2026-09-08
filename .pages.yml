@@ -47,6 +47,9 @@ content:
           - name: note
             label: 说明
             type: text
+          - name: focus
+            label: 意向领域
+            type: string
       - name: skills
         label: 专业能力
         type: object
