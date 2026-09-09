@@ -81,7 +81,8 @@
             '<small class="cat-index">' + esc(p.index) + '</small>' +
             '<h3>' + esc(p.title) + '</h3>' +
             (p.title_en ? '<small class="cat-title-en">' + esc(p.title_en) + '</small>' : '') +
-            '<p>' + esc(p.subtitle) + ' <span>' + esc(p.role) + '</span></p>' +
+            (p.address ? '<p class="cat-meta">项目地址：' + esc(p.address) + '<br>项目状态：' + esc(p.status || '') + '<br>职责定位：' + esc(p.role_cn || '') + '</p>'
+                       : '<p>' + esc(p.subtitle) + ' <span>' + esc(p.role) + '</span></p>') +
           '</div>' +
           end;
       }).join('');

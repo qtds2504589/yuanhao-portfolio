@@ -55,7 +55,10 @@
           "image": "assets/imon/10.jpg",
           "alt": "IMON 野萌体验馆",
           "href": "case-studies/imon.html",
-          "title_en": "IMON WILD & CUTE EXPERIENCE STORE"
+          "title_en": "IMON WILD & CUTE EXPERIENCE STORE",
+          "address": "深圳",
+          "status": "已交付",
+          "role_cn": "统筹 / 空间设计"
         },
         {
           "index": "02",
