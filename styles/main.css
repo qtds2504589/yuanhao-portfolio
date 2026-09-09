@@ -352,19 +352,6 @@ figcaption{margin-top:1.2vw}
   --font-serif:Georgia,'Songti SC','SimSun',serif;
   --font-mono:Consolas,'Courier New',Menlo,monospace;
 }
-/* serif display for EN titles; CJK falls back to Arial */
-h1,
-.project h2,
-.case-title h1,
-.section-head h2,
-.chapter-title,
-.cat-head h2,
-.journey h3,
-.next-case-title,
-.ending-statement,
-.contact-head h2{
-  font-family:var(--font-serif);
-}
 /* grain texture over the dark canvas (Brutalist/Vercel style) */
 body::before{
   content:'';position:fixed;inset:0;z-index:999;pointer-events:none;opacity:.04;
