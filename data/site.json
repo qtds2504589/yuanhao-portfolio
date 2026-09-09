@@ -160,6 +160,19 @@
           "href": "case-studies/imonstore.html",
           "title_en": "IMON TOY BRAND ZONE",
           "address": "无"
+        },
+        {
+          "index": "16",
+          "title": "睿草养生品牌店",
+          "subtitle": "职责定位：空间设计. 项目状态：概念方案",
+          "role": "SPATIAL DESIGN",
+          "image": "assets/ruicao/1.jpg",
+          "alt": "睿草养生品牌店",
+          "href": "case-studies/ruicao.html",
+          "title_en": "RUI CAO WELLNESS STORE",
+          "address": "武汉",
+          "status": "概念方案",
+          "role_cn": "空间设计"
         }
       ]
     },
