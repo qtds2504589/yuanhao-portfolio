@@ -43,7 +43,8 @@ jobs:
                   key = os.path.relpath(local, '.').replace('\\', '/')
                   ext = os.path.splitext(f)[1].lower()
                   ct = ct_map.get(ext, 'application/octet-stream')
-                  bucket.put_object_from_file(key, local, headers={'Content-Type': ct, 'Content-Disposition': ''})
+                  headers = {'Content-Type': ct, 'Content-Disposition': 'inline'}
+                  bucket.put_object_from_file(key, local, headers=headers)
                   count += 1
                   if count % 50 == 0:
                       print(f'Uploaded {count} files...')
