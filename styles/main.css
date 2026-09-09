@@ -313,3 +313,11 @@ figcaption{margin-top:1.2vw}
 /* hero 首图放大填满容器 */
 .hero .visual{overflow:hidden}
 .hero .visual img{transform:scale(1.14)}
+
+/* V1.6 CASE FOOTER — next project navigation */
+.case-page footer .next-link{display:flex;align-items:flex-start;justify-content:space-between;gap:4vw;color:var(--fg);text-decoration:none;margin:0 0 8vw}
+.case-page footer .next-link .next-word{font-size:clamp(55px,10vw,160px);line-height:.9;letter-spacing:-.06em;margin:0}
+.case-page footer .next-link .next-word em{font-family:Georgia,serif;font-weight:400}
+.case-page footer .next-link .next-arrow{font-size:clamp(44px,6vw,100px);line-height:.9;color:var(--muted);transition:transform .5s ease,color .5s ease}
+.case-page footer .next-link:hover .next-arrow{color:var(--fg);transform:translateX(10px)}
+@media(max-width:700px){.case-page footer .next-link .next-word{font-size:clamp(52px,15vw,120px)}}
