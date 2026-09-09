@@ -52,7 +52,7 @@
     var skills = document.querySelector('.bilingual-list');
     if (skills && Array.isArray(data.skills)) {
       skills.innerHTML = data.skills.map(function (s) {
-        return '<div><b>' + esc(s.index) + '</b><span>' + esc(s.name) + ' <small>' + esc(s.en) + '</small></span></div>';
+        return '<div><b>' + esc(s.index) + '</b><span>' + esc(s.name) + ' <small>' + esc(s.en) + '</small>' + (s.desc ? '<small class="skill-desc">' + esc(s.desc) + '</small>' : '') + '</span></div>';
       }).join('');
     }
     /* 工作方法 */

@@ -19,27 +19,32 @@
     {
       "index": "01",
       "name": "空间策略",
-      "en": "SPATIAL STRATEGY"
+      "en": "SPATIAL STRATEGY",
+      "desc": "从品牌定位与使用场景出发，明确空间气质、动线与体验方向"
     },
     {
       "index": "02",
       "name": "概念与方案设计",
-      "en": "CONCEPT DEVELOPMENT"
+      "en": "CONCEPT DEVELOPMENT",
+      "desc": "提出概念、造型、材质与灯光氛围，推进多轮方案评审与选定"
     },
     {
       "index": "03",
       "name": "项目统筹",
-      "en": "PROJECT COORDINATION"
+      "en": "PROJECT COORDINATION",
+      "desc": "对接业主、施工方与供应商，把控进度、成本与落地质量"
     },
     {
       "index": "04",
       "name": "设计团队管理",
-      "en": "DESIGN LEADERSHIP"
+      "en": "DESIGN LEADERSHIP",
+      "desc": "带领团队分工、评审与质量把控，统筹多项目并行推进"
     },
     {
       "index": "05",
       "name": "图纸与落地交付",
-      "en": "TECHNICAL DEVELOPMENT"
+      "en": "CONSTRUCTION DOCUMENTATION & DELIVERY",
+      "desc": "施工图深化、现场施工配合与验收，推动项目真实落地"
     }
   ],
   "categories": [
