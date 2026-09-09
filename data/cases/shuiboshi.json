@@ -1,10 +1,10 @@
 {
-  "nav_label": "案例 10 · 税博士文化墙 / SHUIBOSHI",
+  "nav_label": "案例 10 · 税博士企业文化墙 / SHUIBOSHI",
   "eyebrow": "项目案例 / CASE STUDY · 10",
-  "title": "税博士文化墙",
+  "title": "税博士企业文化墙",
   "sub_en": "CORPORATE CULTURE WALL · TAX & FINANCE",
   "hero_image": "assets/shuiboshi/cover.jpg",
-  "hero_image_alt": "税博士文化墙 · 企业文化墙",
+  "hero_image_alt": "税博士企业文化墙",
   "hero_caption": "01 / 文化墙呈现 · CULTURE WALL — BUILT SPACE",
   "role_label": "职责定位 / ROLE",
   "role_statement": "以财税专业与女性力量为关键词的企业文化墙设计，<br>通过图文编排与色彩层次，在有限的墙面空间内呈现企业数字化的服务理念与团队文化。",
@@ -32,5 +32,5 @@
     "assets/shuiboshi/01.jpg",
     "assets/shuiboshi/02.jpg"
   ],
-  "title_en": "SHUIBOSHI CULTURE WALL"
+  "title_en": "SHUIBOSHI CORPORATE CULTURE WALL"
 }
