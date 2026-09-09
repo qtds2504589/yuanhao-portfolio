@@ -25,18 +25,13 @@
   "s4_en": "细节与场景 / DETAILS & SCENES",
   "s4_caption": "从主题墙绘、灯光装置到家具形态，保持统一的儿童友好设计语言。",
   "s4_caption2": "空间细节 · THEMATIC & LIGHTING DETAILS",
-  "s5_eyebrow": "05 / 落地呈现",
-  "s5_en": "完工呈现 / COMPLETED SPACE",
-  "s5_caption": "项目已建成并投入使用，展厅成为集团对外展示与客户体验的核心窗口。",
-  "s5_caption2": "实景照片 · ON-SITE PHOTOGRAPHY",
   "outro_statement": "空间不是展示的背景，而是体验本身。",
   "outro_statement_en": "The space is not a backdrop for display — it is the experience itself.",
   "imgs": [
     "assets/zhongyou/01.jpg",
     "assets/zhongyou/02.jpg",
     "assets/zhongyou/03.jpg",
-    "assets/zhongyou/04.jpg",
-    "assets/zhongyou/05.jpg"
+    "assets/zhongyou/04.jpg"
   ],
   "title_en": "ZHONGYOU GROUP PRODUCT EXHIBITION HALL"
 }
