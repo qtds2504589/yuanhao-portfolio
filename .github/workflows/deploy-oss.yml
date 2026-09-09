@@ -14,7 +14,7 @@ jobs:
 
       - name: Install ossutil
         run: |
-          curl -fsSL https://gosspublic.alicdn.com/ossutil/v2/2.0.0-beta.406/linux/amd64/ossutil -o /usr/local/bin/ossutil
+          curl -fsSL https://gosspublic.alicdn.com/ossutil/1.7.18/ossutil64 -o /usr/local/bin/ossutil
           chmod +x /usr/local/bin/ossutil
           ossutil --version
 
