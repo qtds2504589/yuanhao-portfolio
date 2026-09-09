@@ -12,20 +12,29 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Configure Aliyun CLI
-        uses: aliyun/aliyun-cli-action@v1
-        with:
-          aliyun-access-key-id: ${{ secrets.OSS_ACCESS_KEY_ID }}
-          aliyun-access-key-secret: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
+      - name: Install aliyun-cli
+        run: |
+          curl -fsSL https://aliyun-cli.oss-cn-hangzhou.aliyuncs.com/aliyun-cli-linux-latest-amd64.tgz -o aliyun-cli.tgz
+          tar xzf aliyun-cli.tgz
+          sudo mv aliyun /usr/local/bin/
+          aliyun version
 
       - name: Sync to OSS
-        run: |
-          aliyun oss cp ./ oss://${{ secrets.OSS_BUCKET }} --recursive --update -f --exclude ".github/*"
         env:
+          OSS_ACCESS_KEY_ID: ${{ secrets.OSS_ACCESS_KEY_ID }}
+          OSS_ACCESS_KEY_SECRET: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
+          OSS_BUCKET: ${{ secrets.OSS_BUCKET }}
           OSS_ENDPOINT: ${{ secrets.OSS_ENDPOINT }}
+        run: |
+          aliyun configure set --mode AK --access-key-id "$OSS_ACCESS_KEY_ID" --access-key-secret "$OSS_ACCESS_KEY_SECRET" --region cn-hangzhou
+          aliyun oss cp ./ "oss://$OSS_BUCKET/" --recursive --update -f --exclude ".github/*" --endpoint "$OSS_ENDPOINT"
 
-      - name: Set default index document
-        run: |
-          aliyun oss bucket-static-set --bucket ${{ secrets.OSS_BUCKET }} --index index.html --not-found index.html
+      - name: Set static website
         env:
+          OSS_ACCESS_KEY_ID: ${{ secrets.OSS_ACCESS_KEY_ID }}
+          OSS_ACCESS_KEY_SECRET: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
+          OSS_BUCKET: ${{ secrets.OSS_BUCKET }}
           OSS_ENDPOINT: ${{ secrets.OSS_ENDPOINT }}
+        run: |
+          aliyun configure set --mode AK --access-key-id "$OSS_ACCESS_KEY_ID" --access-key-secret "$OSS_ACCESS_KEY_SECRET" --region cn-hangzhou
+          aliyun oss bucket-static-set --bucket "$OSS_BUCKET" --index index.html --not-found index.html --endpoint "$OSS_ENDPOINT" || true
