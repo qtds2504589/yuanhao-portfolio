@@ -1,0 +1,31 @@
+name: Deploy to Aliyun OSS
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure Aliyun CLI
+        uses: aliyun/aliyun-cli-action@v1
+        with:
+          aliyun-access-key-id: ${{ secrets.OSS_ACCESS_KEY_ID }}
+          aliyun-access-key-secret: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
+
+      - name: Sync to OSS
+        run: |
+          aliyun oss cp ./ oss://${{ secrets.OSS_BUCKET }} --recursive --update -f --exclude ".github/*"
+        env:
+          OSS_ENDPOINT: ${{ secrets.OSS_ENDPOINT }}
+
+      - name: Set default index document
+        run: |
+          aliyun oss bucket-static-set --bucket ${{ secrets.OSS_BUCKET }} --index index.html --not-found index.html
+        env:
+          OSS_ENDPOINT: ${{ secrets.OSS_ENDPOINT }}
