@@ -30,20 +30,5 @@ jobs:
             --endpoint "$OSS_ENDPOINT" \
             --access-key-id "$OSS_ACCESS_KEY_ID" \
             --access-key-secret "$OSS_ACCESS_KEY_SECRET" \
-            --update -f
-
-      - name: Fix Content-Type on HTML files
-        env:
-          OSS_ACCESS_KEY_ID: ${{ secrets.OSS_ACCESS_KEY_ID }}
-          OSS_ACCESS_KEY_SECRET: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
-          OSS_BUCKET: ${{ secrets.OSS_BUCKET }}
-          OSS_ENDPOINT: ${{ secrets.OSS_ENDPOINT }}
-        run: |
-          # 修正所有 html 文件的 Content-Type，去掉 attachment
-          for f in $(ossutil ls "oss://$OSS_BUCKET/" --endpoint "$OSS_ENDPOINT" --access-key-id "$OSS_ACCESS_KEY_ID" --access-key-secret "$OSS_ACCESS_KEY_SECRET" | grep "\.html$" | awk '{print $1}'); do
-            ossutil set-meta "$f" "Content-Type:text/html; charset=utf-8" "Content-Disposition:" \
-              --endpoint "$OSS_ENDPOINT" \
-              --access-key-id "$OSS_ACCESS_KEY_ID" \
-              --access-key-secret "$OSS_ACCESS_KEY_SECRET" \
-              --update
-          done
+            --update -f \
+            --meta "Content-Disposition:"
