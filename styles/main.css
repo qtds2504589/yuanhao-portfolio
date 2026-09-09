@@ -227,13 +227,13 @@ footer em{font-family:Georgia,serif;font-weight:400}.note{max-width:480px;color:
 .cat-head h2{font-size:clamp(34px,4.6vw,84px);letter-spacing:-.05em;line-height:1;margin:0 0 .8vw;font-weight:400}
 .cat-head h2 em{display:block;font-family:Georgia,serif;font-weight:400;font-size:.42em;letter-spacing:.02em;color:var(--muted);margin-top:.9vw}
 .cat-head p{grid-column:3;grid-row:1;margin:0;max-width:280px;font:italic 13px/1.7 Georgia,serif;color:var(--muted);text-align:left}
-.cat-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 4vw;align-items:start}
-.cat-card{display:block;color:inherit;text-decoration:none;margin-bottom:6vw}
+.cat-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 4vw;align-items:stretch}
+.cat-card{display:flex;flex-direction:column;color:inherit;text-decoration:none;margin-bottom:6vw}
 .cat-img{height:32vw;background:#181818;overflow:hidden}
 .cat-img img{width:100%;height:100%;object-fit:contain;display:block;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
 .cat-card:hover .cat-img img{transform:scale(1.025)}
 .cat-img-empty{display:flex;align-items:center;justify-content:center;color:#555;font:11px var(--font-mono);letter-spacing:.1em}
-.cat-card-body{position:relative;padding:1.4vw 0;border-bottom:1px solid var(--line)}
+.cat-card-body{position:relative;padding:1.4vw 0;border-bottom:1px solid var(--line);margin-top:auto}
 .cat-index{position:absolute;right:0;top:1.4vw;display:block}
 .cat-card h3{font-size:clamp(26px,3.2vw,56px);letter-spacing:-.03em;line-height:1;margin:0 0 .6vw;font-weight:400}
 .cat-title-en{display:block;font:11px var(--font-mono);letter-spacing:.12em;color:var(--muted);margin:0 0 1vw}
