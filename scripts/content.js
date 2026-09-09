@@ -64,6 +64,25 @@
     }
   }
 
+  /* 卡片信息行：地址（如有）/ 状态 / 职责定位；无地址时隐藏地址行 */
+  function cardMeta(p) {
+    if (!p.address) {
+      return '<p>' + esc(p.subtitle) + ' <span>' + esc(p.role) + '</span></p>';
+    }
+    var rc = p.role_cn || '';
+    var st = p.status || '';
+    if ((!rc || !st) && p.subtitle && p.subtitle.indexOf('职责定位') >= 0) {
+      var parts = p.subtitle.split('项目状态：');
+      var head = parts[0].replace('职责定位：', '').replace(/[.\u3002]\s*$/, '').trim();
+      if (!rc) rc = head;
+      if (!st && parts[1]) st = parts[1].trim();
+    }
+    var addrHtml = (p.address && p.address !== '无')
+      ? '项目地址：' + esc(p.address) + '<br>' : '';
+    return '<p class="cat-meta">' + addrHtml +
+      '项目状态：' + esc(st) + '<br>职责定位：' + esc(rc) + '</p>';
+  }
+
   /* 分类杂志目录：每类一节，含中文/英文大标题与项目卡片 */
   function renderCategories(data) {
     var root = document.getElementById('categories');
@@ -81,8 +100,7 @@
             '<small class="cat-index">' + esc(p.index) + '</small>' +
             '<h3>' + esc(p.title) + '</h3>' +
             (p.title_en ? '<small class="cat-title-en">' + esc(p.title_en) + '</small>' : '') +
-            (p.address ? '<p class="cat-meta">项目地址：' + esc(p.address) + '<br>项目状态：' + esc(p.status || '') + '<br>职责定位：' + esc(p.role_cn || '') + '</p>'
-                       : '<p>' + esc(p.subtitle) + ' <span>' + esc(p.role) + '</span></p>') +
+            cardMeta(p) +
           '</div>' +
           end;
       }).join('');

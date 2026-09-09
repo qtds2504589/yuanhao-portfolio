@@ -68,7 +68,8 @@
           "image": "assets/jili/jili-cover.jpg",
           "alt": "集里桥儿童之家",
           "href": "case-studies/jiliqiao.html",
-          "title_en": "JILIQIAO CHILDREN'S HOME"
+          "title_en": "JILIQIAO CHILDREN'S HOME",
+          "address": "浏阳"
         },
         {
           "index": "03",
@@ -78,7 +79,8 @@
           "image": "assets/wuliping/wuliping-cover.jpg",
           "alt": "五里坪党群服务中心",
           "href": "case-studies/wuliping.html",
-          "title_en": "WULIPING PARTY-MASS SERVICE CENTER"
+          "title_en": "WULIPING PARTY-MASS SERVICE CENTER",
+          "address": "湘西"
         },
         {
           "index": "04",
@@ -88,7 +90,8 @@
           "image": "assets/zhongyou/cover.jpg",
           "alt": "中幼集团产品展厅",
           "href": "case-studies/zhongyou.html",
-          "title_en": "ZHONGYOU GROUP PRODUCT EXHIBITION HALL"
+          "title_en": "ZHONGYOU GROUP PRODUCT EXHIBITION HALL",
+          "address": "深圳"
         },
         {
           "index": "05",
@@ -98,7 +101,8 @@
           "image": "assets/milo/cover.jpg",
           "alt": "MILO 智能医美体验概念方案",
           "href": "case-studies/milo.html",
-          "title_en": "MILO SMART AESTHETICS EXPERIENCE CONCEPT"
+          "title_en": "MILO SMART AESTHETICS EXPERIENCE CONCEPT",
+          "address": "无"
         },
         {
           "index": "15",
@@ -108,7 +112,8 @@
           "image": "assets/ziwei/cover.jpg",
           "alt": "紫薇农业展厅",
           "href": "case-studies/ziwei.html",
-          "title_en": "ZIWEI AGRICULTURAL EXHIBITION HALL"
+          "title_en": "ZIWEI AGRICULTURAL EXHIBITION HALL",
+          "address": "湘西"
         }
       ]
     },
@@ -125,7 +130,8 @@
           "image": "assets/yumu/cover.jpg",
           "alt": "宇牧米昔旭辉国际品牌店",
           "href": "case-studies/yumu.html",
-          "title_en": "YUMU MIXI XUHUI INTERNATIONAL BRAND STORE"
+          "title_en": "YUMU MIXI XUHUI INTERNATIONAL BRAND STORE",
+          "address": "长沙"
         },
         {
           "index": "07",
@@ -135,7 +141,8 @@
           "image": "assets/jiumai/cover.jpg",
           "alt": "九麦真品品牌早点店",
           "href": "case-studies/jiumai.html",
-          "title_en": "JIUMAI GENUINE BREAKFAST BRAND STORE"
+          "title_en": "JIUMAI GENUINE BREAKFAST BRAND STORE",
+          "address": "长沙"
         },
         {
           "index": "14",
@@ -145,7 +152,8 @@
           "image": "assets/imonstore/01.jpg",
           "alt": "IMON 品牌店",
           "href": "case-studies/imonstore.html",
-          "title_en": "IMON RETAIL STORE SCENE SYSTEM"
+          "title_en": "IMON RETAIL STORE SCENE SYSTEM",
+          "address": "无"
         }
       ]
     },
@@ -162,7 +170,8 @@
           "image": "assets/xiangyou/xiangyou-cover.jpg",
           "alt": "湘幼教育集团办公室",
           "href": "case-studies/xiangyou.html",
-          "title_en": "XIANGYOU EDUCATION GROUP HEADQUARTERS"
+          "title_en": "XIANGYOU EDUCATION GROUP HEADQUARTERS",
+          "address": "长沙"
         },
         {
           "index": "09",
@@ -172,7 +181,8 @@
           "image": "assets/shanchuan/cover.jpg",
           "alt": "山川生物集团前台大厅",
           "href": "case-studies/shanchuan.html",
-          "title_en": "SHANCHUAN BIOTECH FRONT HALL"
+          "title_en": "SHANCHUAN BIOTECH FRONT HALL",
+          "address": "武汉"
         }
       ]
     },
@@ -189,7 +199,8 @@
           "image": "assets/shuiboshi/cover.jpg",
           "alt": "税博士文化墙",
           "href": "case-studies/shuiboshi.html",
-          "title_en": "SHUIBOSHI CULTURE WALL"
+          "title_en": "SHUIBOSHI CULTURE WALL",
+          "address": "长沙"
         },
         {
           "index": "11",
@@ -199,7 +210,8 @@
           "image": "assets/guoke/cover.jpg",
           "alt": "国科大学院主题墙",
           "href": "case-studies/guoke.html",
-          "title_en": "UCAS ACADEMY THEME WALL"
+          "title_en": "UCAS ACADEMY THEME WALL",
+          "address": "长沙"
         },
         {
           "index": "12",
@@ -209,7 +221,8 @@
           "image": "assets/kangwei/cover.jpg",
           "alt": "康为数字化门头",
           "href": "case-studies/kangwei.html",
-          "title_en": "KANGWEI DIGITAL EXHIBITION FACADE"
+          "title_en": "KANGWEI DIGITAL EXHIBITION FACADE",
+          "address": "长沙"
         },
         {
           "index": "13",
@@ -219,7 +232,8 @@
           "image": "assets/snto/cover.jpg",
           "alt": "SNTO 企业文化墙",
           "href": "case-studies/snto.html",
-          "title_en": "SNTO CORPORATE CULTURE WALL"
+          "title_en": "SNTO CORPORATE CULTURE WALL",
+          "address": "长沙"
         }
       ]
     }
