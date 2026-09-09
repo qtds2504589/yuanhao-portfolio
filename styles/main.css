@@ -370,3 +370,4 @@ body::before{
   .js .reveal{opacity:1;transform:none;transition:none}
   .case-hero img,.image-wide img,.image-large img,.image-small img,.journey-image img{transition:none}
 }
+.focus-pill{display:inline-block;background:#2563EB;color:#fff!important;padding:5px 14px;border-radius:999px;margin-top:7px;font-size:13px;letter-spacing:.02em}
