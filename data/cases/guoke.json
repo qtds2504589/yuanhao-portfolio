@@ -1,10 +1,10 @@
 {
-  "nav_label": "案例 11 · 国科大学院主题墙 / GUOKE",
+  "nav_label": "案例 11 · 国防科大学院主题墙 / GUOKE",
   "eyebrow": "项目案例 / CASE STUDY · 11",
-  "title": "国科大学院主题墙",
+  "title": "国防科大学院主题墙",
   "sub_en": "ACADEMY THEME WALL",
   "hero_image": "assets/guoke/cover.jpg",
-  "hero_image_alt": "国科大学院主题墙",
+  "hero_image_alt": "国防科大学院主题墙",
   "hero_caption": "01 / 主题墙呈现 · THEME WALL",
   "role_label": "职责定位 / ROLE",
   "role_statement": "以党建文化与育人理念为主题的学院文化墙设计，<br>以浮雕质感与庄重的红色元素，塑造严肃而向上的校园形象。",
@@ -31,5 +31,5 @@
   "imgs": [
     "assets/guoke/01.jpg"
   ],
-  "title_en": "UCAS ACADEMY THEME WALL"
+  "title_en": "NUDT ACADEMY THEME WALL"
 }
