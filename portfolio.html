@@ -11,37 +11,36 @@
     font-family: Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
   }
   .page {
-    width: 100vw;
-    height: 100vh;
-    min-height: 100vh;
+    width: 297mm;
+    height: 210mm;
     position: relative;
     overflow: hidden;
-    padding: 48px 56px;
+    padding: 28mm 32mm;
+    page-break-after: always;
     display: flex;
     flex-direction: column;
-    page-break-after: always;
   }
   .page-num {
     position: absolute;
-    bottom: 32px;
-    right: 56px;
-    font: 11px monospace;
+    bottom: 16mm;
+    right: 32mm;
+    font: 10px monospace;
     color: rgba(240,238,232,.4);
     letter-spacing: .1em;
   }
   .page-brand {
     position: absolute;
-    top: 32px;
-    left: 56px;
-    font: 10px monospace;
+    top: 16mm;
+    left: 32mm;
+    font: 9px monospace;
     letter-spacing: .12em;
     color: rgba(240,238,232,.5);
   }
   .page-label {
     position: absolute;
-    top: 32px;
-    right: 56px;
-    font: 10px monospace;
+    top: 16mm;
+    right: 32mm;
+    font: 9px monospace;
     letter-spacing: .12em;
     color: rgba(240,238,232,.5);
   }
@@ -51,49 +50,49 @@
     justify-content: center;
   }
   .cover h1 {
-    font-size: 12vw;
+    font-size: 120px;
     line-height: .95;
     letter-spacing: -.03em;
     font-weight: 400;
   }
   .cover .sub {
-    margin-top: 40px;
-    font-size: 18px;
+    margin-top: 30px;
+    font-size: 16px;
     color: rgba(240,238,232,.6);
     font-family: Georgia, serif;
   }
   .cover .cats {
-    margin-top: 80px;
-    font-size: 14px;
+    margin-top: 60px;
+    font-size: 13px;
     color: rgba(240,238,232,.5);
     line-height: 2;
   }
 
   /* 个人简介页 */
   .about h2 {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 400;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     letter-spacing: -.02em;
   }
   .about p {
-    font-size: 16px;
-    line-height: 1.9;
+    font-size: 14px;
+    line-height: 1.8;
     color: rgba(240,238,232,.75);
-    max-width: 720px;
-    margin-bottom: 20px;
+    max-width: 900px;
+    margin-bottom: 16px;
   }
   .about .timeline {
-    margin-top: 40px;
+    margin-top: 30px;
   }
   .about .tl-item {
     display: flex;
     gap: 32px;
-    padding: 12px 0;
+    padding: 10px 0;
     border-bottom: 1px solid rgba(240,238,232,.1);
   }
   .about .tl-year {
-    font: 12px monospace;
+    font: 11px monospace;
     color: rgba(240,238,232,.4);
     min-width: 100px;
     padding-top: 2px;
@@ -101,39 +100,44 @@
   .about .tl-text b {
     font-weight: 400;
     color: #f0eee8;
-    font-size: 14px;
+    font-size: 13px;
   }
   .about .tl-text span {
     display: block;
-    font-size: 12px;
+    font-size: 11px;
     color: rgba(240,238,232,.5);
     margin-top: 2px;
   }
 
   /* 项目列表页 */
   .list h2 {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 400;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+  }
+  .list .list-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 48px;
   }
   .list .list-item {
     display: flex;
-    justify-content: space-between;
-    padding: 16px 0;
+    gap: 16px;
+    padding: 12px 0;
     border-bottom: 1px solid rgba(240,238,232,.1);
-    font-size: 16px;
+    font-size: 14px;
   }
   .list .list-item .num {
-    font: 12px monospace;
+    font: 11px monospace;
     color: rgba(240,238,232,.4);
-    min-width: 40px;
-    padding-top: 3px;
+    min-width: 30px;
+    padding-top: 2px;
   }
   .list .list-item .name {
     flex: 1;
   }
   .list .list-item .loc {
-    font-size: 13px;
+    font-size: 12px;
     color: rgba(240,238,232,.4);
   }
 
@@ -142,87 +146,149 @@
     justify-content: center;
   }
   .category .big-num {
-    font-size: 120px;
+    font-size: 100px;
     line-height: 1;
     font-weight: 300;
     color: rgba(240,238,232,.15);
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
   .category h2 {
-    font-size: 64px;
+    font-size: 56px;
     font-weight: 400;
     letter-spacing: -.02em;
   }
   .category .en {
-    margin-top: 12px;
-    font: 18px Georgia, serif;
+    margin-top: 10px;
+    font: 16px Georgia, serif;
     color: rgba(240,238,232,.5);
   }
 
-  /* 案例页 */
+  /* 案例页 - 横版，左文右图 */
   .case-page {
-    padding: 80px 56px 48px;
-    justify-content: space-between;
+    flex-direction: row;
+    gap: 32px;
   }
-  .case-imgs {
-    flex: 1;
+  .case-info {
+    width: 300px;
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    margin-bottom: 24px;
-    overflow: hidden;
-  }
-  .case-imgs .case-hero {
-    width: 100%;
-    height: 45%;
-    object-fit: cover;
-    border-radius: 2px;
-  }
-  .img-row {
-    display: flex;
-    gap: 12px;
-    height: 28%;
-  }
-  .img-row img {
-    flex: 1;
-    object-fit: cover;
-    border-radius: 2px;
   }
   .case-title {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 400;
     letter-spacing: -.02em;
     margin-bottom: 6px;
   }
   .case-en {
-    font: 12px monospace;
+    font: 10px monospace;
     color: rgba(240,238,232,.4);
     letter-spacing: .08em;
     margin-bottom: 16px;
   }
   .case-desc {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.7;
     color: rgba(240,238,232,.6);
     margin-bottom: 24px;
-    max-width: 800px;
   }
   .case-meta {
-    display: flex;
-    gap: 64px;
+    margin-top: auto;
     padding-top: 16px;
     border-top: 1px solid rgba(240,238,232,.1);
   }
+  .meta-item {
+    margin-bottom: 10px;
+  }
   .meta-item small {
     display: block;
-    font: 10px monospace;
+    font: 9px monospace;
     color: rgba(240,238,232,.4);
     letter-spacing: .1em;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
   }
   .meta-item b {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
+  }
+  .case-imgs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+  .img-single img {
+    width: 100%;
+    max-height: 160mm;
+    object-fit: contain;
+  }
+  .img-pair {
+    display: flex;
+    gap: 10px;
+    height: 160mm;
+  }
+  .img-half {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-half img {
+    max-width: 100%;
+    max-height: 160mm;
+    object-fit: contain;
+  }
+  .img-grid3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 160mm;
+  }
+  .img-top {
+    flex: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-top img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  .img-bottom {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+  }
+  .img-grid4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    height: 160mm;
+  }
+  .img-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-cell img {
+    max-width: 100%;
+    max-height: 75mm;
+    object-fit: contain;
+  }
+  .img-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 160mm;
+    overflow: hidden;
+  }
+  .img-rows .img-top {
+    flex: 1.1;
+  }
+  .img-rows .img-bottom {
+    flex: 1;
   }
 </style>
 </head>
@@ -283,7 +349,7 @@
   <div class="page-brand">YUAN HAO</div>
   <div class="page-label">PROJECTS</div>
   <h2>项目列表</h2>
-  <div id="project-list">
+  <div class="list-grid">
     <div class="list-item"><div class="num">01</div><div class="name">IMON玩具体验馆</div><div class="loc"></div></div>
     <div class="list-item"><div class="num">02</div><div class="name">集里桥儿童之家</div><div class="loc"></div></div>
     <div class="list-item"><div class="num">03</div><div class="name">五里坪党群服务中心</div><div class="loc"></div></div>
@@ -304,7 +370,7 @@
   <div class="page-num">03</div>
 </div>
 
-<!-- 分类页1：展厅与文化 -->
+<!-- 分类页1 -->
 <div class="page category">
   <div class="page-brand">YUAN HAO</div>
   <div class="page-label">CATEGORY 01</div>
@@ -319,491 +385,571 @@
 <div class="page case-page">
   <div class="page-brand">YUAN HAO</div>
   <div class="page-label">CASE 01</div>
+  <div class="case-info">
+    <div class="case-title">IMON玩具体验馆</div>
+    <div class="case-en">IMON TOY EXPERIENCE STORE · FLAGSHIP EXPERIENCE STORE · 300㎡</div>
+    <div class="case-desc">统筹 300㎡ 品牌旗舰店的客户对接、主题策划与方案落地。</div>
+    <div class="case-meta">
+      <div class="meta-item">
+        <small>分类</small>
+        <b>商业与零售</b>
+      </div>
+      <div class="meta-item">
+        <small>状态</small>
+        <b>已交付</b>
+      </div>
+      <div class="meta-item">
+        <small>职责</small>
+        <b>统筹/空间设计</b>
+      </div>
+    </div>
+  </div>
   <div class="case-imgs">
-    <img src="assets/imon/6.jpg" alt="IMON玩具体验馆" class="case-hero">
-<div class="img-row"><img src="assets/imon/hansa.jpg" alt="IMON玩具体验馆"> <img src="assets/imon/014.jpg" alt="IMON玩具体验馆"> </div>
-<div class="img-row"><img src="assets/imon/13.jpg" alt="IMON玩具体验馆"> <img src="assets/imon/9.jpg" alt="IMON玩具体验馆"> </div>
-
+    <div class="img-rows"><div class="img-top"><img src="assets/imon/6.jpg" alt="IMON玩具体验馆"></div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/imon/hansa.jpg" alt="IMON玩具体验馆"></div>
+                  <div class="img-half"><img src="assets/imon/014.jpg" alt="IMON玩具体验馆"></div>
+                </div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/imon/13.jpg" alt="IMON玩具体验馆"></div>
+                  <div class="img-half"><img src="assets/imon/9.jpg" alt="IMON玩具体验馆"></div>
+                </div></div>
   </div>
-  <div class="case-title">IMON玩具体验馆</div>
-  <div class="case-en">IMON TOY EXPERIENCE STORE · FLAGSHIP EXPERIENCE STORE · 300㎡</div>
-  <div class="case-desc">统筹 300㎡ 品牌旗舰店的客户对接、主题策划与方案落地。</div>
-  <div class="case-meta">
-    <div class="meta-item">
-      <small>分类 / CATEGORY</small>
-      <b>商业与零售</b>
-    </div>
-    <div class="meta-item">
-      <small>项目状态</small>
-      <b>已交付</b>
-    </div>
-    <div class="meta-item">
-      <small>职责定位</small>
-      <b>统筹/空间设计</b>
-    </div>
-  </div>
-  <div class="page-num">03</div>
+  <div class="page-num">04</div>
 </div>
 
 <!-- 案例 02：集里桥儿童之家 -->
 <div class="page case-page">
   <div class="page-brand">YUAN HAO</div>
   <div class="page-label">CASE 02</div>
+  <div class="case-info">
+    <div class="case-title">集里桥儿童之家</div>
+    <div class="case-en">JILIQIAO CHILDREN'S HOME · CHILDREN'S HOUSE · SPATIAL EXPERIENCE</div>
+    <div class="case-desc">让探索成为空间的一部分。</div>
+    <div class="case-meta">
+      <div class="meta-item">
+        <small>分类</small>
+        <b>展厅与文化</b>
+      </div>
+      <div class="meta-item">
+        <small>状态</small>
+        <b>已交付</b>
+      </div>
+      <div class="meta-item">
+        <small>职责</small>
+        <b>统筹/空间设计</b>
+      </div>
+    </div>
+  </div>
   <div class="case-imgs">
-    <img src="assets/jili/jili-cover.jpg" alt="集里桥儿童之家" class="case-hero">
-<div class="img-row"><img src="assets/jili/jili-plan.jpg" alt="集里桥儿童之家"> <img src="assets/jili/jili-bird.jpg" alt="集里桥儿童之家"> </div>
-<div class="img-row"><img src="assets/jili/jili-axon-01.jpg" alt="集里桥儿童之家"> <img src="assets/jili/jili-interior-01.jpg" alt="集里桥儿童之家"> </div>
-<div class="img-row"><img src="assets/jili/jili-interior-09.jpg" alt="集里桥儿童之家"> <img src="assets/jili/jili-interior-03.jpg" alt="集里桥儿童之家"> </div>
-<div class="img-row"><img src="assets/jili/jili-interior-13.jpg" alt="集里桥儿童之家"> <img src="assets/jili/jili-scene.jpg" alt="集里桥儿童之家"> </div>
-
+    <div class="img-rows"><div class="img-top"><img src="assets/jili/jili-cover.jpg" alt="集里桥儿童之家"></div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/jili/jili-plan.jpg" alt="集里桥儿童之家"></div>
+                  <div class="img-half"><img src="assets/jili/jili-bird.jpg" alt="集里桥儿童之家"></div>
+                </div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/jili/jili-axon-01.jpg" alt="集里桥儿童之家"></div>
+                  <div class="img-half"><img src="assets/jili/jili-interior-01.jpg" alt="集里桥儿童之家"></div>
+                </div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/jili/jili-interior-09.jpg" alt="集里桥儿童之家"></div>
+                  <div class="img-half"><img src="assets/jili/jili-interior-03.jpg" alt="集里桥儿童之家"></div>
+                </div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/jili/jili-interior-13.jpg" alt="集里桥儿童之家"></div>
+                  <div class="img-half"><img src="assets/jili/jili-scene.jpg" alt="集里桥儿童之家"></div>
+                </div></div>
   </div>
-  <div class="case-title">集里桥儿童之家</div>
-  <div class="case-en">JILIQIAO CHILDREN'S HOME · CHILDREN'S HOUSE · SPATIAL EXPERIENCE</div>
-  <div class="case-desc">让探索成为空间的一部分。</div>
-  <div class="case-meta">
-    <div class="meta-item">
-      <small>分类 / CATEGORY</small>
-      <b>展厅与文化</b>
-    </div>
-    <div class="meta-item">
-      <small>项目状态</small>
-      <b>已交付</b>
-    </div>
-    <div class="meta-item">
-      <small>职责定位</small>
-      <b>统筹/空间设计</b>
-    </div>
-  </div>
-  <div class="page-num">04</div>
+  <div class="page-num">05</div>
 </div>
 
 <!-- 案例 03：五里坪党群服务中心 -->
 <div class="page case-page">
   <div class="page-brand">YUAN HAO</div>
   <div class="page-label">CASE 03</div>
+  <div class="case-info">
+    <div class="case-title">五里坪党群服务中心</div>
+    <div class="case-en">WULIPING PARTY-MASS SERVICE CENTER · COMMUNITY PARTY SERVICE CENTER</div>
+    <div class="case-desc">从方案设计到完工交付全程统筹。</div>
+    <div class="case-meta">
+      <div class="meta-item">
+        <small>分类</small>
+        <b>展厅与文化</b>
+      </div>
+      <div class="meta-item">
+        <small>状态</small>
+        <b>已交付</b>
+      </div>
+      <div class="meta-item">
+        <small>职责</small>
+        <b>统筹/空间设计</b>
+      </div>
+    </div>
+  </div>
   <div class="case-imgs">
-    <img src="assets/wuliping/wuliping-cover.jpg" alt="五里坪党群服务中心" class="case-hero">
-<div class="img-row"><img src="assets/wuliping/01.jpg" alt="五里坪党群服务中心"> <img src="assets/wuliping/02.jpg" alt="五里坪党群服务中心"> </div>
-<div class="img-row"><img src="assets/wuliping/03.jpg" alt="五里坪党群服务中心"> <img src="assets/wuliping/05.jpg" alt="五里坪党群服务中心"> </div>
-<img src="assets/wuliping/04.jpg" alt="五里坪党群服务中心" class="case-hero">
-
+    <div class="img-rows"><div class="img-top"><img src="assets/wuliping/wuliping-cover.jpg" alt="五里坪党群服务中心"></div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/wuliping/01.jpg" alt="五里坪党群服务中心"></div>
+                  <div class="img-half"><img src="assets/wuliping/02.jpg" alt="五里坪党群服务中心"></div>
+                </div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/wuliping/03.jpg" alt="五里坪党群服务中心"></div>
+                  <div class="img-half"><img src="assets/wuliping/05.jpg" alt="五里坪党群服务中心"></div>
+                </div><div class="img-single"><img src="assets/wuliping/04.jpg" alt="五里坪党群服务中心"></div></div>
   </div>
-  <div class="case-title">五里坪党群服务中心</div>
-  <div class="case-en">WULIPING PARTY-MASS SERVICE CENTER · COMMUNITY PARTY SERVICE CENTER</div>
-  <div class="case-desc">从方案设计到完工交付全程统筹。</div>
-  <div class="case-meta">
-    <div class="meta-item">
-      <small>分类 / CATEGORY</small>
-      <b>展厅与文化</b>
-    </div>
-    <div class="meta-item">
-      <small>项目状态</small>
-      <b>已交付</b>
-    </div>
-    <div class="meta-item">
-      <small>职责定位</small>
-      <b>统筹/空间设计</b>
-    </div>
-  </div>
-  <div class="page-num">05</div>
+  <div class="page-num">06</div>
 </div>
 
 <!-- 案例 04：中幼集团产品展厅 -->
 <div class="page case-page">
   <div class="page-brand">YUAN HAO</div>
   <div class="page-label">CASE 04</div>
+  <div class="case-info">
+    <div class="case-title">中幼集团产品展厅</div>
+    <div class="case-en">ZHONGYOU GROUP PRODUCT EXHIBITION HALL · PRODUCT EXHIBITION HALL · CHILDREN'S EDUCATION</div>
+    <div class="case-desc">在明亮的色彩与圆润的造型中建立儿童友好的空间语言。</div>
+    <div class="case-meta">
+      <div class="meta-item">
+        <small>分类</small>
+        <b>展厅与文化</b>
+      </div>
+      <div class="meta-item">
+        <small>状态</small>
+        <b>已交付</b>
+      </div>
+      <div class="meta-item">
+        <small>职责</small>
+        <b>统筹/空间设计</b>
+      </div>
+    </div>
+  </div>
   <div class="case-imgs">
-    <img src="assets/zhongyou/cover.jpg" alt="中幼集团产品展厅" class="case-hero">
-<div class="img-row"><img src="assets/zhongyou/01.jpg" alt="中幼集团产品展厅"> <img src="assets/zhongyou/02.jpg" alt="中幼集团产品展厅"> </div>
-<div class="img-row"><img src="assets/zhongyou/03.jpg" alt="中幼集团产品展厅"> <img src="assets/zhongyou/04.jpg" alt="中幼集团产品展厅"> </div>
-
+    <div class="img-rows"><div class="img-top"><img src="assets/zhongyou/cover.jpg" alt="中幼集团产品展厅"></div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/zhongyou/01.jpg" alt="中幼集团产品展厅"></div>
+                  <div class="img-half"><img src="assets/zhongyou/02.jpg" alt="中幼集团产品展厅"></div>
+                </div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/zhongyou/03.jpg" alt="中幼集团产品展厅"></div>
+                  <div class="img-half"><img src="assets/zhongyou/04.jpg" alt="中幼集团产品展厅"></div>
+                </div></div>
   </div>
-  <div class="case-title">中幼集团产品展厅</div>
-  <div class="case-en">ZHONGYOU GROUP PRODUCT EXHIBITION HALL · PRODUCT EXHIBITION HALL · CHILDREN'S EDUCATION</div>
-  <div class="case-desc">在明亮的色彩与圆润的造型中建立儿童友好的空间语言。</div>
-  <div class="case-meta">
-    <div class="meta-item">
-      <small>分类 / CATEGORY</small>
-      <b>展厅与文化</b>
-    </div>
-    <div class="meta-item">
-      <small>项目状态</small>
-      <b>已交付</b>
-    </div>
-    <div class="meta-item">
-      <small>职责定位</small>
-      <b>统筹/空间设计</b>
-    </div>
-  </div>
-  <div class="page-num">06</div>
+  <div class="page-num">07</div>
 </div>
 
 <!-- 案例 05：MILO 智能医美体验 -->
 <div class="page case-page">
   <div class="page-brand">YUAN HAO</div>
   <div class="page-label">CASE 05</div>
+  <div class="case-info">
+    <div class="case-title">MILO 智能医美体验</div>
+    <div class="case-en">MILO SMART AESTHETICS EXPERIENCE CONCEPT · SMART MEDICAL BEAUTY EXPERIENCE · CONCEPT</div>
+    <div class="case-desc">以科技装置与未来感空间语言建立全新的品牌识别。</div>
+    <div class="case-meta">
+      <div class="meta-item">
+        <small>分类</small>
+        <b>商业与零售</b>
+      </div>
+      <div class="meta-item">
+        <small>状态</small>
+        <b>已交付</b>
+      </div>
+      <div class="meta-item">
+        <small>职责</small>
+        <b>统筹/空间设计</b>
+      </div>
+    </div>
+  </div>
   <div class="case-imgs">
-    <img src="assets/milo/cover.jpg" alt="MILO 智能医美体验" class="case-hero">
-<div class="img-row"><img src="assets/milo/01.jpg" alt="MILO 智能医美体验"> <img src="assets/milo/02.jpg" alt="MILO 智能医美体验"> </div>
-<div class="img-row"><img src="assets/milo/03.jpg" alt="MILO 智能医美体验"> <img src="assets/milo/04.jpg" alt="MILO 智能医美体验"> </div>
-<img src="assets/milo/05.jpg" alt="MILO 智能医美体验" class="case-hero">
-
+    <div class="img-rows"><div class="img-top"><img src="assets/milo/cover.jpg" alt="MILO 智能医美体验"></div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/milo/01.jpg" alt="MILO 智能医美体验"></div>
+                  <div class="img-half"><img src="assets/milo/02.jpg" alt="MILO 智能医美体验"></div>
+                </div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/milo/03.jpg" alt="MILO 智能医美体验"></div>
+                  <div class="img-half"><img src="assets/milo/04.jpg" alt="MILO 智能医美体验"></div>
+                </div><div class="img-single"><img src="assets/milo/05.jpg" alt="MILO 智能医美体验"></div></div>
   </div>
-  <div class="case-title">MILO 智能医美体验</div>
-  <div class="case-en">MILO SMART AESTHETICS EXPERIENCE CONCEPT · SMART MEDICAL BEAUTY EXPERIENCE · CONCEPT</div>
-  <div class="case-desc">以科技装置与未来感空间语言建立全新的品牌识别。</div>
-  <div class="case-meta">
-    <div class="meta-item">
-      <small>分类 / CATEGORY</small>
-      <b>商业与零售</b>
-    </div>
-    <div class="meta-item">
-      <small>项目状态</small>
-      <b>已交付</b>
-    </div>
-    <div class="meta-item">
-      <small>职责定位</small>
-      <b>统筹/空间设计</b>
-    </div>
-  </div>
-  <div class="page-num">07</div>
+  <div class="page-num">08</div>
 </div>
 
 <!-- 案例 06：紫薇农业展厅 -->
 <div class="page case-page">
   <div class="page-brand">YUAN HAO</div>
   <div class="page-label">CASE 06</div>
+  <div class="case-info">
+    <div class="case-title">紫薇农业展厅</div>
+    <div class="case-en">ZIWEI AGRICULTURAL EXHIBITION HALL · </div>
+    <div class="case-desc">通过展示、交互与空间叙事，呈现现代农业的数字化图景。</div>
+    <div class="case-meta">
+      <div class="meta-item">
+        <small>分类</small>
+        <b>展厅与文化</b>
+      </div>
+      <div class="meta-item">
+        <small>状态</small>
+        <b>已交付</b>
+      </div>
+      <div class="meta-item">
+        <small>职责</small>
+        <b>统筹/空间设计</b>
+      </div>
+    </div>
+  </div>
   <div class="case-imgs">
-    <img src="assets/ziwei/cover.jpg" alt="紫薇农业展厅" class="case-hero">
-<div class="img-row"><img src="assets/ziwei/01.jpg" alt="紫薇农业展厅"> <img src="assets/ziwei/02.jpg" alt="紫薇农业展厅"> </div>
-<div class="img-row"><img src="assets/ziwei/03.jpg" alt="紫薇农业展厅"> <img src="assets/ziwei/07.jpg" alt="紫薇农业展厅"> </div>
-<img src="assets/ziwei/ziwei-scene.jpg" alt="紫薇农业展厅" class="case-hero">
-
+    <div class="img-rows"><div class="img-top"><img src="assets/ziwei/cover.jpg" alt="紫薇农业展厅"></div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/ziwei/01.jpg" alt="紫薇农业展厅"></div>
+                  <div class="img-half"><img src="assets/ziwei/02.jpg" alt="紫薇农业展厅"></div>
+                </div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/ziwei/03.jpg" alt="紫薇农业展厅"></div>
+                  <div class="img-half"><img src="assets/ziwei/07.jpg" alt="紫薇农业展厅"></div>
+                </div><div class="img-single"><img src="assets/ziwei/ziwei-scene.jpg" alt="紫薇农业展厅"></div></div>
   </div>
-  <div class="case-title">紫薇农业展厅</div>
-  <div class="case-en">ZIWEI AGRICULTURAL EXHIBITION HALL · </div>
-  <div class="case-desc">通过展示、交互与空间叙事，呈现现代农业的数字化图景。</div>
-  <div class="case-meta">
-    <div class="meta-item">
-      <small>分类 / CATEGORY</small>
-      <b>展厅与文化</b>
-    </div>
-    <div class="meta-item">
-      <small>项目状态</small>
-      <b>已交付</b>
-    </div>
-    <div class="meta-item">
-      <small>职责定位</small>
-      <b>统筹/空间设计</b>
-    </div>
-  </div>
-  <div class="page-num">08</div>
+  <div class="page-num">09</div>
 </div>
 
 <!-- 案例 07：宇牧米昔品牌饮品店 -->
 <div class="page case-page">
   <div class="page-brand">YUAN HAO</div>
   <div class="page-label">CASE 07</div>
+  <div class="case-info">
+    <div class="case-title">宇牧米昔品牌饮品店</div>
+    <div class="case-en">YUMU MIXI BRAND BEVERAGE STORE · NATURAL HEALTH DRINK STORE · 30㎡</div>
+    <div class="case-desc">在仅 30㎡ 的有限空间内，通过品牌色、杯子造型与灯光营造自然、健康、舒适的品牌氛围。</div>
+    <div class="case-meta">
+      <div class="meta-item">
+        <small>分类</small>
+        <b>商业与零售</b>
+      </div>
+      <div class="meta-item">
+        <small>状态</small>
+        <b>已交付</b>
+      </div>
+      <div class="meta-item">
+        <small>职责</small>
+        <b>统筹/空间设计</b>
+      </div>
+    </div>
+  </div>
   <div class="case-imgs">
-    <img src="assets/yumu/cover.jpg" alt="宇牧米昔品牌饮品店" class="case-hero">
-<div class="img-row"><img src="assets/yumu/01.jpg" alt="宇牧米昔品牌饮品店"> <img src="assets/yumu/02.jpg" alt="宇牧米昔品牌饮品店"> </div>
-<div class="img-row"><img src="assets/yumu/03.jpg" alt="宇牧米昔品牌饮品店"> <img src="assets/yumu/04.jpg" alt="宇牧米昔品牌饮品店"> </div>
-<img src="assets/yumu/05.jpg" alt="宇牧米昔品牌饮品店" class="case-hero">
-
+    <div class="img-rows"><div class="img-top"><img src="assets/yumu/cover.jpg" alt="宇牧米昔品牌饮品店"></div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/yumu/01.jpg" alt="宇牧米昔品牌饮品店"></div>
+                  <div class="img-half"><img src="assets/yumu/02.jpg" alt="宇牧米昔品牌饮品店"></div>
+                </div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/yumu/03.jpg" alt="宇牧米昔品牌饮品店"></div>
+                  <div class="img-half"><img src="assets/yumu/04.jpg" alt="宇牧米昔品牌饮品店"></div>
+                </div><div class="img-single"><img src="assets/yumu/05.jpg" alt="宇牧米昔品牌饮品店"></div></div>
   </div>
-  <div class="case-title">宇牧米昔品牌饮品店</div>
-  <div class="case-en">YUMU MIXI BRAND BEVERAGE STORE · NATURAL HEALTH DRINK STORE · 30㎡</div>
-  <div class="case-desc">在仅 30㎡ 的有限空间内，通过品牌色、杯子造型与灯光营造自然、健康、舒适的品牌氛围。</div>
-  <div class="case-meta">
-    <div class="meta-item">
-      <small>分类 / CATEGORY</small>
-      <b>商业与零售</b>
-    </div>
-    <div class="meta-item">
-      <small>项目状态</small>
-      <b>已交付</b>
-    </div>
-    <div class="meta-item">
-      <small>职责定位</small>
-      <b>统筹/空间设计</b>
-    </div>
-  </div>
-  <div class="page-num">09</div>
+  <div class="page-num">10</div>
 </div>
 
 <!-- 案例 08：九麦真品早点店 -->
 <div class="page case-page">
   <div class="page-brand">YUAN HAO</div>
   <div class="page-label">CASE 08</div>
+  <div class="case-info">
+    <div class="case-title">九麦真品早点店</div>
+    <div class="case-en">JIUMAI GENUINE BREAKFAST STORE · BRAND BREAKFAST STORE</div>
+    <div class="case-desc">围绕「真材实料、健康早餐」的品牌定位，用温暖质朴的材质与简洁的空间语言传递品质感。</div>
+    <div class="case-meta">
+      <div class="meta-item">
+        <small>分类</small>
+        <b>商业与零售</b>
+      </div>
+      <div class="meta-item">
+        <small>状态</small>
+        <b>已交付</b>
+      </div>
+      <div class="meta-item">
+        <small>职责</small>
+        <b>统筹/空间设计</b>
+      </div>
+    </div>
+  </div>
   <div class="case-imgs">
-    <img src="assets/jiumai/cover.jpg" alt="九麦真品早点店" class="case-hero">
-<div class="img-row"><img src="assets/jiumai/01.jpg" alt="九麦真品早点店"> <img src="assets/jiumai/02.jpg" alt="九麦真品早点店"> </div>
-<div class="img-row"><img src="assets/jiumai/03.jpg" alt="九麦真品早点店"> <img src="assets/jiumai/04.jpg" alt="九麦真品早点店"> </div>
-<img src="assets/jiumai/05.jpg" alt="九麦真品早点店" class="case-hero">
-
+    <div class="img-rows"><div class="img-top"><img src="assets/jiumai/cover.jpg" alt="九麦真品早点店"></div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/jiumai/01.jpg" alt="九麦真品早点店"></div>
+                  <div class="img-half"><img src="assets/jiumai/02.jpg" alt="九麦真品早点店"></div>
+                </div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/jiumai/03.jpg" alt="九麦真品早点店"></div>
+                  <div class="img-half"><img src="assets/jiumai/04.jpg" alt="九麦真品早点店"></div>
+                </div><div class="img-single"><img src="assets/jiumai/05.jpg" alt="九麦真品早点店"></div></div>
   </div>
-  <div class="case-title">九麦真品早点店</div>
-  <div class="case-en">JIUMAI GENUINE BREAKFAST STORE · BRAND BREAKFAST STORE</div>
-  <div class="case-desc">围绕「真材实料、健康早餐」的品牌定位，用温暖质朴的材质与简洁的空间语言传递品质感。</div>
-  <div class="case-meta">
-    <div class="meta-item">
-      <small>分类 / CATEGORY</small>
-      <b>商业与零售</b>
-    </div>
-    <div class="meta-item">
-      <small>项目状态</small>
-      <b>已交付</b>
-    </div>
-    <div class="meta-item">
-      <small>职责定位</small>
-      <b>统筹/空间设计</b>
-    </div>
-  </div>
-  <div class="page-num">10</div>
+  <div class="page-num">11</div>
 </div>
 
 <!-- 案例 09：IMON玩具品牌专区 -->
 <div class="page case-page">
   <div class="page-brand">YUAN HAO</div>
   <div class="page-label">CASE 09</div>
+  <div class="case-info">
+    <div class="case-title">IMON玩具品牌专区</div>
+    <div class="case-en">IMON TOY BRAND ZONE · RETAIL STORE · SCENE-BUILT NATURE DISPLAY</div>
+    <div class="case-desc">6×2m / 4×5m 的限定场地内，用树皮立柱、木纹货架与动物 IP 造景还原自然场景。</div>
+    <div class="case-meta">
+      <div class="meta-item">
+        <small>分类</small>
+        <b>商业与零售</b>
+      </div>
+      <div class="meta-item">
+        <small>状态</small>
+        <b>已交付</b>
+      </div>
+      <div class="meta-item">
+        <small>职责</small>
+        <b>统筹/空间设计</b>
+      </div>
+    </div>
+  </div>
   <div class="case-imgs">
-    <img src="assets/imonstore/01.jpg" alt="IMON玩具品牌专区" class="case-hero">
-<div class="img-row"><img src="assets/imonstore/02.jpg" alt="IMON玩具品牌专区"> <img src="assets/imonstore/03.jpg" alt="IMON玩具品牌专区"> </div>
-<div class="img-row"><img src="assets/imonstore/04.jpg" alt="IMON玩具品牌专区"> <img src="assets/imonstore/05.jpg" alt="IMON玩具品牌专区"> </div>
-
+    <div class="img-rows"><div class="img-top"><img src="assets/imonstore/01.jpg" alt="IMON玩具品牌专区"></div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/imonstore/02.jpg" alt="IMON玩具品牌专区"></div>
+                  <div class="img-half"><img src="assets/imonstore/03.jpg" alt="IMON玩具品牌专区"></div>
+                </div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/imonstore/04.jpg" alt="IMON玩具品牌专区"></div>
+                  <div class="img-half"><img src="assets/imonstore/05.jpg" alt="IMON玩具品牌专区"></div>
+                </div></div>
   </div>
-  <div class="case-title">IMON玩具品牌专区</div>
-  <div class="case-en">IMON TOY BRAND ZONE · RETAIL STORE · SCENE-BUILT NATURE DISPLAY</div>
-  <div class="case-desc">6×2m / 4×5m 的限定场地内，用树皮立柱、木纹货架与动物 IP 造景还原自然场景。</div>
-  <div class="case-meta">
-    <div class="meta-item">
-      <small>分类 / CATEGORY</small>
-      <b>商业与零售</b>
-    </div>
-    <div class="meta-item">
-      <small>项目状态</small>
-      <b>已交付</b>
-    </div>
-    <div class="meta-item">
-      <small>职责定位</small>
-      <b>统筹/空间设计</b>
-    </div>
-  </div>
-  <div class="page-num">11</div>
+  <div class="page-num">12</div>
 </div>
 
 <!-- 案例 10：睿草养生品牌店 -->
 <div class="page case-page">
   <div class="page-brand">YUAN HAO</div>
   <div class="page-label">CASE 10</div>
+  <div class="case-info">
+    <div class="case-title">睿草养生品牌店</div>
+    <div class="case-en">RUI CAO WELLNESS STORE · </div>
+    <div class="case-desc">将自然材质、深绿主调与陈列体验融入零售空间，传递健康雅致的品牌气质。</div>
+    <div class="case-meta">
+      <div class="meta-item">
+        <small>分类</small>
+        <b>商业与零售</b>
+      </div>
+      <div class="meta-item">
+        <small>状态</small>
+        <b>已交付</b>
+      </div>
+      <div class="meta-item">
+        <small>职责</small>
+        <b>统筹/空间设计</b>
+      </div>
+    </div>
+  </div>
   <div class="case-imgs">
-    <img src="assets/ruicao/1.jpg" alt="睿草养生品牌店" class="case-hero">
-<div class="img-row"><img src="assets/ruicao/2.jpg" alt="睿草养生品牌店"> <img src="assets/ruicao/3.jpg" alt="睿草养生品牌店"> </div>
-<div class="img-row"><img src="assets/ruicao/4.jpg" alt="睿草养生品牌店"> <img src="assets/ruicao/5.jpg" alt="睿草养生品牌店"> </div>
-<img src="assets/ruicao/6.jpg" alt="睿草养生品牌店" class="case-hero">
-
+    <div class="img-rows"><div class="img-top"><img src="assets/ruicao/1.jpg" alt="睿草养生品牌店"></div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/ruicao/2.jpg" alt="睿草养生品牌店"></div>
+                  <div class="img-half"><img src="assets/ruicao/3.jpg" alt="睿草养生品牌店"></div>
+                </div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/ruicao/4.jpg" alt="睿草养生品牌店"></div>
+                  <div class="img-half"><img src="assets/ruicao/5.jpg" alt="睿草养生品牌店"></div>
+                </div><div class="img-single"><img src="assets/ruicao/6.jpg" alt="睿草养生品牌店"></div></div>
   </div>
-  <div class="case-title">睿草养生品牌店</div>
-  <div class="case-en">RUI CAO WELLNESS STORE · </div>
-  <div class="case-desc">将自然材质、深绿主调与陈列体验融入零售空间，传递健康雅致的品牌气质。</div>
-  <div class="case-meta">
-    <div class="meta-item">
-      <small>分类 / CATEGORY</small>
-      <b>商业与零售</b>
-    </div>
-    <div class="meta-item">
-      <small>项目状态</small>
-      <b>已交付</b>
-    </div>
-    <div class="meta-item">
-      <small>职责定位</small>
-      <b>统筹/空间设计</b>
-    </div>
-  </div>
-  <div class="page-num">12</div>
+  <div class="page-num">13</div>
 </div>
 
 <!-- 案例 11：湘幼教育集团办公室 -->
 <div class="page case-page">
   <div class="page-brand">YUAN HAO</div>
   <div class="page-label">CASE 11</div>
+  <div class="case-info">
+    <div class="case-title">湘幼教育集团办公室</div>
+    <div class="case-en">XIANGYOU EDUCATION GROUP HEADQUARTERS · GROUP HEADQUARTERS OFFICE · 500㎡</div>
+    <div class="case-desc">在 500㎡ 内统筹规划功能分区与动线。</div>
+    <div class="case-meta">
+      <div class="meta-item">
+        <small>分类</small>
+        <b>商业与零售</b>
+      </div>
+      <div class="meta-item">
+        <small>状态</small>
+        <b>已交付</b>
+      </div>
+      <div class="meta-item">
+        <small>职责</small>
+        <b>统筹/空间设计</b>
+      </div>
+    </div>
+  </div>
   <div class="case-imgs">
-    <img src="assets/xiangyou/xiangyou-cover.jpg" alt="湘幼教育集团办公室" class="case-hero">
-<div class="img-row"><img src="assets/xiangyou/03.jpg" alt="湘幼教育集团办公室"> <img src="assets/xiangyou/13.jpg" alt="湘幼教育集团办公室"> </div>
-<div class="img-row"><img src="assets/xiangyou/01.jpg" alt="湘幼教育集团办公室"> <img src="assets/xiangyou/14.jpg" alt="湘幼教育集团办公室"> </div>
-<div class="img-row"><img src="assets/xiangyou/15.jpg" alt="湘幼教育集团办公室"> <img src="assets/xiangyou/04.jpg" alt="湘幼教育集团办公室"> </div>
-<img src="assets/xiangyou/05.jpg" alt="湘幼教育集团办公室" class="case-hero">
-
+    <div class="img-rows"><div class="img-top"><img src="assets/xiangyou/xiangyou-cover.jpg" alt="湘幼教育集团办公室"></div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/xiangyou/03.jpg" alt="湘幼教育集团办公室"></div>
+                  <div class="img-half"><img src="assets/xiangyou/13.jpg" alt="湘幼教育集团办公室"></div>
+                </div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/xiangyou/01.jpg" alt="湘幼教育集团办公室"></div>
+                  <div class="img-half"><img src="assets/xiangyou/14.jpg" alt="湘幼教育集团办公室"></div>
+                </div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/xiangyou/15.jpg" alt="湘幼教育集团办公室"></div>
+                  <div class="img-half"><img src="assets/xiangyou/04.jpg" alt="湘幼教育集团办公室"></div>
+                </div><div class="img-single"><img src="assets/xiangyou/05.jpg" alt="湘幼教育集团办公室"></div></div>
   </div>
-  <div class="case-title">湘幼教育集团办公室</div>
-  <div class="case-en">XIANGYOU EDUCATION GROUP HEADQUARTERS · GROUP HEADQUARTERS OFFICE · 500㎡</div>
-  <div class="case-desc">在 500㎡ 内统筹规划功能分区与动线。</div>
-  <div class="case-meta">
-    <div class="meta-item">
-      <small>分类 / CATEGORY</small>
-      <b>商业与零售</b>
-    </div>
-    <div class="meta-item">
-      <small>项目状态</small>
-      <b>已交付</b>
-    </div>
-    <div class="meta-item">
-      <small>职责定位</small>
-      <b>统筹/空间设计</b>
-    </div>
-  </div>
-  <div class="page-num">13</div>
+  <div class="page-num">14</div>
 </div>
 
 <!-- 案例 12：山川生物集团前台大厅 -->
 <div class="page case-page">
   <div class="page-brand">YUAN HAO</div>
   <div class="page-label">CASE 12</div>
+  <div class="case-info">
+    <div class="case-title">山川生物集团前台大厅</div>
+    <div class="case-en">SHANCHUAN BIOTECH FRONT HALL · CORPORATE LOBBY & CULTURE WALL</div>
+    <div class="case-desc">提取山的轮廓与层次，结合绿色光带，将生物科技属性与自然意象融合。</div>
+    <div class="case-meta">
+      <div class="meta-item">
+        <small>分类</small>
+        <b>商业与零售</b>
+      </div>
+      <div class="meta-item">
+        <small>状态</small>
+        <b>已交付</b>
+      </div>
+      <div class="meta-item">
+        <small>职责</small>
+        <b>统筹/空间设计</b>
+      </div>
+    </div>
+  </div>
   <div class="case-imgs">
-    <img src="assets/shanchuan/cover.jpg" alt="山川生物集团前台大厅" class="case-hero">
-<div class="img-row"><img src="assets/shanchuan/01.jpg" alt="山川生物集团前台大厅"> <img src="assets/shanchuan/02.jpg" alt="山川生物集团前台大厅"> </div>
-<div class="img-row"><img src="assets/shanchuan/03.jpg" alt="山川生物集团前台大厅"> <img src="assets/shanchuan/06.jpg" alt="山川生物集团前台大厅"> </div>
-<div class="img-row"><img src="assets/shanchuan/07.jpg" alt="山川生物集团前台大厅"> <img src="assets/shanchuan/05.jpg" alt="山川生物集团前台大厅"> </div>
-
+    <div class="img-rows"><div class="img-top"><img src="assets/shanchuan/cover.jpg" alt="山川生物集团前台大厅"></div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/shanchuan/01.jpg" alt="山川生物集团前台大厅"></div>
+                  <div class="img-half"><img src="assets/shanchuan/02.jpg" alt="山川生物集团前台大厅"></div>
+                </div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/shanchuan/03.jpg" alt="山川生物集团前台大厅"></div>
+                  <div class="img-half"><img src="assets/shanchuan/06.jpg" alt="山川生物集团前台大厅"></div>
+                </div><div class="img-bottom">
+                  <div class="img-half"><img src="assets/shanchuan/07.jpg" alt="山川生物集团前台大厅"></div>
+                  <div class="img-half"><img src="assets/shanchuan/05.jpg" alt="山川生物集团前台大厅"></div>
+                </div></div>
   </div>
-  <div class="case-title">山川生物集团前台大厅</div>
-  <div class="case-en">SHANCHUAN BIOTECH FRONT HALL · CORPORATE LOBBY & CULTURE WALL</div>
-  <div class="case-desc">提取山的轮廓与层次，结合绿色光带，将生物科技属性与自然意象融合。</div>
-  <div class="case-meta">
-    <div class="meta-item">
-      <small>分类 / CATEGORY</small>
-      <b>商业与零售</b>
-    </div>
-    <div class="meta-item">
-      <small>项目状态</small>
-      <b>已交付</b>
-    </div>
-    <div class="meta-item">
-      <small>职责定位</small>
-      <b>统筹/空间设计</b>
-    </div>
-  </div>
-  <div class="page-num">14</div>
+  <div class="page-num">15</div>
 </div>
 
 <!-- 案例 13：税博士企业文化墙 -->
 <div class="page case-page">
   <div class="page-brand">YUAN HAO</div>
   <div class="page-label">CASE 13</div>
+  <div class="case-info">
+    <div class="case-title">税博士企业文化墙</div>
+    <div class="case-en">SHUIBOSHI CORPORATE CULTURE WALL · CORPORATE CULTURE WALL · TAX & FINANCE</div>
+    <div class="case-desc">通过图文编排与色彩层次，在有限的墙面空间内呈现企业数字化的服务理念与团队文化。</div>
+    <div class="case-meta">
+      <div class="meta-item">
+        <small>分类</small>
+        <b>展厅与文化</b>
+      </div>
+      <div class="meta-item">
+        <small>状态</small>
+        <b>已交付</b>
+      </div>
+      <div class="meta-item">
+        <small>职责</small>
+        <b>统筹/空间设计</b>
+      </div>
+    </div>
+  </div>
   <div class="case-imgs">
-    <img src="assets/shuiboshi/cover.jpg" alt="税博士企业文化墙" class="case-hero">
-<div class="img-row"><img src="assets/shuiboshi/01.jpg" alt="税博士企业文化墙"> <img src="assets/shuiboshi/03.jpg" alt="税博士企业文化墙"> </div>
-<img src="assets/shuiboshi/02.jpg" alt="税博士企业文化墙" class="case-hero">
-
+    <div class="img-grid4">
+          <div class="img-cell"><img src="assets/shuiboshi/cover.jpg" alt="税博士企业文化墙"></div>
+          <div class="img-cell"><img src="assets/shuiboshi/01.jpg" alt="税博士企业文化墙"></div>
+          <div class="img-cell"><img src="assets/shuiboshi/03.jpg" alt="税博士企业文化墙"></div>
+          <div class="img-cell"><img src="assets/shuiboshi/02.jpg" alt="税博士企业文化墙"></div>
+        </div>
   </div>
-  <div class="case-title">税博士企业文化墙</div>
-  <div class="case-en">SHUIBOSHI CORPORATE CULTURE WALL · CORPORATE CULTURE WALL · TAX & FINANCE</div>
-  <div class="case-desc">通过图文编排与色彩层次，在有限的墙面空间内呈现企业数字化的服务理念与团队文化。</div>
-  <div class="case-meta">
-    <div class="meta-item">
-      <small>分类 / CATEGORY</small>
-      <b>展厅与文化</b>
-    </div>
-    <div class="meta-item">
-      <small>项目状态</small>
-      <b>已交付</b>
-    </div>
-    <div class="meta-item">
-      <small>职责定位</small>
-      <b>统筹/空间设计</b>
-    </div>
-  </div>
-  <div class="page-num">15</div>
+  <div class="page-num">16</div>
 </div>
 
 <!-- 案例 14：国防科大学院主题墙 -->
 <div class="page case-page">
   <div class="page-brand">YUAN HAO</div>
   <div class="page-label">CASE 14</div>
+  <div class="case-info">
+    <div class="case-title">国防科大学院主题墙</div>
+    <div class="case-en">NUDT ACADEMY THEME WALL · ACADEMY THEME WALL</div>
+    <div class="case-desc">以浮雕质感与庄重的红色元素，塑造严肃而向上的校园形象。</div>
+    <div class="case-meta">
+      <div class="meta-item">
+        <small>分类</small>
+        <b>展厅与文化</b>
+      </div>
+      <div class="meta-item">
+        <small>状态</small>
+        <b>已交付</b>
+      </div>
+      <div class="meta-item">
+        <small>职责</small>
+        <b>统筹/空间设计</b>
+      </div>
+    </div>
+  </div>
   <div class="case-imgs">
-    <img src="assets/guoke/cover.jpg" alt="国防科大学院主题墙" class="case-hero">
-<img src="assets/guoke/01.jpg" alt="国防科大学院主题墙" class="case-hero">
-
+    <div class="img-pair">
+          <div class="img-half"><img src="assets/guoke/cover.jpg" alt="国防科大学院主题墙"></div>
+          <div class="img-half"><img src="assets/guoke/01.jpg" alt="国防科大学院主题墙"></div>
+        </div>
   </div>
-  <div class="case-title">国防科大学院主题墙</div>
-  <div class="case-en">NUDT ACADEMY THEME WALL · ACADEMY THEME WALL</div>
-  <div class="case-desc">以浮雕质感与庄重的红色元素，塑造严肃而向上的校园形象。</div>
-  <div class="case-meta">
-    <div class="meta-item">
-      <small>分类 / CATEGORY</small>
-      <b>展厅与文化</b>
-    </div>
-    <div class="meta-item">
-      <small>项目状态</small>
-      <b>已交付</b>
-    </div>
-    <div class="meta-item">
-      <small>职责定位</small>
-      <b>统筹/空间设计</b>
-    </div>
-  </div>
-  <div class="page-num">16</div>
+  <div class="page-num">17</div>
 </div>
 
 <!-- 案例 15：康为数字化门头 -->
 <div class="page case-page">
   <div class="page-brand">YUAN HAO</div>
   <div class="page-label">CASE 15</div>
+  <div class="case-info">
+    <div class="case-title">康为数字化门头</div>
+    <div class="case-en">KANGWEI DIGITAL EXHIBITION FACADE · DIGITAL GALLERY FACADE</div>
+    <div class="case-desc">以「信息数据」为视觉元素重新定义门头，让 logo 醒目、导视清晰、立面具有吸引力。</div>
+    <div class="case-meta">
+      <div class="meta-item">
+        <small>分类</small>
+        <b>商业与零售</b>
+      </div>
+      <div class="meta-item">
+        <small>状态</small>
+        <b>已交付</b>
+      </div>
+      <div class="meta-item">
+        <small>职责</small>
+        <b>统筹/空间设计</b>
+      </div>
+    </div>
+  </div>
   <div class="case-imgs">
-    <img src="assets/kangwei/cover.jpg" alt="康为数字化门头" class="case-hero">
-<div class="img-row"><img src="assets/kangwei/01.jpg" alt="康为数字化门头"> <img src="assets/kangwei/02.jpg" alt="康为数字化门头"> </div>
-
+    <div class="img-grid3">
+          <div class="img-top"><img src="assets/kangwei/cover.jpg" alt="康为数字化门头"></div>
+          <div class="img-bottom">
+            <div class="img-half"><img src="assets/kangwei/01.jpg" alt="康为数字化门头"></div>
+            <div class="img-half"><img src="assets/kangwei/02.jpg" alt="康为数字化门头"></div>
+          </div>
+        </div>
   </div>
-  <div class="case-title">康为数字化门头</div>
-  <div class="case-en">KANGWEI DIGITAL EXHIBITION FACADE · DIGITAL GALLERY FACADE</div>
-  <div class="case-desc">以「信息数据」为视觉元素重新定义门头，让 logo 醒目、导视清晰、立面具有吸引力。</div>
-  <div class="case-meta">
-    <div class="meta-item">
-      <small>分类 / CATEGORY</small>
-      <b>商业与零售</b>
-    </div>
-    <div class="meta-item">
-      <small>项目状态</small>
-      <b>已交付</b>
-    </div>
-    <div class="meta-item">
-      <small>职责定位</small>
-      <b>统筹/空间设计</b>
-    </div>
-  </div>
-  <div class="page-num">17</div>
+  <div class="page-num">18</div>
 </div>
 
 <!-- 案例 16：SNTO 企业文化墙 -->
 <div class="page case-page">
   <div class="page-brand">YUAN HAO</div>
   <div class="page-label">CASE 16</div>
+  <div class="case-info">
+    <div class="case-title">SNTO 企业文化墙</div>
+    <div class="case-en">SNTO CORPORATE CULTURE WALL · CORPORATE CULTURE WALL · BRAND DISPLAY</div>
+    <div class="case-desc">通过立体字、世界地图与品牌标语，呈现「轻金属 · 新世界」的品牌叙事。</div>
+    <div class="case-meta">
+      <div class="meta-item">
+        <small>分类</small>
+        <b>展厅与文化</b>
+      </div>
+      <div class="meta-item">
+        <small>状态</small>
+        <b>已交付</b>
+      </div>
+      <div class="meta-item">
+        <small>职责</small>
+        <b>统筹/空间设计</b>
+      </div>
+    </div>
+  </div>
   <div class="case-imgs">
-    <img src="assets/snto/cover.jpg" alt="SNTO 企业文化墙" class="case-hero">
-<div class="img-row"><img src="assets/snto/01.jpg" alt="SNTO 企业文化墙"> <img src="assets/snto/02.jpg" alt="SNTO 企业文化墙"> </div>
-
+    <div class="img-grid3">
+          <div class="img-top"><img src="assets/snto/cover.jpg" alt="SNTO 企业文化墙"></div>
+          <div class="img-bottom">
+            <div class="img-half"><img src="assets/snto/01.jpg" alt="SNTO 企业文化墙"></div>
+            <div class="img-half"><img src="assets/snto/02.jpg" alt="SNTO 企业文化墙"></div>
+          </div>
+        </div>
   </div>
-  <div class="case-title">SNTO 企业文化墙</div>
-  <div class="case-en">SNTO CORPORATE CULTURE WALL · CORPORATE CULTURE WALL · BRAND DISPLAY</div>
-  <div class="case-desc">通过立体字、世界地图与品牌标语，呈现「轻金属 · 新世界」的品牌叙事。</div>
-  <div class="case-meta">
-    <div class="meta-item">
-      <small>分类 / CATEGORY</small>
-      <b>展厅与文化</b>
-    </div>
-    <div class="meta-item">
-      <small>项目状态</small>
-      <b>已交付</b>
-    </div>
-    <div class="meta-item">
-      <small>职责定位</small>
-      <b>统筹/空间设计</b>
-    </div>
-  </div>
-  <div class="page-num">18</div>
+  <div class="page-num">19</div>
 </div>
 
-<!-- 分类页2：商业与零售 -->
+<!-- 分类页2 -->
 <div class="page category">
   <div class="page-brand">YUAN HAO</div>
   <div class="page-label">CATEGORY 02</div>
