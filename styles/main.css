@@ -344,6 +344,18 @@ figcaption{margin-top:1.2vw}
 .case-page footer .next-link:hover .next-arrow{color:var(--fg);transform:translateX(10px)}
 @media(max-width:700px){.case-page footer .next-link .next-word{font-size:clamp(52px,15vw,120px)}}
 
+/* 上一个/下一个 三栏导航 */
+.case-nav{display:flex;align-items:center;justify-content:space-between;padding:6vw 3vw;border-top:1px solid var(--line)}
+.case-nav a{color:var(--fg);text-decoration:none}
+.case-nav .prev-link,.case-nav .next-link{display:flex;align-items:center;gap:1.5vw}
+.case-nav .nav-text{font-size:clamp(28px,3.5vw,48px);line-height:1;letter-spacing:-.03em}
+.case-nav .nav-text em{font-family:Georgia,serif;font-weight:400;font-size:.6em;color:var(--muted)}
+.case-nav .nav-arrow{font-size:clamp(32px,4vw,60px);color:var(--muted);transition:transform .4s ease,color .4s ease}
+.case-nav .prev-link:hover .nav-arrow{transform:translateX(-8px);color:var(--fg)}
+.case-nav .next-link:hover .nav-arrow{transform:translateX(8px);color:var(--fg)}
+.case-nav .back-link{font:11px/1.5 var(--font-mono);letter-spacing:.1em;color:var(--muted);text-transform:uppercase}
+@media(max-width:700px){.case-nav{gap:4vw}.case-nav .back-link{display:none}}
+
 
 /* ========================================
    V1.7 EXTERNAL DESIGN SYSTEM REFINEMENT
