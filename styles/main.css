@@ -116,6 +116,7 @@ footer em{font-family:Georgia,serif;font-weight:400}.note{max-width:480px;color:
 }
 .case-page .chapter-title{font-size:clamp(48px,6vw,80px)}
 .jili-journey h3{font-size:clamp(40px,5vw,65px)}
+.case-page h3{font-size:clamp(44px,5.5vw,72px) !important}
 .case-page p:not(.eyebrow){color:var(--text-secondary)}
 .case-page figure{margin-top:var(--space-sm)}
 .case-page img{display:block;width:100%;object-fit:contain}
