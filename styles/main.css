@@ -282,7 +282,7 @@ footer em{font-family:Georgia,serif;font-weight:400}.note{max-width:480px;color:
 .skill-row .sr-index{font-family:Georgia,serif;font-size:12px;color:var(--muted);letter-spacing:.08em;min-width:3vw}
 .skill-row .sr-name{font-size:16px;font-weight:500;color:var(--fg);white-space:nowrap}
 .skill-row .sr-line{flex:1;border-bottom:1px dotted rgba(255,255,255,.16);transform:translateY(-.35em);min-width:4vw}
-.skill-row .sr-desc{font-size:13px;color:var(--muted);text-align:right}
+.skill-row .sr-desc{font-size:13px;color:var(--muted);text-align:right;white-space:nowrap}
 @media(max-width:700px){
   .skill-row{gap:2.6vw;padding:4vw 0;flex-wrap:wrap}
   .skill-row .sr-index{min-width:7vw}
