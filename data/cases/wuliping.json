@@ -7,7 +7,7 @@
   "hero_image_alt": "湘西五里坪党群服务中心",
   "hero_caption": "01 / 中心实景 · SERVICE CENTER — BUILT SPACE",
   "role_label": "职责定位 / ROLE",
-  "role_statement": "集党建展示、便民服务与社区文化活动于一体的基层党群服务空间，<br>从方案设计到完工交付全程统筹。",
+  "role_statement": "集党建展示、便民服务与社区文化活动于一体的基层党群服务空间。",
   "role_statement_en": "A community party service center integrating exhibition, service and cultural functions — delivered from concept to completion.",
   "role_name": "统筹 / 空间设计",
   "role_name_en": "PROJECT DELIVERY · SPATIAL DESIGN",
@@ -38,5 +38,6 @@
     "assets/wuliping/04.jpg",
     "assets/wuliping/05.jpg"
   ],
-  "title_en": "WULIPING PARTY-MASS SERVICE CENTER"
+  "title_en": "WULIPING PARTY-MASS SERVICE CENTER",
+  "role_subtitle": "从方案设计到完工交付全程统筹。"
 }

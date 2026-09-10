@@ -5,7 +5,7 @@
   "hero_image": "assets/ziwei/cover.jpg",
   "hero_image_alt": "紫薇农业展厅 · 云朵吊顶接待区",
   "hero_caption": "01 / 展厅呈现 · EXHIBITION HALL — BUILT SPACE",
-  "role_statement": "以「科技农业 · 绿色发展」为内核的农业物联网展厅，<br>通过展示、交互与空间叙事，呈现现代农业的数字化图景。",
+  "role_statement": "以「科技农业 · 绿色发展」为内核的农业物联网展厅。",
   "role_statement_en": "An agricultural IoT exhibition hall built on technology & green growth — display, interaction and spatial narrative.",
   "role_name": "统筹 / 空间设计",
   "role_name_en": "PROJECT LEAD · SPATIAL DESIGN",
@@ -39,5 +39,6 @@
   "title_en": "ZIWEI AGRICULTURAL EXHIBITION HALL",
   "s6_eyebrow": "05 / 全景呈现",
   "s6_caption": "项目建成后的多角度实景，涵盖入口、展示区、接待区与多媒体互动区。",
-  "s6_caption2": "实景全览 · PANORAMA VIEW"
+  "s6_caption2": "实景全览 · PANORAMA VIEW",
+  "role_subtitle": "通过展示、交互与空间叙事，呈现现代农业的数字化图景。"
 }

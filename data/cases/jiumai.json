@@ -7,7 +7,7 @@
   "hero_image_alt": "九麦真品早点店",
   "hero_caption": "01 / 门店效果 · STORE — WARM & HONEST",
   "role_label": "职责定位 / ROLE",
-  "role_statement": "以黑麦为特色的品牌早点店，<br>围绕「真材实料、健康早餐」的品牌定位，用温暖质朴的材质与简洁的空间语言传递品质感。",
+  "role_statement": "以黑麦为特色的品牌早点店。",
   "role_statement_en": "A black-rye breakfast brand store — warm, honest materials in a simple spatial language.",
   "role_name": "空间设计师",
   "role_name_en": "SPATIAL DESIGN · BRAND STORE",
@@ -38,5 +38,6 @@
     "assets/jiumai/04.jpg",
     "assets/jiumai/05.jpg"
   ],
-  "title_en": "JIUMAI GENUINE BREAKFAST STORE"
+  "title_en": "JIUMAI GENUINE BREAKFAST STORE",
+  "role_subtitle": "围绕「真材实料、健康早餐」的品牌定位，用温暖质朴的材质与简洁的空间语言传递品质感。"
 }

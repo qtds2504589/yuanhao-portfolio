@@ -7,7 +7,7 @@
   "hero_image_alt": "智能医美体验厅概念方案",
   "hero_caption": "01 / 概念主视觉 · CONCEPT — ROBO ALLIANCE",
   "role_label": "职责定位 / ROLE",
-  "role_statement": "面向智能医美品牌的体验厅概念设计，<br>以科技装置与未来感空间语言建立全新的品牌识别。",
+  "role_statement": "面向智能医美品牌的体验厅概念设计。",
   "role_statement_en": "A concept experience hall for a smart medical beauty brand, built on technology-driven spatial language.",
   "role_name": "概念设计师",
   "role_name_en": "CONCEPT DESIGN · FUTURE EXPERIENCE",
@@ -38,5 +38,6 @@
     "assets/milo/04.jpg",
     "assets/milo/05.jpg"
   ],
-  "title_en": "MILO SMART AESTHETICS EXPERIENCE CONCEPT"
+  "title_en": "MILO SMART AESTHETICS EXPERIENCE CONCEPT",
+  "role_subtitle": "以科技装置与未来感空间语言建立全新的品牌识别。"
 }

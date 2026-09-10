@@ -7,7 +7,7 @@
   "hero_image_alt": "税博士企业文化墙",
   "hero_caption": "01 / 文化墙呈现 · CULTURE WALL — BUILT SPACE",
   "role_label": "职责定位 / ROLE",
-  "role_statement": "以财税专业与女性力量为关键词的企业文化墙设计，<br>通过图文编排与色彩层次，在有限的墙面空间内呈现企业数字化的服务理念与团队文化。",
+  "role_statement": "以财税专业与女性力量为关键词的企业文化墙设计。",
   "role_statement_en": "A corporate culture wall built on tax professionalism and feminine strength — graphic layers and color turning tax & finance into visual narrative.",
   "role_name": "空间设计师",
   "role_name_en": "SPATIAL & GRAPHIC · CULTURE WALL",
@@ -32,5 +32,6 @@
     "assets/shuiboshi/01.jpg",
     "assets/shuiboshi/02.jpg"
   ],
-  "title_en": "SHUIBOSHI CORPORATE CULTURE WALL"
+  "title_en": "SHUIBOSHI CORPORATE CULTURE WALL",
+  "role_subtitle": "通过图文编排与色彩层次，在有限的墙面空间内呈现企业数字化的服务理念与团队文化。"
 }

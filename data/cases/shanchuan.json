@@ -7,7 +7,7 @@
   "hero_image_alt": "山川生物集团前台大厅",
   "hero_caption": "01 / 大厅效果 · LOBBY — INSPIRED BY MOUNTAINS",
   "role_label": "职责定位 / ROLE",
-  "role_statement": "以「山」为设计灵感的企业前台大厅及文化墙，<br>提取山的轮廓与层次，结合绿色光带，将生物科技属性与自然意象融合。",
+  "role_statement": "以「山」为设计灵感的企业前台大厅及文化墙。",
   "role_statement_en": "A corporate lobby inspired by mountains — layering mountain silhouettes with green light to blend biotech with nature.",
   "role_name": "概念设计师",
   "role_name_en": "CONCEPT DESIGN · LOBBY & CULTURE WALL",
@@ -34,5 +34,6 @@
     "assets/shanchuan/04.jpg",
     "assets/shanchuan/05.jpg"
   ],
-  "title_en": "SHANCHUAN BIOTECH FRONT HALL"
+  "title_en": "SHANCHUAN BIOTECH FRONT HALL",
+  "role_subtitle": "提取山的轮廓与层次，结合绿色光带，将生物科技属性与自然意象融合。"
 }

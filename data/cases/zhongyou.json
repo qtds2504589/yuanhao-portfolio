@@ -7,7 +7,7 @@
   "hero_image_alt": "中幼集团产品展厅",
   "hero_caption": "01 / 展厅实景 · EXHIBITION HALL — BUILT SPACE",
   "role_label": "职责定位 / ROLE",
-  "role_statement": "以产品演示、体验互动与品牌展示为一体的教育产品展厅，<br>在明亮的色彩与圆润的造型中建立儿童友好的空间语言。",
+  "role_statement": "以产品演示、体验互动与品牌展示为一体的教育产品展厅。",
   "role_statement_en": "An education product showroom built around demonstration, interaction and brand presence.",
   "role_name": "空间设计师",
   "role_name_en": "SPATIAL DESIGN · EXHIBITION HALL",
@@ -33,5 +33,6 @@
     "assets/zhongyou/03.jpg",
     "assets/zhongyou/04.jpg"
   ],
-  "title_en": "ZHONGYOU GROUP PRODUCT EXHIBITION HALL"
+  "title_en": "ZHONGYOU GROUP PRODUCT EXHIBITION HALL",
+  "role_subtitle": "在明亮的色彩与圆润的造型中建立儿童友好的空间语言。"
 }

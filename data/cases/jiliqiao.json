@@ -7,7 +7,7 @@
   "hero_image_alt": "集里桥儿童之家",
   "hero_caption": "01 / 到达体验 · ARRIVAL — A PLACE DESIGNED FOR CHILDREN'S EVERYDAY DISCOVERY",
   "role_label": "职责定位 / ROLE",
-  "role_statement": "从儿童的尺度出发，<br>让探索成为空间的一部分。",
+  "role_statement": "从儿童的尺度出发。",
   "role_statement_en": "The project begins with children's scale and turns movement,\ncuriosity and discovery into part of the spatial experience.",
   "role_name": "项目负责人",
   "role_name_en": "PROJECT LEAD · CONCEPT & SPATIAL DESIGN",
@@ -44,5 +44,6 @@
   "outro_statement": "好的儿童空间，<br>不是替孩子定义世界，<br>而是<span style=\"color:#aaa\">为探索留下可能。</span>",
   "outro_statement_en": "The goal is not to define a world for children,\nbut to leave room for them to discover one.",
   "title_en": "JILIQIAO CHILDREN'S HOME",
-  "s5_image2": "assets/jili/jili-scene.jpg"
+  "s5_image2": "assets/jili/jili-scene.jpg",
+  "role_subtitle": "让探索成为空间的一部分。"
 }

@@ -7,7 +7,7 @@
   "hero_image_alt": "SNTO 企业文化墙",
   "hero_caption": "01 / 文化墙呈现 · CULTURE WALL",
   "role_label": "职责定位 / ROLE",
-  "role_statement": "以企业国际化形象为主题的企业文化墙设计，<br>通过立体字、世界地图与品牌标语，呈现「轻金属 · 新世界」的品牌叙事。",
+  "role_statement": "以企业国际化形象为主题的企业文化墙设计。",
   "role_statement_en": "A corporate culture wall articulating global ambition — dimensional type, world map and brand slogans telling the \"light metal, new world\" story.",
   "role_name": "空间设计师",
   "role_name_en": "SPATIAL DESIGN · CULTURE WALL & BRAND",
@@ -32,5 +32,6 @@
     "assets/snto/01.jpg",
     "assets/snto/02.jpg"
   ],
-  "title_en": "SNTO CORPORATE CULTURE WALL"
+  "title_en": "SNTO CORPORATE CULTURE WALL",
+  "role_subtitle": "通过立体字、世界地图与品牌标语，呈现「轻金属 · 新世界」的品牌叙事。"
 }

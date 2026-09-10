@@ -7,7 +7,7 @@
   "hero_image_alt": "宇牧米昔品牌饮品店",
   "hero_caption": "01 / 门店效果 · STORE — 30㎡ BRAND SPACE",
   "role_label": "职责定位 / ROLE",
-  "role_statement": "以自然养生为核心理念的代餐饮品店，<br>在仅 30㎡ 的有限空间内，通过品牌色、杯子造型与灯光营造自然、健康、舒适的品牌氛围。",
+  "role_statement": "以自然养生为核心理念的代餐饮品店。",
   "role_statement_en": "A natural-health drink store — within 30㎡, brand color, cup forms and lighting build a calm, healthy atmosphere.",
   "role_name": "空间设计师",
   "role_name_en": "SPATIAL DESIGN · BRAND STORE",
@@ -38,5 +38,6 @@
     "assets/yumu/04.jpg",
     "assets/yumu/05.jpg"
   ],
-  "title_en": "YUMU MIXI BRAND BEVERAGE STORE"
+  "title_en": "YUMU MIXI BRAND BEVERAGE STORE",
+  "role_subtitle": "在仅 30㎡ 的有限空间内，通过品牌色、杯子造型与灯光营造自然、健康、舒适的品牌氛围。"
 }
