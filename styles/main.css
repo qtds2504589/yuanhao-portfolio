@@ -348,7 +348,7 @@ figcaption{margin-top:1.2vw}
 .case-nav{display:flex;align-items:center;justify-content:space-between;padding:6vw 3vw;border-top:1px solid var(--line)}
 .case-nav a{color:var(--fg);text-decoration:none}
 .case-nav .prev-link,.case-nav .next-link{display:flex;align-items:center;gap:2vw}
-.case-nav .nav-text{font-size:clamp(48px,6vw,96px);line-height:.9;letter-spacing:-.05em}
+.case-nav .nav-text{font-size:clamp(36px,4.5vw,68px);line-height:.9;letter-spacing:-.05em}
 .case-nav .nav-text em{font-family:Georgia,serif;font-weight:400;font-size:.5em;color:var(--muted);letter-spacing:.02em}
 .case-nav .nav-arrow{font-size:clamp(40px,5vw,80px);color:var(--muted);transition:transform .4s ease,color .4s ease}
 .case-nav .prev-link:hover .nav-arrow{transform:translateX(-8px);color:var(--fg)}
