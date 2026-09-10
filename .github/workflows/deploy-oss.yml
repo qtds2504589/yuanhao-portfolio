@@ -49,4 +49,9 @@ jobs:
                   if count % 50 == 0:
                       print(f'Uploaded {count} files...')
           print(f'Done: {count} files uploaded')
+          # 强制修正所有 html 文件的 Content-Disposition
+          for obj in oss2.ObjectIterator(bucket):
+              if obj.key.endswith('.html'):
+                  bucket.update_object_meta(obj.key, {'Content-Disposition': 'inline'})
+          print('Fixed Content-Disposition on all HTML files')
           EOF
