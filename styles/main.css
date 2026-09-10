@@ -24,7 +24,7 @@ footer em{font-family:Georgia,serif;font-weight:400}.note{max-width:480px;color:
 }
 .case-page .statement em{font-family:inherit;font-style:normal}
 .case-page .statement-en{margin-top:.3vw;margin-bottom:0}
-.statement-sub{font-size:clamp(16px,1.8vw,22px);line-height:1.6;color:var(--muted);max-width:720px;margin:1.2vw 0 .5vw;font-weight:400}
+.statement-sub{font-size:clamp(16px,1.8vw,22px);line-height:1.6;color:var(--muted);max-width:720px;margin:2.5vw 0 .5vw;font-weight:400}
 .statement-sub-en{font:14px/1.6 Georgia,serif;color:var(--muted);max-width:720px;margin:0 0 5vw;opacity:.7}
 .case-intro{padding-top:6vw;padding-bottom:8vw}
 .role-grid{margin-top:5vw;margin-left:20%;border-top:1px solid var(--line);padding-top:2vw}
@@ -115,7 +115,7 @@ footer em{font-family:Georgia,serif;font-weight:400}.note{max-width:480px;color:
   line-height:.98;
 }
 .case-page .chapter-title{font-size:clamp(48px,6vw,80px)}
-.jili-journey h3{font-size:clamp(40px,5vw,65px)}
+.jili-journey h3{font-size:clamp(36px,4.5vw,58px)}
 .case-page h3{font-size:clamp(44px,5.5vw,72px) !important}
 .case-page p:not(.eyebrow){color:var(--text-secondary)}
 .case-page figure{margin-top:var(--space-sm)}
