@@ -22,8 +22,8 @@ footer em{font-family:Georgia,serif;font-weight:400}.note{max-width:480px;color:
   max-width:950px;
 }
 .case-page .statement em{font-family:inherit;font-style:normal}
-.case-page .statement-en{margin-top:1.2vw;margin-bottom:5vw}
-.statement-sub{font-size:clamp(16px,1.8vw,22px);line-height:1.6;color:var(--muted);max-width:720px;margin:-1vw 0 3vw;font-weight:400}
+.case-page .statement-en{margin-top:.8vw;margin-bottom:0}
+.statement-sub{font-size:clamp(16px,1.8vw,22px);line-height:1.6;color:var(--muted);max-width:720px;margin:2.5vw 0 5vw;font-weight:400}
 .case-intro{padding-top:10vw;padding-bottom:10vw}
 .role-grid{margin-top:5vw;margin-left:20%;border-top:1px solid var(--line);padding-top:2vw}
 .role-grid p{margin:0}
