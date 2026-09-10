@@ -20,6 +20,7 @@ footer em{font-family:Georgia,serif;font-weight:400}.note{max-width:480px;color:
   line-height:1.08;
   letter-spacing:-.045em;
   max-width:950px;
+  margin:0 0 .5vw;
 }
 .case-page .statement em{font-family:inherit;font-style:normal}
 .case-page .statement-en{margin-top:.3vw;margin-bottom:0}
